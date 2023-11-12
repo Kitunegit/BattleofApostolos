@@ -7,6 +7,3 @@ execute as @a[scores={click_test=1..,click_time=..1},nbt={SelectedItem:{tag:{cli
 execute as @a[scores={click_test=1..,click_time=..1},nbt={SelectedItem:{tag:{click_test:1}}}] run scoreboard players set @s click_time 100
 scoreboard players set @a click_test 0
 scoreboard players remove @a[scores={click_time=1..}] click_time 1
-
-
-

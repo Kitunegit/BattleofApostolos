@@ -1,1 +1,1 @@
-/give @s command_block
+give @s command_block

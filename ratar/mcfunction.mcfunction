@@ -1,1 +1,0 @@
-give @s command_block

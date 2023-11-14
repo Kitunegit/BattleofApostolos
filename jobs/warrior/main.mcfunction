@@ -1,1 +1,1 @@
-#戦士
+#戦士-imageColor_orange

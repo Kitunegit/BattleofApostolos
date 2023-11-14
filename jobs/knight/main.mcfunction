@@ -1,1 +1,1 @@
-#騎士
+#騎士-imageColor_lightBlue

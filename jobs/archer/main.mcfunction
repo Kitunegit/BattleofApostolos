@@ -1,1 +1,1 @@
-#弓兵
+#弓兵-imageColor_green

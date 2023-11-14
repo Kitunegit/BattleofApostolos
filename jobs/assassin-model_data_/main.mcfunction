@@ -1,2 +1,3 @@
-#騎士-imageColor_lightBlue
+#暗殺者-imageColor_purple
+
 

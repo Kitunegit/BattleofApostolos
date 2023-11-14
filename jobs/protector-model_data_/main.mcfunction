@@ -1,2 +1,3 @@
-#騎士-imageColor_lightBlue
+#守護者-imageColor_blue
+
 

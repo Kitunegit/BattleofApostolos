@@ -8,7 +8,7 @@ execute at @a[tag=protector_skill_1] run playsound minecraft:entity.zombie.attac
 effect give @a[tag=protector_skill_1] slowness 15 1 true
 effect give @a[tag=protector_skill_1] resistance 15 2 true
 effect give @a[tag=protector_skill_1] fire_resistance 15 1 true
-item replace entity @a[tag=protector_skill_1] hotbar.1 with barrier{CustomModelData:81} 30
+item replace entity @a[tag=protector_skill_1] hotbar.1 with barrier{CustomModelData:81} 31
 
 scoreboard players set @a[tag=protector_skill_1] protector_skill_1_cool 600
 scoreboard players set @a[tag=protector_skill_1] protector_r_detect 0
@@ -25,3 +25,5 @@ scoreboard players operation @a[scores={protector_skill_1_cool=1..}] protector_s
 scoreboard players operation @a[scores={protector_skill_1_cool=1..}] protector_skill_1_cal %= item_cool_check protector_skill_1_cal
 
 execute if score @a[scores={protector_skill_1_cool=1..},limit=1] protector_skill_1_cal matches 0 run clear @a[scores={protector_skill_1_cool=1..}] barrier{CustomModelData:81} 1
+
+item replace entity @a[scores={protector_skill_1_cool=..0}] hotbar.1 with carrot_on_a_stick{CustomModelData:81}

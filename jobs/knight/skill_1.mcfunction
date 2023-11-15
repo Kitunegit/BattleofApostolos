@@ -20,7 +20,7 @@
     #他処理
         tag @a[tag=knight_skill_1] remove knight_skill_1
         scoreboard players set @a[scores={knight_r_detect=1..,knight_skill_1_cool=1..}] knight_r_detect 0
-        scoreboard players remove @a[tag=knight_skill_1,scores={knight_skill_1_time=0..}] knight_skill_1_time 1
+        scoreboard players remove @a[scores={knight_skill_1_time=0..}] knight_skill_1_time 1
 
     #クールダウンカウント処理
         execute as @a[scores={knight_skill_1_cool=1..}] run scoreboard players operation @s knight_skill_1_cal = @s knight_skill_1_cool

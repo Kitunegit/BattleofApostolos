@@ -3,9 +3,8 @@
 
 tag @a[nbt={SelectedItem:{tag:{CustomModelData:31},id:"minecraft:carrot_on_a_stick"}},scores={knight_skill_1_cool=..0,knight_r_detect=1..}] add knight_skill_1
 
-execute at @a[tag=knight_skill_1] run particle minecraft:crit ~ ~1 ~ 0 0.4 0 0.9 7 force @a
-execute at @a[tag=knight_skill_1] run particle soul_fire_flame ~ ~1 ~ 0 0.4 0 0.2 7 force @a
-execute at @a[tag=knight_skill_1] run playsound block.anvil.place player @a[tag=knight_skill_1] ~ ~ ~ 0.5 0.8
+
+execute at @a[tag=knight_skill_1] run playsound block.anvil.place player @a[tag=knight_skill_1] ~ ~ ~ 0.5 2
 
 
 item replace entity @a[tag=knight_skill_1] hotbar.1 with barrier{CustomModelData:31} 31

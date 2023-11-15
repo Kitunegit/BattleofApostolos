@@ -27,7 +27,7 @@
         execute as @a[scores={knight_skill_1_cool=1..}] run scoreboard players operation @s knight_skill_1_cal = @s knight_skill_1_cool
         scoreboard players operation @a[scores={knight_skill_1_cool=1..}] knight_skill_1_cal %= $item_cool_check knight_skill_1_cal
 
-        execute if score @a[scores={knight_skill_1_cool=1..},limit=1] knight_skill_1_cal matches 0 run clear @a[scores={knight_skill_1_cool=1..}] barrier{CustomModelData:31} 1
+        execute as @a[scores={knight_skill_1_cool=1..},limit=1] if score @s knight_skill_1_cal matches 0 run clear @s barrier{CustomModelData:31} 1
 
         item replace entity @a[scores={knight_skill_1_cool=..0}] hotbar.1 with carrot_on_a_stick{CustomModelData:31}
 

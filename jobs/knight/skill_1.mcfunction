@@ -1,7 +1,8 @@
 
 #スキル1：片手剣の極意
 
-    execute as @a[scores={jobscore=3,knight_skill_1=1,knight_skill_1_cool=..0}] at @s run playsound entity.player.attack.sweep master @s ~ ~ ~
+    execute as @a[scores={jobscore=3,knight_skill_1_cool=1..}] at @s run item replace entity @s hotbar.1 with barrier{CustomModelData:41}
+    execute as @a[scores={jobscore=3,knight_skill_1=1,knight_skill_1_cool=..0}] at @s run playsound block.anvil.place masete @s ~ ~ ~ 50 12
     scoreboard players set @a[scores={jobscore=3}] knight_skill_1 0 
     scoreboard players remove @a[scores={jobscore=3,knight_skill_1_cool=0..}] knight_skill_1_cool 1
     

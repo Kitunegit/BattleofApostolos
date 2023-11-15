@@ -6,10 +6,10 @@
     #使用後処理
         execute at @a[tag=knight_skill_1] run playsound block.anvil.place player @a[tag=knight_skill_1] ~ ~ ~ 0.5 2
         execute at @a[tag=knight_skill_1] run scoreboard players set @s knight_skill_1_time 300
-        execute at @a[tag=knight_skill_1] run particle crit ~ ~1 ~ 5 5 5 10 1
+        execute at @a[tag=knight_skill_1] run particle minecraft:crit ~ ~1 ~ 5 5 5 10 1
         execute at @a[tag=knight_skill_1] run particle dust 0.37 0.94 0.95 1 ~ ~1 ~ 1 1 1 30 10 normal
         execute as @a[scores={knight_skill_1_time=1..}] at @s run attribute @s minecraft:generic.attack_speed base set 60
-        execute at @a[scores={knight_skill_1_time=1..}] run particle cloud ~ ~1 ~ 0.3 0.5 0.3 10 3 normal
+        execute at @a[scores={knight_skill_1_time=1..}] run particle minecraft:cloud ~ ~1 ~ 0.3 0.5 0.3 10 3 normal
 
     #クールダウン処理
         item replace entity @a[tag=knight_skill_1] hotbar.1 with barrier{CustomModelData:31} 31

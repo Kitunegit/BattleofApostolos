@@ -16,7 +16,7 @@ scoreboard players set @a[tag=protector_skill_1] protector_r_detect 0
 tag @a[tag=protector_skill_1] remove protector_skill_1
 
 execute at @a[scores={protector_r_detect=1..,protector_skill_1_cool=1..},nbt={SelectedItem:{tag:{CustomModelData:81},id:"minecraft:carrot_on_a_stick"}}] run playsound ui.button.click player @a[scores={protector_r_detect=1..,protector_skill_1_cool=1..},nbt={SelectedItem:{tag:{CustomModelData:81},id:"minecraft:carrot_on_a_stick"}}]
-scoreboard players set @a[scores={protector_r_detect=1..,protector_skill_1_cool=1..}] protector_r_detect 0
+scoreboard players set @a[scores={protector_r_detect=1..,protector_skill_1_cool=1..},nbt={SelectedItem:{tag:{CustomModelData:81},id:"minecraft:carrot_on_a_stick"}}] protector_r_detect 0
 
 execute at @a[scores={protector_skill_1_cool=300..600}] run particle dust 0 0.25 1 0.8 ~ ~-0.15 ~ 0.25 1.0 0.25 0 4
 execute at @a[scores={protector_skill_1_cool=300..600}] run particle dust 0.44 0.91 0.94 0.8 ~ ~-0.15 ~ 0.45 1.0 0.45 0 4
@@ -26,4 +26,4 @@ scoreboard players operation @a[scores={protector_skill_1_cool=1..}] protector_s
 
 execute if score @a[scores={protector_skill_1_cool=1..},limit=1] protector_skill_1_cal matches 0 run clear @a[scores={protector_skill_1_cool=1..}] barrier{CustomModelData:81} 1
 
-item replace entity @a[scores={protector_skill_1_cool=..0}] hotbar.1 with carrot_on_a_stick{CustomModelData:81}
+item replace entity @a[scores={protector_skill_1_cool=0}] hotbar.1 with carrot_on_a_stick{CustomModelData:81}

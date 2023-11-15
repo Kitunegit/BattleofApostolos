@@ -22,6 +22,6 @@ execute at @a[scores={protector_skill_1_cool=300..600}] run particle dust 0 0.25
 execute at @a[scores={protector_skill_1_cool=300..600}] run particle dust 0.44 0.91 0.94 0.8 ~ ~-0.15 ~ 0.45 1.0 0.45 0 4
 execute at @a[scores={protector_skill_1_cool=300..600}] run particle dust 0.84 0.98 1 0.8 ~ ~-0.15 ~ 0.25 1.0 0.25 0 4
 scoreboard players operation @a[scores={protector_skill_1_cool=1..}] protector_skill_1_cal = @a[scores={protector_skill_1_cool=1..}] protector_skill_1_cool
-scoreboard players operation @a[scores={protector_skill_1_cool=1..}] protector_skill_1_cal %= item_cool_check protector_skill_1_cal
+scoreboard players operation @a[scores={protector_skill_1_cool=1..}] protector_skill_1_cal %= $item_cool_check protector_skill_1_cal
 
 execute if score @a[scores={protector_skill_1_cool=1..},limit=1] protector_skill_1_cal matches 0 run clear @a[scores={protector_skill_1_cool=1..}] barrier{CustomModelData:81} 1

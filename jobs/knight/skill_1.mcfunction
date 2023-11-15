@@ -6,7 +6,7 @@
     #使用後処理
         execute at @a[tag=knight_skill_1] run playsound block.anvil.place player @a[tag=knight_skill_1] ~ ~ ~ 0.5 2
         execute at @a[tag=knight_skill_1] run scoreboard players set @s knight_skill_1_time 300
-        execute at @a[tag=knight_skill_1] run particle dust 0.37 0.94 0.95 2 ~ ~1 ~ 1 1 1 1 50 normal
+        execute at @a[tag=knight_skill_1] run particle dust 0.37 0.94 0.95 0.5 ~ ~1 ~ 1.2 1.2 1.2 1 50 normal
         execute at @a[tag=knight_skill_1] run particle crit ~ ~1 ~ 0.8 0.8 0.8 0.1 30 normal
         execute as @a[scores={knight_skill_1_time=1..}] at @s run attribute @s minecraft:generic.attack_speed base set 1000
 

@@ -15,7 +15,7 @@
         execute as @a[scores={knight_skill_1_time=1}] at @s run playsound block.fire.extinguish player @s ~ ~ ~ 0.5 0.8
 
     #クールダウン処理
-        item replace entity @a[tag=knight_skill_1] hotbar.1 with barrier{CustomModelData:31} 36
+        item replace entity @a[tag=knight_skill_1] hotbar.1 with barrier{CustomModelData:31} 41
         scoreboard players set @a[tag=knight_skill_1] knight_skill_1_cool 800
         scoreboard players set @a[tag=knight_skill_1] knight_r_detect 0
         execute as @a[scores={knight_skill_1_cool=1}] at @s run playsound ui.button.click player @s ~ ~ ~ 0.5 0.8

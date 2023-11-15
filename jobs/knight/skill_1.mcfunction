@@ -7,6 +7,7 @@
         execute as @a[tag=knight_skill_1,scores={knight_skill_1_cool=1}] at @s run playsound block.fire.extinguish master @s ~ ~ ~ 50
         execute as @a[tag=knight_skill_1,scores={jobscore=3,knight_skill_1_cool=1..}] at @s run item replace entity @s hotbar.1 with barrier{CustomModelData:31} 36
         execute as @a[tag=knight_skill_1,scores={jobscore=3,knight_skill_1_cool=..0}] at @s run item replace entity @s hotbar.1 with carrot_on_a_stick{CustomModelData:31}
+        execute as @a[tag=knight_skill_1,scores={jobscore=3,knight_skill_1_cool=1..}] at @s run tag @s remove knight_skill_1
 
     #使用後処理
         execute as @a[tag=knight_skill_1,scores={jobscore=3,knight_skill_1_cool=..0}] at @s run scoreboard players set @s knight_skill_1_cool 700

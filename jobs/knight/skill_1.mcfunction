@@ -22,7 +22,7 @@
         scoreboard players remove @a[tag=knight_skill_1,scores={knight_skill_1_time=0..}] knight_skill_1_time 1
 
     #クールダウンカウント処理
-        scoreboard players operation @a[scores={knight_skill_1_cool=1..}] knight_skill_1_cal = @a[scores={knight_skill_1_cool=1..}] knight_skill_1_cool
+        execute as @a[scores={knight_skill_1_cool=1..}] run scoreboard players operation @s knight_skill_1_cal = @s knight_skill_1_cool
         scoreboard players operation @a[scores={knight_skill_1_cool=1..}] knight_skill_1_cal %= $item_cool_check knight_skill_1_cal
 
         execute if score @a[scores={knight_skill_1_cool=1..},limit=1] knight_skill_1_cal matches 0 run clear @a[scores={knight_skill_1_cool=1..}] barrier{CustomModelData:31} 1

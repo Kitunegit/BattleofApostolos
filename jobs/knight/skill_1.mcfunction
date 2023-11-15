@@ -11,6 +11,7 @@
         execute as @a[scores={knight_skill_1_time=1..}] at @s run attribute @s minecraft:generic.attack_speed base set 10
         execute as @a[scores={knight_skill_1_time=1..}] at @s run effect give @s slowness 1 0 true
         execute as @a[scores={knight_skill_1_time=1..}] at @s run particle dust 1 1 1 1 ~ ~1 ~ 0.5 1 0.5 0.3 5 normal
+        execute as @a[scores={knight_skill_1_time=1}] at @s run  attribute @s minecraft:generic.attack_speed base set 4
         execute as @a[scores={knight_skill_1_time=1}] at @s run playsound block.fire.extinguish player @s ~ ~ ~ 0.5 0.8
 
     #クールダウン処理

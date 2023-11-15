@@ -1,1 +1,2 @@
 scoreboard objectives add protector_skill_1_cool dummy
+scoreboard objectives add protector_skill_2_cool dummy

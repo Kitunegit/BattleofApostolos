@@ -4,7 +4,6 @@
         tag @a[nbt={SelectedItem:{tag:{CustomModelData:31},id:"minecraft:carrot_on_a_stick"}},scores={knight_skill_1_cool=..0,knight_r_detect=1..}] add knight_skill_1
 
     #使用後処理
-        execute as @a[tag=knight_skill_1] run say スキル、片手剣の極意！！！
         execute at @a[tag=knight_skill_1] run playsound block.anvil.place player @a[tag=knight_skill_1] ~ ~ ~ 0.5 2
         execute as @a[tag=knight_skill_1] at @s run scoreboard players set @s knight_skill_1_time 300
         execute at @a[tag=knight_skill_1] run particle dust 0.37 0.94 0.95 0.8 ~ ~1 ~ 1.5 1.5 1.5 1 50 normal

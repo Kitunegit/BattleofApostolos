@@ -19,7 +19,7 @@
         execute as @a[scores={knight_skill_1_cool=1}] at @s run playsound ui.button.click player @s ~ ~ ~ 0.5 0.8
 
     #他処理
-        tag @a[tag=knight_skill_1] remove knight_skill_1
+        tag @a[tag=knight_skill_1] remove knight_skill_1w
         scoreboard players set @a[scores={knight_r_detect=1..,knight_skill_1_cool=1..}] knight_r_detect 0
         scoreboard players remove @a[scores={knight_skill_1_time=0..}] knight_skill_1_time 1
 

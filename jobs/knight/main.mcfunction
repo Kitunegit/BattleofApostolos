@@ -1,5 +1,5 @@
 
 #騎士-imageColor_lightBlue
 
-    function pvp_data:pvpfunctions/jobs/knight/passive
-    function pvp_data:pvpfunctions/jobs/knight/skill_1
+    execute if entity @a[scores={jobscore=3}] run function pvp_data:pvpfunctions/jobs/knight/passive
+    execute if entity @a[scores={jobscore=3}] run function pvp_data:pvpfunctions/jobs/knight/skill_1

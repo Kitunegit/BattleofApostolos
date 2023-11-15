@@ -14,7 +14,6 @@ scoreboard players set @a[tag=knight_skill_1] knight_r_detect 0
 
 tag @a[tag=knight_skill_1] remove knight_skill_1
 
-execute at @a[scores={knight_r_detect=1..,knight_skill_1_cool=1..},nbt={SelectedItem:{tag:{CustomModelData:31},id:"minecraft:carrot_on_a_stick"}}] run playsound ui.button.click player @a[scores={knight_r_detect=1..,knight_skill_1_cool=1..},nbt={SelectedItem:{tag:{CustomModelData:31},id:"minecraft:carrot_on_a_stick"}}]
 scoreboard players set @a[scores={knight_r_detect=1..,knight_skill_1_cool=1..}] knight_r_detect 0
 
 

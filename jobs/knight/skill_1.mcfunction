@@ -8,7 +8,7 @@
         execute as @a[tag=knight_skill_1] at @s run scoreboard players set @s knight_skill_1_time 300
         execute at @a[tag=knight_skill_1] run particle dust 0.37 0.94 0.95 0.8 ~ ~1 ~ 1.5 1.5 1.5 1 50 normal
         execute at @a[tag=knight_skill_1] run particle crit ~ ~1 ~ 0.8 0.8 0.8 0.1 30 normal
-        execute as @a[scores={knight_skill_1_time=1..}] at @s run attribute @s minecraft:generic.attack_speed base set 10
+        execute as @a[scores={knight_skill_1_time=1..}] at @s run attribute @s minecraft:generic.attack_speed base set 6
         execute as @a[scores={knight_skill_1_time=1..}] at @s run particle dust 1 1 1 1 ~ ~1 ~ 0.5 1 0.5 0.3 5 normal
         execute as @a[scores={knight_skill_1_time=1}] at @s run playsound block.fire.extinguish player @s ~ ~ ~ 0.5 0.8
 

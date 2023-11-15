@@ -21,7 +21,7 @@
 
 execute at @a[scores={protector_skill_1_cool=300..600}] run particle dust 0 0.25 1 0.8 ~ ~-0.15 ~ 0.25 1.0 0.25 0 4
 execute at @a[scores={protector_skill_1_cool=300..600}] run particle dust 0.44 0.91 0.94 0.8 ~ ~-0.15 ~ 0.45 1.0 0.45 0 4
-execute at @a[scores={protector_skill_1_cool=300..600}] run particle soul_fire_flame ~ ~ ~ 0.25 1.0 0.25 0 4 force 
+execute at @a[scores={protector_skill_1_cool=300..600}] run particle soul_fire_flame ~ ~ ~ 0.25 1.0 0.25 0 1 force 
 scoreboard players operation @a[scores={protector_skill_1_cool=1..}] protector_skill_1_cal = @a[scores={protector_skill_1_cool=1..}] protector_skill_1_cool
 scoreboard players operation @a[scores={protector_skill_1_cool=1..}] protector_skill_1_cal %= $item_cool_check protector_skill_1_cal
 

@@ -25,6 +25,6 @@ execute at @a[scores={protector_skill_1_cool=300..600}] run particle soul_fire_f
 scoreboard players operation @a[scores={protector_skill_1_cool=1..}] protector_skill_1_cal = @a[scores={protector_skill_1_cool=1..}] protector_skill_1_cool
 scoreboard players operation @a[scores={protector_skill_1_cool=1..}] protector_skill_1_cal %= $item_cool_check protector_skill_1_cal
 
-execute if score @a[scores={protector_skill_1_cool=1..},limit=1] protector_skill_1_cal matches 0 run clear @a[scores={protector_skill_1_cool=1..}] barrier{CustomModelData:81} 1
+execute as @a[scores={protector_skill_1_cool=1..}] if score @s protector_skill_1_cal matches 0 run clear @a[scores={protector_skill_1_cool=1..}] barrier{CustomModelData:81} 1
 
 item replace entity @a[scores={protector_skill_1_cool=0}] hotbar.1 with carrot_on_a_stick{CustomModelData:81,display:{Name:'{"text":"防御特化","color":"blue","bold":true}',Lore:['{"text":"一定時間遅くなるが硬くなる。","color":"white"}']}}

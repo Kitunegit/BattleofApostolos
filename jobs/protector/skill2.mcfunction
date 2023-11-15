@@ -22,6 +22,6 @@ execute at @a[scores={protector_skill_2_cool=900..1200}] run particle dust 0.831
 scoreboard players operation @a[scores={protector_skill_2_cool=1..}] protector_skill_2_cal = @a[scores={protector_skill_2_cool=1..}] protector_skill_2_cool
 scoreboard players operation @a[scores={protector_skill_2_cool=1..}] protector_skill_2_cal %= $item_cool_check protector_skill_2_cal
 
-execute if score @a[scores={protector_skill_2_cool=1..},limit=1] protector_skill_2_cal matches 0 run clear @a[scores={protector_skill_2_cool=1..}] barrier{CustomModelData:82} 1
+execute as @a[scores={protector_skill_2_cool=1..}] if score @s protector_skill_2_cal matches 0 run clear @a[scores={protector_skill_2_cool=1..}] barrier{CustomModelData:82} 1
 
 item replace entity @a[scores={protector_skill_2_cool=0}] hotbar.2 with carrot_on_a_stick{CustomModelData:82,display:{Name:'{"text":"緊急装甲","color":"blue","bold":true}',Lore:['{"text":"一定時間体力が増える。","color":"white"}']}}

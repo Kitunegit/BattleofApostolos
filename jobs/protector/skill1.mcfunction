@@ -14,5 +14,5 @@ scoreboard players set @a[tag=protector_skill_1] r_click_detect 0
 
 tag @a[tag=protector_skill_1] remove protector_skill_1
 
-execute at @a[scores={r_click_detect=1..,protector_skill_1_cool=1..}] run playsound ui.button.click player @a[scores={r_click_detect=1..,protector_skill_1_cool=1..}]
+execute at @a[scores={r_click_detect=1..,protector_skill_1_cool=1..},nbt={SelectedItem:{tag:{CustomModelData:81},id:"minecraft:carrot_on_a_stick"}}] run playsound ui.button.click player @a[scores={r_click_detect=1..,protector_skill_1_cool=1..},nbt={SelectedItem:{tag:{CustomModelData:81},id:"minecraft:carrot_on_a_stick"}}]
 scoreboard players set @a[scores={r_click_detect=1..,protector_skill_1_cool=1..}] r_click_detect 0

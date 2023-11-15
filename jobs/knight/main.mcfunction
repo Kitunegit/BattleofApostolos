@@ -3,4 +3,3 @@
 
     function pvp_data:pvpfunctions/jobs/knight/passive
     function pvp_data:pvpfunctions/jobs/knight/skill_1
-    say "main!!"

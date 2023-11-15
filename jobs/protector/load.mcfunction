@@ -3,5 +3,5 @@ scoreboard objectives add protector_skill_1_cal dummy
 scoreboard objectives add protector_skill_2_cool dummy
 scoreboard objectives add protector_skill_2_cal dummy
 scoreboard objectives add protector_r_detect used:carrot_on_a_stick
-scoreboard players set item_cool_check protector_skill_1_cal 20
-scoreboard players set item_cool_check protector_skill_2_cal 20
+scoreboard players set $item_cool_check protector_skill_1_cal 20
+scoreboard players set $item_cool_check protector_skill_2_cal 20

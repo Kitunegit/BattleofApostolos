@@ -24,10 +24,10 @@
         scoreboard players remove @a[scores={knight_skill_1_time=0..}] knight_skill_1_time 1
 
     #クールダウンカウント処理
-        execute as @a[scores={knight_skill_1_cool=1..}] run scoreboard players operation @s knight_skill_1_cal = @s knight_skill_1_cool
+        execute as @a[scores={knight_skill_1_cool=1..}] at @s run scoreboard players operation @s knight_skill_1_cal = @s knight_skill_1_cool
         scoreboard players operation @a[scores={knight_skill_1_cool=1..}] knight_skill_1_cal %= $item_cool_check knight_skill_1_cal
 
-        execute as @a[scores={knight_skill_1_cool=1..},limit=1] if score @s knight_skill_1_cal matches 0 run clear @s barrier{CustomModelData:31} 1
+        execute as @a[scores={knight_skill_1_cool=1..},limit=1] at @s if score @s knight_skill_1_cal matches 0 run clear @s barrier{CustomModelData:31} 1
 
         item replace entity @a[scores={knight_skill_1_cool=..0}] hotbar.1 with carrot_on_a_stick{CustomModelData:31}
 

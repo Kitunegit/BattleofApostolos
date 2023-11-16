@@ -1,6 +1,6 @@
 
 #発動中演出
-    execute at @s[scores={knight_skill_1_cool=1..}] run particle dust 1 1 1 1 ~ ~1 ~ 1 1.5 1 0 10 normal
+    execute at @s[scores={knight_skill_1_cool=1..}] run particle dust 1 1 1 1 ~ ~1 ~ 0.5 1.5 0.5 0 10 normal
     execute at @s[scores={knight_skill_1_cool=1..}] run attribute @s minecraft:generic.attack_speed base set 8
 
 #発動終了演出

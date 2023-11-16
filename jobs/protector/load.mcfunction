@@ -1,0 +1,3 @@
+scoreboard objectives add protector_skill_1_cool dummy
+scoreboard objectives add protector_skill_1_con dummy
+scoreboard players set $const protector_skill_1_con 20

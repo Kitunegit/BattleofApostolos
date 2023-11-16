@@ -1,1 +1,2 @@
-execute at @s run playsound entity.dragon_fireball.explode player @s ~ ~ ~ 
+execute at @s run playsound entity.generic.extinguish_fire player @s ~ ~ ~ 
+item replace entity @s hotbar.1 with carrot_on_a_stick{CustomModelData:81}

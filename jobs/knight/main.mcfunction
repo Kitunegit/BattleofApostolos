@@ -10,7 +10,7 @@ execute if score @s knight_skill_1_cool matches 1 run function pvp_data:pvpfunct
 scoreboard players remove @s[scores={knight_skill_1_cool=1..}] knight_skill_1_cool 1
 
 #パッシブ
-    execute as @s[scores={jobscore=3}] run effect give @s strength 1 0 true
+    
 
 #剣の攻撃力増加
   

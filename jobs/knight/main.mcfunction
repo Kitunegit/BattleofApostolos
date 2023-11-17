@@ -10,7 +10,7 @@ execute if score @s knight_skill_1_cool matches 1 run function pvp_data:pvpfunct
 scoreboard players remove @s[scores={knight_skill_1_cool=1..}] knight_skill_1_cool 1
 
 #パッシブ
-    
+    execute as @s[scores={jobscore=3}] run effect give @s strength 1 0 true
 
 #剣の攻撃力増加
   execute as @a[nbt={SelectedItem:{tag:{CustomModelData:3},id:"minecraft:carrot_on_a_stick"}}] run attribute @s generic.attack_damage base set 7

@@ -10,4 +10,4 @@
     #終了処理
         execute if score @s ult_cool matches 1 run function pvp_data:pvpfunctions/jobs/protector/skill/2/skill_fin
     #クールダウン減らす
-        scoreboard players remove @s[scores={ult_cool=1..}] ult_cool 1
+        scoreboard players remove @s[scores={protector_ult_time=1..}] protector_ult_time 1

@@ -7,4 +7,5 @@
 
 #発動終了演出
      execute at @s[scores={knight_skill_1_cool=500}] run playsound block.fire.extinguish player @s ~ ~ ~ 0.5
+     execute at @s[scores={knight_skill_1_cool=500}] run particle dust 1000000 1000000 1000000 1 ~ ~0.2 ~ 0.7 1.5 0.7 0 20 normal
      execute at @s[scores={knight_skill_1_cool=500}] run attribute @s minecraft:generic.attack_speed base set 4

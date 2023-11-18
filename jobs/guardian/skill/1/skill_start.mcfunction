@@ -8,5 +8,5 @@
     effect give @s fire_resistance 15 1 false
 #その他処理
     item replace entity @s hotbar.1 with barrier{CustomModelData:81} 30
-    scoreboard players set @s protector_skill_1_cool 600
+    scoreboard players set @s guardian_skill_1_cool 600
     scoreboard players set @s r_click 0

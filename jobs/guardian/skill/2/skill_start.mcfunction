@@ -6,5 +6,5 @@
     effect give @s minecraft:absorption 15 4 true
 #その他処理
     item replace entity @s hotbar.2 with barrier{CustomModelData:82} 60
-    scoreboard players set @s protector_skill_2_cool 1200
+    scoreboard players set @s guardian_skill_2_cool 1200
     scoreboard players set @s r_click 0

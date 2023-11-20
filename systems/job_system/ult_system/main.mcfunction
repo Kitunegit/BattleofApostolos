@@ -11,13 +11,14 @@
         scoreboard players operation @s XPBar_con /= @s ult_cool_data
 
        #経験値量調整
-        xp set @s 29 levels
+        xp set @s 27 levels
         execute store result score $Points XPBar run xp query @s points
         scoreboard players operation $Diff XPBar = @s XPBar_con
         scoreboard players operation $Diff XPBar -= $Points XPBar
         scoreboard players operation $Diff XPBar /= $6 XPBar
         scoreboard players operation $Points XPBar += $Diff XPBar
         #経験値代入
+        xp set @s 0 points
         execute if score $Points XPBar matches 64.. run xp add @s 64 points
         execute if score $Points XPBar matches 64.. run scoreboard players remove $Points XPBar 64
         execute if score $Points XPBar matches 32.. run xp add @s 32 points
@@ -32,8 +33,7 @@
         execute if score $Points XPBar matches 2.. run scoreboard players remove $Points XPBar 2
         execute if score $Points XPBar matches 1.. run xp add @s 1 points
         execute if score $Points XPBar matches 1.. run scoreboard players remove $Points XPBar 1
-
-
+        
 xp set @s 0 levels
 scoreboard players operation $Levels XPBar = @s ult_cool
 execute if score $Levels XPBar matches 128.. run xp add @s 128 levels
@@ -55,3 +55,4 @@ execute if score $Levels XPBar matches 1.. run scoreboard players remove $Levels
 scoreboard players reset $Levels XPBar
 scoreboard players reset $Points XPBar
 scoreboard players reset $Diff XPBar
+stopsound @s player entity.player.levelup 

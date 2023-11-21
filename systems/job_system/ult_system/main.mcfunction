@@ -1,7 +1,7 @@
 #1秒に1ずつクールを減らす
     execute if score @s ult_con matches 0..20 run scoreboard players remove @s ult_con 1
-    execute if score @s ult_con matches 0 if score @s ult_cool matches 1.. run scoreboard players remove @s ult_cool 1
-    execute if score @s ult_con matches 0 run scoreboard players set @s ult_con 20
+    execute if score @s ult_con matches ..0 if score @s ult_cool matches 1.. run scoreboard players remove @s ult_cool 1
+    execute if score @s ult_con matches ..0 run scoreboard players set @s ult_con 20
 #経験値バーの処理
 
     #経験値

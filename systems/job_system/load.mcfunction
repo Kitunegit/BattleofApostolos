@@ -3,7 +3,7 @@
     scoreboard objectives add jobscore dummy
     scoreboard objectives add r_click minecraft.used:minecraft.carrot_on_a_stick
     function pvp_data:pvpfunctions/jobs/knight/load
-    function pvp_data:pvpfunctions/jobs/protector/load
+    function pvp_data:pvpfunctions/jobs/guardian/load
 
 #体力増加
     execute as @a run attribute @s generic.max_health base set 40

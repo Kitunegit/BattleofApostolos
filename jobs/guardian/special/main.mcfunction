@@ -5,7 +5,7 @@ execute if entity @e[tag=guardian_sp_trgt] as @s[nbt={SelectedItem:{tag:{CustomM
 #突撃処理
 execute at @s if score @s guardian_special_cool matches 1.. run function pvp_data:pvpfunctions/jobs/guardian/special/main_2
 #例外処理
-execute as @s[nbt={SelectedItem:{tag:{CustomModelData:8},id:"minecraft:carrot_on_a_stick"}},scores={guardian_special_cool=0..,r_click=1..}] run playsound ui.button.click player @s
+execute as @s[nbt={SelectedItem:{tag:{CustomModelData:8},id:"minecraft:carrot_on_a_stick"}},scores={guardian_special_cool=0..,r_click=1..}] at @s run playsound ui.button.click player @s
 execute as @s[nbt={SelectedItem:{tag:{CustomModelData:8},id:"minecraft:carrot_on_a_stick"}},scores={guardian_special_cool=0..,r_click=1..}] run scoreboard players set @s r_click 0
 
 

@@ -1,15 +1,5 @@
 #弓兵-imageColor_green
 
-#表記システム
-    execute store result score @s archer_arrow_count run clear @s arrow 0
-    scoreboard players operation @s archer_arrow_num_con = @s archer_arrow_num
-    scoreboard players operation @s archer_arrow_num_con += @s archer_arrow_count
-    title @s actionbar [{"text":"\uF80E\uE000\uF809\uF808","font":"test-16"},{"score":{"name":"@s","objective":"archer_arrow_num_con"},"font":"test-16"}]
-#矢の所持
-    execute as @s[nbt=!{Inventory:[{Slot:8b,id:"minecraft:arrow"}]},nbt=!{Inventory:[{Slot:8b,id:"minecraft:tipped_arrow"}]}] if score @s archer_arrow_num matches 1.. run tag @s add archer_arrow_add
-    item replace entity @s[tag=archer_arrow_add] hotbar.8 with arrow
-    execute if predicate pvp_data:10_rng run scoreboard players remove @s[tag=archer_arrow_add] archer_arrow_num 1
-    tag @s remove archer_arrow_add
 #矢処理
     #矢常時実行
         execute at @e[type=arrow] run particle dust 0.016 0.247 0.122 0.5 ~ ~ ~ 0.15 0.15 0.15 2 3

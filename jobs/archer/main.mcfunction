@@ -16,3 +16,9 @@
     function pvp_data:pvpfunctions/jobs/archer/ult/main
     function pvp_data:pvpfunctions/jobs/archer/passive
     scoreboard players set @s ult_cool_data 120
+#見た目
+    execute as @a if entity @s[nbt={SelectedItem:{tag:{CustomModelData:7},id:"minecraft:stick"}}] run item replace entity @s hotbar.0 with bow{display:{Name:'{"text":"弓兵の長弓","bold":true,"italic":false}',},Unbreakable:1b,CustomModelData:7} 1
+    execute as @a if entity @s[nbt=!{SelectedItem:{tag:{CustomModelData:7},id:"minecraft:stick"}},nbt={Inventory:[{id:"minecraft:bow",tag:{CustomModelData:7}}]},nbt=!{SelectedItem:{tag:{CustomModelData:7},id:"minecraft:bow"}},] run tag @s add bow_changes
+    clear @a[tag=bow_changes] bow{CustomModelData:7}
+    item replace entity @a[tag=bow_changes] hotbar.0 with stick{CustomModelData:7,display:{Name:'{"text":"弓兵の長弓","bold":true,"italic":false}',}}
+    tag @a[tag=bow_changes] remove bow_changes

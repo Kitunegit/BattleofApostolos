@@ -5,7 +5,8 @@
         execute at @s if score @s archer_ult_time matches 0.. rotated ~ 0 run particle dust 0.89 0.953 0.333 0.75 ^ ^1 ^-0.5 0.25 0.25 0.25 5 10
         execute at @s if score @s archer_ult_time matches 0.. rotated ~ 0 run particle dust 0.404 0.953 0.3333 0.75 ^ ^1 ^-0.5 0.25 0.25 0.25 5 10
         execute at @s if score @s archer_ult_time matches 0.. rotated ~ 0 run particle dust 0.09 0.553 0.031 0.75 ^ ^1 ^-0.5 0.25 0.25 0.25 5 10
-        execute at @s if score @s archer_ult_time matches 0.. run ride @s mount @e[type=arrow,limit=1]
+        execute at @s if score @s archer_ult_time matches 0.. run ride @s mount @e[type=arrow,limit=1,nbt=!{life:1s}]
+        execute at @s if score @s archer_ult_time matches 0.. if entity @e[type=arrow] run playsound block.wood.place player @a ~ ~ ~ 1 2
     #効果終了演出
         execute at @s if score @s archer_ult_time matches 0 run playsound minecraft:entity.item.break player @s ~ ~ ~ 1 0.5
         execute at @s if score @s archer_ult_time matches 0 run item replace entity @s hotbar.0 with bow{display:{Name:'{"text":"弓兵の長弓","bold":true,"italic":false}',},Unbreakable:1b,CustomModelData:7} 1

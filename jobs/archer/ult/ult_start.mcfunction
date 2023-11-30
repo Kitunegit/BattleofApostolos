@@ -6,5 +6,5 @@
     scoreboard players set @s archer_ult_time 200
 #その他処理
     item replace entity @s hotbar.3 with barrier{CustomModelData:73}
-    scoreboard players set @s ult_cool 120
+    scoreboard players set @s ult_cool 60
     scoreboard players set @s r_click 0

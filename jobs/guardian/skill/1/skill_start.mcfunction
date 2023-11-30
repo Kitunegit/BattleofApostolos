@@ -3,7 +3,6 @@
     execute at @s run particle minecraft:soul_fire_flame ~ ~ ~ 0.00001 0.0001 0.00001 0.5 5
     execute at @s run particle minecraft:crit ~ ~ ~ 0 0 0 0.5 15
 #効果付与
-    effect give @s slowness 15 1 false
     effect give @s resistance 15 2 false
     effect give @s fire_resistance 15 1 false
 #その他処理

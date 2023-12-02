@@ -1,0 +1,3 @@
+scoreboard objectives add assassin_skill_1_cool dummy
+scoreboard objectives add assassin_skill_1_con dummy
+scoreboard players set $const assassin_skill_1_con 20

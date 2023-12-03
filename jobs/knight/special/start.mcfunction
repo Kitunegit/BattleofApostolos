@@ -2,7 +2,8 @@
     scoreboard players set @s knight_special_cool 100
 
 #技処理
-    execute as @s at @s positioned ^ ^ ^5 at @e[distance=..4.9,limit=3] run particle sweep_attack ~ ~1 ~ 1 1 1 1 10 force @a 
+    execute as @s at @s positioned ^ ^ ^5 at @e[distance=..4.9,limit=3] run particle sweep_attack ~ ~1 ~ 1 1 1 1 1 force @a 
+    execute as @s at @s positioned ^ ^ ^5 at @e[distance=..4.9,limit=3] run particle crit ~ ~1 ~ 1 1 1 1 20 force @a
     execute as @s at @s positioned ^ ^ ^5 as @e[distance=..4.9,limit=3] run damage @s 4 player_attack by @s
 
 #発動時演出

@@ -8,3 +8,4 @@ tag @a[tag=assassin_changes] remove assassin_changes
 
 function pvp_data:pvpfunctions/jobs/assassin/passive
 function pvp_data:pvpfunctions/jobs/assassin/skill/1/skill_main
+function pvp_data:pvpfunctions/jobs/assassin/skill/2/skill_main

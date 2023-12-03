@@ -1,6 +1,6 @@
 
 #開始処理
-    scoreboard players set @s knight_special_cool 100
+    execute as @s[nbt={SelectedItem:{tag:{CustomModelData:3},id:"minecraft:carrot_on_a_stick"}},scores={knight_special_cool=..0,r_click=1..}] run scoreboard players set @s knight_special_cool 100
     
 #技処理1
     execute as @s[scores={knight_special_count=1}] at @s positioned ^ ^ ^4 at @e[distance=..3.9,limit=3] run particle sweep_attack ~ ~1 ~ 1 1 1 1 3 force @a 

@@ -1,8 +1,8 @@
 
 #発動時演出
     execute at @s run playsound block.anvil.land player @a[distance=..10] ~ ~ ~ 0.5 2
-    execute at @s run particle crit ~ ~1 ~ 1 1 1 0 80 normal
-    execute at @s run particle dust 0 100000000 100000000 1 ~ ~1 ~ 1 1.3 1 0 80 normal
+    execute at @s run particle crit ~ ~1 ~ 1 1 1 0 80 force
+    execute at @s run particle dust 0 100000000 100000000 1 ~ ~1 ~ 1 1.3 1 0 80 force
 
 
 

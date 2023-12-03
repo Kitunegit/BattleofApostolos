@@ -10,3 +10,5 @@
 
 #技処理
     execute as @s at @s positioned ^ ^ ^5 at @e[distance=..4.9,limit=3] run particle sweep_attack ~ ~1 ~ 1 1 1 1 10 force @a 
+    execute as @s at @s positioned ^ ^ ^5 run damage @e[distance=..4.9,limit=3] 2 player_attack by @s
+    

@@ -1,5 +1,5 @@
 
-    execute as @s[nbt={SelectedItem:{tag:{CustomModelData:3},id:"minecraft:carrot_on_a_stick"}},scores={knight_special_cool=0..,r_click=1..}] run tag @s add knight_special_switch
+    execute as @s[nbt={SelectedItem:{tag:{CustomModelData:3},id:"minecraft:carrot_on_a_stick"}},scores={knight_special_cool=..0,r_click=1..}] run tag @s add knight_special_switch
     execute as @s[tag=knight_special_switch] run scoreboard players add @s knight_special_count 1
 
 

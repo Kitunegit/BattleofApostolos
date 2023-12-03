@@ -11,7 +11,7 @@ execute as @s[nbt={SelectedItem:{tag:{CustomModelData:8},id:"minecraft:carrot_on
     execute if score @s guardian_special_cool matches 1.. run scoreboard players operation @s guardian_special_con = @s guardian_special_cool
     execute if score @s guardian_special_cool matches 1.. run scoreboard players operation @s guardian_special_con %= $const guardian_special_con
     execute if score @s guardian_special_con matches 0 at @s run playsound minecraft:entity.item.pickup player @s ~ ~ ~ 0.05 2
-    execute if score @s guardian_special_con matches 0 run clear @s stick{CustomModelData:85} 1
+    execute if score @s guardian_special_con matches 0 run clear @s stick{CustomModelData:84} 1
 
 
 tag @e remove guardian_sp_trgt

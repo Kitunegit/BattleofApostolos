@@ -1,9 +1,5 @@
 #発動演出
-<<<<<<< HEAD
-    execute at @s run playsound block.amethyst_block.place player @s ~ ~ ~ 5
-=======
     execute at @s run playsound block.amethyst_block.place player @a[distance=..10] ~ ~ ~ 5
->>>>>>> origin/main
     execute at @s run particle dust 0 1 0.45108 1.2 ~ ~0.5 ~ 0.25 0.75 0.25 1 25 force
 
 #バリア付与

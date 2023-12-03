@@ -1,5 +1,5 @@
 #発動時処理
-    scoreboard players set @s knight_special_cool 1
+    scoreboard players set @s knight_special_cool 10
 
 #技処理
     execute as @s at @s positioned ^ ^ ^3 at @e[distance=..2.9,limit=3] run particle sweep_attack ~ ~1 ~ 1 1 1 1 3 force @a 

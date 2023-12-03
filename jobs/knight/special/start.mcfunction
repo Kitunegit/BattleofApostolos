@@ -6,4 +6,4 @@
     playsound ui.toast.in player @s ~ ~ ~ 100 1.5
     playsound ui.toast.in player @s ~ ~ ~ 100 1.5
     playsound ui.toast.in player @s ~ ~ ~ 100 1.5
-    execute at @s run particle crit ~ ~0.5 ~ 0.3 0.3 0.3 1 1 normal @s
+    execute at @s run particle crit ~ ~0.5 ~ 1 1 1 1 1 normal @s

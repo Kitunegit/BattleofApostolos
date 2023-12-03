@@ -34,3 +34,6 @@
     execute as @s[scores={knight_special_count=20}] run playsound ui.toast.in player @s ~ ~ ~ 100 1.5
     execute as @s[scores={knight_special_count=20}] run playsound ui.toast.in player @s ~ ~ ~ 100 1.5
     execute as @s[scores={knight_special_count=20}] run execute at @s run particle crit ~ ~0.8 ~ 0.3 0.3 0.3 0 30 force @a
+
+#終了処理
+    execute as @s[scores={knight_special_count=21..}] run tag @s remove knight_special_switch

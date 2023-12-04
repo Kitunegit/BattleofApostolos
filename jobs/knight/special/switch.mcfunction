@@ -38,5 +38,5 @@
     execute if score @s knight_special_count matches 22 as @e[tag=knight_special_target] run execute at @s run particle crit ~ ~0.8 ~ 0.3 0.3 0.3 0 30 force @a
 
 #終了処理
-    execute as @s[scores={knight_special_count=23..}] run tag @s remove knight_special_switch
-    execute as @s[scores={knight_special_count=23..}] run tag @s remove knight_special_targe
+    execute if score @s knight_special_count matches 23.. run tag @e remove knight_special_switch
+    execute if score @s knight_special_count matches 23.. run tag @e remove knight_special_target

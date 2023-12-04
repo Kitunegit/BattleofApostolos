@@ -10,7 +10,7 @@
     execute if score @s knight_special_count matches 1 as @e[tag=knight_special_target,tag=player] run playsound ui.toast.in player @a[distance=..10] ~ ~ ~ 100 1.5
     execute if score @s knight_special_count matches 1 as @e[tag=knight_special_target,tag=player] run playsound ui.toast.in player @a[distance=..10] ~ ~ ~ 100 1.5
     execute if score @s knight_special_count matches 1 as @e[tag=knight_special_target,tag=player] run playsound entity.player.attack.sweep player @a[distance=..10] ~ ~ ~ 100 1.5
-    execute if score @s knight_special_count matches 1 as @e[tag=knight_special_target,tag=player] run execute at @s run particle crit ~ ~0.8 ~ 0.3 0.3 0.3 0 30 force @a
+    execute if score @s knight_special_count matches 1 as @e[tag=knight_special_target,tag=player] run execute at @s run particle crit ~ ~1 ~ 0.3 0.3 0.3 0 40 force @a
 
 #技処理2
     execute if score @s knight_special_count matches 11 as @e[tag=knight_special_target,tag=player] at @s run particle sweep_attack ~ ~1 ~ 1 1 1 1 3 force @a 

@@ -4,7 +4,7 @@ execute as @s[scores={knight_special_count=1}] at @s positioned ^ ^ ^6 as @e[dis
 #技処理1
     execute as @s[tag=knight_special_target,scores={knight_special_count=1}] at @s run particle sweep_attack ~ ~1 ~ 1 1 1 1 3 force @a 
     execute as @s[tag=knight_special_target,scores={knight_special_count=1}] at @s run particle crit ~ ~1 ~ 1 1 1 1 20 force @a
-    execute as @s[tag=knight_special_target,scores={knight_special_count=1}] at @s  run damage @s 6 player_attack by @a[scores={knight_special_count=1..},limit=1]
+    execute as @s[tag=knight_special_target,scores={knight_special_count=1}] at @s run damage @s 6 player_attack by @a[scores={knight_special_count=1..},limit=1]
 
 #発動時演出1
     execute as @s[tag=knight_special_target,scores={knight_special_count=1}] run playsound ui.toast.in player @s ~ ~ ~ 100 1.5

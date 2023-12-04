@@ -1,5 +1,5 @@
 
-execute as @s[scores={knight_special_count=1}] at @s positioned ^ ^ ^6 as @e[distance=..3.9,limit=3] run tag @s add knight_special_target
+
     
 #技処理1
     execute as @s[tag=knight_special_target,scores={knight_special_count=1}] at @s run particle sweep_attack ~ ~1 ~ 1 1 1 1 3 force @a 

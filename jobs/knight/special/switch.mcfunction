@@ -39,4 +39,4 @@
 
 #終了処理
     execute if score @s knight_special_count matches 23.. run tag @e remove knight_special_switch
-    execute if score @s knight_special_count matches 23.. run tag @e remove knight_special_targe
+    execute if score @s knight_special_count matches 23.. run tag @e remove knight_special_target

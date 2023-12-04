@@ -5,7 +5,7 @@
     scoreboard players operation @s archer_arrow_num_con += @s archer_arrow_count
     title @s actionbar [{"text":"\uF80C\uF80C\uE000\uF809\uF808","font":"test-16"},{"score":{"name":"@s","objective":"archer_arrow_num_con"},"font":"test-16"}]
 #矢の所持
-    execute as @s[nbt=!{Inventory:[{Slot:8b,id:"minecraft:arrow"}]},nbt=!{Inventory:[{Slot:8b,id:"minecraft:tipped_arrow"}]}] if score @s archer_arrow_num matches 1.. run tag @s add archer_arrow_add
+    execute as @s[nbt=!{Inventory:[{Slot:8b,id:"minecraft:arrow"}]},nbt=!{Inventory:[{Slot:8b,id:"minecraft:tipped_arrow"}]},nbt=!{Inventory:[{Slot:8b,id:"minecraft:spectral_arrow"}]}] if score @s archer_arrow_num matches 1.. run tag @s add archer_arrow_add
     item replace entity @s[tag=archer_arrow_add] hotbar.8 with arrow
     execute if predicate pvp_data:10_rng run scoreboard players remove @s[tag=archer_arrow_add] archer_arrow_num 1
     tag @s remove archer_arrow_add

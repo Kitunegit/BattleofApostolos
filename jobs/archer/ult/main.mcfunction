@@ -17,4 +17,4 @@
     #クールダウン減らす
         scoreboard players remove @s[scores={archer_ult_time=0..}] archer_ult_time 1
         
-        execute as @e[type=firework_rocket] at @s facing entity @a[scores={jobscore=8},limit=1] eyes run tp @s ^ ^ ^0.8
+        execute as @e[type=firework_rocket] at @s facing entity @e[scores={jobscore=..6,jobscore=8..},limit=1,tag=player] eyes run tp @s ^ ^ ^0.8

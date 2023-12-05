@@ -13,7 +13,7 @@
 #待機処理
     execute as @s[nbt={SelectedItem:{tag:{CustomModelData:3},id:"minecraft:carrot_on_a_stick"}},scores={knight_special_cool=1..,r_click=1..}] at @s run playsound ui.button.click player @s
     execute as @s if entity @s[tag=!knight_special_switch] run scoreboard players set @s knight_special_count 0
-    execute as @s[scores={knight_special_cool=1}] run playsound item.armor.equip_iron player @s ~ ~ ~ 0.5 0.5
+    execute as @s[scores={knight_special_cool=1}] run playsound item.armor.equip_iron player @s ~ ~ ~ 10 1
 
     #発動時後処理
         scoreboard players remove @s[scores={knight_special_cool=1..}] knight_special_cool 1

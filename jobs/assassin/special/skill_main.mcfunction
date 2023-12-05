@@ -8,7 +8,7 @@
 
         execute if score @s assassin_special_cool matches 1.. run scoreboard players operation @s assassin_special_con = @s assassin_special_cool
         execute if score @s assassin_special_cool matches 1.. run scoreboard players operation @s assassin_special_con %= $const assassin_special_con
-        execute if score @s assassin_special_con matches 0 run clear @s barrier{CustomModelData:64} 1
+        execute if score @s assassin_special_con matches 0 run clear @s stick{CustomModelData:64} 1
         #終了処理
         execute if score @s assassin_special_cool matches 1 run function pvp_data:pvpfunctions/jobs/assassin/special/skill_fin
     #クールダウン減らす

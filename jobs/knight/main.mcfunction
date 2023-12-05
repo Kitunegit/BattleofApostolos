@@ -1,5 +1,5 @@
 
-execute if entity @a[scores={jobscore=3}] as @s at @s run function pvp_data:pvpfunctions/jobs/knight/skill/special/main
+execute if entity @a[scores={jobscore=3}] as @s at @s run function pvp_data:pvpfunctions/jobs/knight/special/main
 execute if entity @a[scores={jobscore=3}] as @s at @s run function pvp_data:pvpfunctions/jobs/knight/skill/1/skill1
 
 

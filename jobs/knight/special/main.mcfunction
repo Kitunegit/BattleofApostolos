@@ -10,6 +10,6 @@
 
 
 #待機処理
-    execute as @s if entity @s[tag=!knight_special_switch] run scoreboard players set @s knight_special_count 0
+    execute as @s if entity @s[tag=!knight_special_switch] run scoreboard players set @s special_count 0
     execute as @s[scores={jobscore=3,special_cool=1}] run playsound item.armor.equip_iron player @s ~ ~ ~ 10 1
     execute as @s[scores={jobscore=3,special_cool=1}] run playsound item.armor.equip_iron player @s ~ ~ ~ 10 1

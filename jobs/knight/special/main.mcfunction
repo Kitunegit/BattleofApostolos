@@ -1,7 +1,7 @@
 
     execute if predicate pvp_data:r_click/cmd3 if score @s special_cool matches ..0 if score @s r_click matches 1.. run tag @s add knight_special_switch
     execute as @s[tag=knight_special_switch] run scoreboard players add @s special_count 1
-    execute as @s[scores={jobscore=3,special_count=1}] at @s positioned ^ ^ ^4 as @e[distance=..3.9,limit=3,tag=player] run tag @s add knight_special_target
+    execute if entity @e[distance=..3.9,limit=3,tag=player] as @s[scores={jobscore=3,special_count=1}] at @s positioned ^ ^ ^4 as @e[distance=..3.9,limit=3,tag=player] run tag @s add knight_special_target
     execute as @s[scores={jobscore=3,special_count=1}] unless entity @e[tag=knight_special_target] run playsound entity.bat.death player @s ~ ~ ~ 0.6 1
     execute if predicate pvp_data:r_click/cmd3 if score @s special_cool matches ..0 if score @s r_click matches 1.. run playsound block.bamboo_wood_button.click_on player @s
 

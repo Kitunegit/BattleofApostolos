@@ -11,5 +11,4 @@
     execute as @a run attribute @s generic.max_health base set 40
     effect give @a instant_health 1 100 true
 
-#タグ付与
-    tag @a add player
+execute as @a run attribute @s generic.max_health base set 40

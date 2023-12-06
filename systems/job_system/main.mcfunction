@@ -6,6 +6,7 @@ execute as @a[scores={jobscore=0..}] run function pvp_data:pvpfunctions/systems/
 
 
 tag @a add player
+scoreboard players set @a r_click 0
 scoreboard players remove @a[scores={skill_1_cool=1..}] skill_1_cool 1
 scoreboard players remove @a[scores={skill_2_cool=1..}] skill_2_cool 1
 scoreboard players remove @a[scores={special_cool=1..}] special_cool 1

@@ -6,11 +6,12 @@
     scoreboard objectives add skill_1_cool dummy
     scoreboard objectives add skill_2_cool dummy
     scoreboard objectives add special_cool dummy
+    scoreboard objectives add special_count dummy
 
     scoreboard objectives add skill_1_con dummy
     scoreboard objectives add skill_2_con dummy
     scoreboard objectives add special_con dummy
-    
+
     scoreboard players set $const skill_1_con 20
     scoreboard players set $const skill_2_con 20
     scoreboard players set $const special_con 20

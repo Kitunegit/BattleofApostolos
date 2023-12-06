@@ -37,3 +37,4 @@
 #終了処理
     execute if score @s knight_special_count matches 23.. run tag @s remove knight_special_switch
     execute if score @s knight_special_count matches 23.. run tag @e[tag=player] remove knight_special_target
+    execute if score @s knight_special_count matches 1 run scoreboard players set @s special_cool 100

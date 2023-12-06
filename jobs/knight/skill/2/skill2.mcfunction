@@ -1,5 +1,3 @@
 
-execute as @s[nbt={SelectedItem:{tag:{CustomModelData:32},id:"minecraft:carrot_on_a_stick"}},scores={knight_skill_2_cool=..0,r_click=1..}] run function pvp_data:pvpfunctions/jobs/knight/skill/2/skill2_start
+execute if predicate pvp_data:r_click/cmd32 if score @s skill_2_cool matches ..0 if score @s r_click matches 1.. run function pvp_data:pvpfunctions/jobs/knight/skill/2/skill2_start
 
-scoreboard players remove @s[scores={jobscore=3,knight_skill_2_cool=1..}] knight_skill_2_cool 1
-scoreboard players set @a[scores={jobscore=3}] r_click 0

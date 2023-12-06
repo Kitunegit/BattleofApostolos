@@ -3,6 +3,9 @@
     scoreboard objectives add jobscore dummy
     scoreboard objectives add r_click minecraft.used:minecraft.carrot_on_a_stick
     scoreboard objectives add sneaking dummy
+    scoreboard objectives add skill_1_cool dummy
+    scoreboard objectives add skill_2_cool dummy
+    scoreboard objectives add special_cool dummy
     function pvp_data:pvpfunctions/jobs/knight/load
     function pvp_data:pvpfunctions/jobs/guardian/load
     function pvp_data:pvpfunctions/jobs/archer/load

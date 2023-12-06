@@ -11,3 +11,5 @@ execute as @s[nbt={SelectedItem:{tag:{CustomModelData:31},id:"minecraft:carrot_o
      execute at @s[scores={knight_skill_1_cool=500}] run playsound block.fire.extinguish player @s ~ ~ ~ 0.5
      execute at @s[scores={knight_skill_1_cool=500}] run particle dust 100000000 100000000 100000000 2 ~ ~0.2 ~ 1 1.5 1 0 100 force
      execute at @s[scores={knight_skill_1_cool=500}] run attribute @s minecraft:generic.attack_speed base set 4
+
+scoreboard players remove @s[scores={knight_skill_1_cool=1..}] knight_skill_1_cool 1

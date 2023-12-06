@@ -18,5 +18,5 @@
         execute if score @s rng matches 86..100 run item replace entity @s hotbar.8 with tipped_arrow{Potion:"minecraft:strong_turtle_master"} 1
 #スコア設定
     scoreboard players add @s archer_arrow_num 1
-    scoreboard players set @s archer_skill_1_cool 200
+    scoreboard players set @s skill_1_cool 200
     scoreboard players set @s r_click 0

@@ -3,12 +3,6 @@ execute if entity @a[scores={jobscore=3}] as @s at @s run function pvp_data:pvpf
 execute if entity @a[scores={jobscore=3}] as @s at @s run function pvp_data:pvpfunctions/jobs/knight/skill/1/skill1
 execute if entity @a[scores={jobscore=3}] as @s at @s run function pvp_data:pvpfunctions/jobs/knight/skill/2/skill2
 
-
-execute if score @s knight_skill_1_cool matches 1.. run scoreboard players operation @s knight_skill_1_con = @s knight_skill_1_cool
-execute if score @s knight_skill_1_cool matches 1.. run scoreboard players operation @s knight_skill_1_con %= $const knight_skill_1_con
-execute if score @s knight_skill_1_con matches 0 run clear @s barrier{CustomModelData:31} 1
-execute if score @s knight_skill_1_cool matches 1 run function pvp_data:pvpfunctions/jobs/knight/skill/1/skill1_fin
-
 #パッシブ
     execute as @s[scores={jobscore=3}] run effect give @s strength 1 0 true
 

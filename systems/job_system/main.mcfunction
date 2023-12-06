@@ -12,6 +12,9 @@ execute as @a[scores={jobscore=0..}] if score @s skill_2_cool matches 1.. run sc
 execute as @a[scores={jobscore=0..}] if score @s skill_2_cool matches 1.. run scoreboard players operation @s skill_2_con %= $const skill_2_con
 execute as @a[scores={jobscore=0..}] if score @s skill_2_con matches 0 at @s run playsound minecraft:entity.item.pickup player @s ~ ~ ~ 0.05 2
 
+execute as @a[scores={jobscore=0..}] if score @s special_cool matches 1.. run scoreboard players operation @s special_con = @s special_cool
+execute as @a[scores={jobscore=0..}] if score @s special_cool matches 1.. run scoreboard players operation @s special_con %= $const special_con
+
 tag @a add player
 scoreboard players set @a r_click 0
 scoreboard players remove @a[scores={skill_1_cool=1..}] skill_1_cool 1

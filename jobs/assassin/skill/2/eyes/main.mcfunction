@@ -4,6 +4,8 @@
     execute as @e[type=marker,tag=black_eyes] at @s positioned ^ ^ ^0.5 if block ~ ~ ~ air run tp @s ^ ^ ^0.5
     execute as @e[type=marker,tag=black_eyes] at @s positioned ^ ^ ^0.5 if block ~ ~ ~ air run tp @s ^ ^ ^0.5
     execute as @e[type=marker,tag=black_eyes] at @s positioned ^ ^ ^0.5 if block ~ ~ ~ air run tp @s ^ ^ ^0.5
+    execute as @e[type=marker,tag=black_eyes] at @s positioned ^ ^ ^0.5 if block ~ ~ ~ air run tp @s ^ ^ ^0.5
+    execute as @e[type=marker,tag=black_eyes] at @s positioned ^ ^ ^0.5 if block ~ ~ ~ air run tp @s ^ ^ ^0.5
     execute at @e[type=marker,tag=black_eyes] run particle dust 0 0 0 0.9 ~ ~ ~ 0.4 0.4 0.4 1 11
     execute at @e[type=marker,tag=black_eyes] run particle dust 0.435 0 1 0.7 ~ ~ ~ 0.4 0.4 0.4 1 20
     kill @e[type=marker,tag=black_eyes,scores={assassin_skill_2_tmr=10..}]

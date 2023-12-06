@@ -6,6 +6,4 @@
     #スキル処理
         execute if entity @e[type=marker,tag=black_eyes] run function pvp_data:pvpfunctions/jobs/assassin/skill/2/eyes/main
     #終了処理
-        execute if score @s skill2_cool matches 1 run function pvp_data:pvpfunctions/jobs/assassin/skill/2/skill_fin
-    #クールダウン減らす
-        scoreboard players remove @s[scores={skill2_cool=1..}] skill2_cool 1
+        execute if score @s skill_2_cool matches 1 run function pvp_data:pvpfunctions/jobs/assassin/skill/2/skill_fin

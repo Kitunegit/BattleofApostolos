@@ -18,6 +18,7 @@
     function pvp_data:pvpfunctions/jobs/knight/load
     function pvp_data:pvpfunctions/jobs/guardian/load
     function pvp_data:pvpfunctions/jobs/archer/load
+    scoreboard objectives add death deathCount
 
 #体力増加
     execute as @a run attribute @s generic.max_health base set 40

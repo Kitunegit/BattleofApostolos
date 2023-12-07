@@ -6,11 +6,9 @@ execute as @a[scores={jobscore=0..}] run function pvp_data:pvpfunctions/systems/
 
 execute as @a[scores={jobscore=0..}] if score @s skill_1_cool matches 1.. run scoreboard players operation @s skill_1_con = @s skill_1_cool
 execute as @a[scores={jobscore=0..}] if score @s skill_1_cool matches 1.. run scoreboard players operation @s skill_1_con %= $const skill_1_con
-execute as @a[scores={jobscore=0..}] if score @s skill_1_con matches 0 at @s run playsound minecraft:entity.item.pickup player @s ~ ~ ~ 0.05 2
 
 execute as @a[scores={jobscore=0..}] if score @s skill_2_cool matches 1.. run scoreboard players operation @s skill_2_con = @s skill_2_cool
 execute as @a[scores={jobscore=0..}] if score @s skill_2_cool matches 1.. run scoreboard players operation @s skill_2_con %= $const skill_2_con
-execute as @a[scores={jobscore=0..}] if score @s skill_2_con matches 0 at @s run playsound minecraft:entity.item.pickup player @s ~ ~ ~ 0.05 2
 
 execute as @a[scores={jobscore=0..}] if score @s special_cool matches 1.. run scoreboard players operation @s special_con = @s special_cool
 execute as @a[scores={jobscore=0..}] if score @s special_cool matches 1.. run scoreboard players operation @s special_con %= $const special_con
@@ -23,3 +21,6 @@ scoreboard players remove @a[scores={special_cool=1..}] special_cool 1
 
 execute as @a if predicate pvp_data:sneaking run scoreboard players add @s sneaking 1
 execute as @a unless predicate pvp_data:sneaking run scoreboard players set @s sneaking 0
+
+execute as @a if score @s death matches 1.. run attribute @s generic.max_health base set 40
+execute as @a if score @s death matches 1.. run scoreboard players set @s death 0

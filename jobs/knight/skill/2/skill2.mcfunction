@@ -3,3 +3,4 @@ execute if predicate pvp_data:r_click/cmd32 if score @s skill_2_cool matches ..0
 
 #バリア
     execute if score @s skill_2_con matches 0 run clear @s barrier{CustomModelData:32} 1
+    

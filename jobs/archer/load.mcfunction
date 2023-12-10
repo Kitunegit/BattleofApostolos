@@ -7,13 +7,5 @@
     scoreboard objectives add archer_passive_cool dummy
     scoreboard objectives add archer_passive_con dummy
     scoreboard players set $const archer_passive_con 60
-#スキル1
-    scoreboard objectives add archer_skill_1_cool dummy
-    scoreboard objectives add archer_skill_1_con dummy
-    scoreboard players set $const archer_skill_1_con 20
-#スキル2
-    scoreboard objectives add archer_skill_2_cool dummy
-    scoreboard objectives add archer_skill_2_con dummy
-    scoreboard players set $const archer_skill_2_con 20
 #ウルト
     scoreboard objectives add archer_ult_time dummy

@@ -20,5 +20,3 @@
     scoreboard players add @s archer_arrow_num 1
     scoreboard players set @s skill_1_cool 200
     scoreboard players set @s r_click 0
-    scoreboard players set $strength delta.api.launch 30000
-    function delta:api/launch_looking

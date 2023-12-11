@@ -8,15 +8,17 @@
     #乱数生成
         function pvp_data:pvpfunctions/systems/rng_system/generated
     #スコアに応じて矢を渡す
-        execute if score @s rng matches 0..15 run item replace entity @s hotbar.8 with tipped_arrow{Potion:"minecraft:strong_slowness"} 1
-        execute if score @s rng matches 16..30 run item replace entity @s hotbar.8 with tipped_arrow{Potion:"minecraft:strong_harming"} 1
-        execute if score @s rng matches 31..45 run item replace entity @s hotbar.8 with tipped_arrow{Potion:"minecraft:strong_poison"} 1
-        execute if score @s rng matches 46..60 run item replace entity @s hotbar.8 with tipped_arrow{Potion:"minecraft:weakness"} 1
+        execute if score @s rng matches 0..15 run item replace entity @s hotbar.8 with tipped_arrow{Potion:"minecraft:strong_slowness",CustomModelData:2} 1
+        execute if score @s rng matches 16..30 run item replace entity @s hotbar.8 with tipped_arrow{Potion:"minecraft:strong_harming",CustomModelData:2} 1
+        execute if score @s rng matches 31..45 run item replace entity @s hotbar.8 with tipped_arrow{Potion:"minecraft:strong_poison",CustomModelData:2} 1
+        execute if score @s rng matches 46..60 run item replace entity @s hotbar.8 with tipped_arrow{Potion:"minecraft:weakness",CustomModelData:2} 1
         execute if score @s rng matches 61..65 run item replace entity @s hotbar.8 with spectral_arrow 1
-        execute if score @s rng matches 66..75 run item replace entity @s hotbar.8 with tipped_arrow{Potion:"minecraft:strong_healing"} 1
-        execute if score @s rng matches 76..85 run item replace entity @s hotbar.8 with tipped_arrow{Potion:"minecraft:strong_regeneration"} 1
-        execute if score @s rng matches 86..100 run item replace entity @s hotbar.8 with tipped_arrow{Potion:"minecraft:strong_turtle_master"} 1
+        execute if score @s rng matches 66..75 run item replace entity @s hotbar.8 with tipped_arrow{Potion:"minecraft:strong_healing",CustomModelData:1} 1
+        execute if score @s rng matches 76..85 run item replace entity @s hotbar.8 with tipped_arrow{Potion:"minecraft:strong_regeneration",CustomModelData:1} 1
+        execute if score @s rng matches 86..100 run item replace entity @s hotbar.8 with tipped_arrow{Potion:"minecraft:strong_turtle_master",CustomModelData:2} 1
 #スコア設定
     scoreboard players add @s archer_arrow_num 1
     scoreboard players set @s skill_1_cool 200
     scoreboard players set @s r_click 0
+    scoreboard players set $strength delta.api.launch 30000
+    function delta:api/launch_looking

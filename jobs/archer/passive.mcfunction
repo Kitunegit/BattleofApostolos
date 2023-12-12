@@ -17,7 +17,7 @@
     execute if score @s archer_passive_cool matches 0 if score @s archer_arrow_num matches ..14 if predicate pvp_data:50_rng run scoreboard players add @s archer_arrow_num 1
     execute if score @s archer_passive_cool matches 0 run scoreboard players set @s archer_passive_cool 30
     execute if score @s archer_passive_cool matches 0 run scoreboard players set @s archer_passive_cool 30
-    scoreboard players set $strength delta.api.launch 10000
+    execute at @s if score @s sneaking matches 1 run scoreboard players set $strength delta.api.launch 20000
     execute at @s if score @s sneaking matches 1 rotated ~ -50 run function delta:api/launch_looking
     execute at @s if score @s sneaking matches 1 run playsound entity.player.attack.sweep player @s ~ ~ ~
     execute at @s if score @s sneaking matches 1 run particle sweep_attack ~ ~ ~

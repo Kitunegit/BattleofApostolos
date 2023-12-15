@@ -2,7 +2,7 @@
 
 #矢処理
     #矢常時実行
-        execute as @e[type=arrow] run function pvp_data:pvpfunctions/jobs/archer/arrow
+        execute if entity @e[type=arrow] run function pvp_data:pvpfunctions/jobs/archer/arrow
 #常時実行
     function pvp_data:pvpfunctions/jobs/archer/skill/1/main
     function pvp_data:pvpfunctions/jobs/archer/skill/2/main
@@ -17,3 +17,5 @@
     tag @a[tag=bow_changes] remove bow_changes
 #射撃ダメアップ
     execute as @e[type=arrow] run data merge entity @s {damage:3}
+
+

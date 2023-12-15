@@ -1,8 +1,11 @@
 #アーチャーパッシブ
 #アクションバーに現在の矢の所持数を表示
+    #インベントリの矢の数を代入
     execute store result score @s archer_arrow_count run clear @s arrow 0
+    #
     scoreboard players operation @s archer_arrow_num_con = @s archer_arrow_num
     scoreboard players operation @s archer_arrow_num_con += @s archer_arrow_count
+
     execute if entity @s[nbt={Inventory:[{Slot:8b,id:"minecraft:arrow",Count:1b}]}] run title @s actionbar [{"text":"\uF80C\uF80C\uE000\uF809\uF808","font":"test-16"},{"score":{"name":"@s","objective":"archer_arrow_num_con"},"font":"test-16"}]
     execute if entity @s[nbt={Inventory:[{Slot:8b,id:"minecraft:tipped_arrow",Count:1b,tag:{CustomModelData:1},}]}] run title @s actionbar [{"text":"\uF80C\uF80C\uE002\uF809\uF808","font":"test-16"},{"score":{"name":"@s","objective":"archer_arrow_num_con"},"font":"test-16"}]
     execute if entity @s[nbt={Inventory:[{Slot:8b,id:"minecraft:tipped_arrow",Count:1b,tag:{CustomModelData:2},}]}] run title @s actionbar [{"text":"\uF80C\uF80C\uE001\uF809\uF808","font":"test-16"},{"score":{"name":"@s","objective":"archer_arrow_num_con"},"font":"test-16"}]

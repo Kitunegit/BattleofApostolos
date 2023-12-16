@@ -26,3 +26,4 @@ execute as @a unless predicate pvp_data:sneaking run scoreboard players set @s s
 execute as @a if score @s death matches 1.. run attribute @s generic.max_health base set 40
 execute as @a if score @s death matches 1.. run effect give @s instant_health 1 50 true
 execute as @a if score @s death matches 1.. run scoreboard players set @s death 0
+execute as @a if score @s death matches 1.. run gamemode spectator @s

@@ -2,7 +2,12 @@ execute if score @s warrior_ult_timer matches 100 at @s run playsound block.anvi
 execute if score @s warrior_ult_timer matches 80 at @s run playsound block.anvil.land player @a[distance=..10] ~ ~ ~ 0.7 0.7
 execute if score @s warrior_ult_timer matches 60 at @s run playsound block.anvil.land player @a[distance=..10] ~ ~ ~ 0.7 0.8
 execute if score @s warrior_ult_timer matches 40 at @s run playsound block.anvil.land player @a[distance=..10] ~ ~ ~ 0.7 1
-execute if score @s warrior_ult_timer matches 20..100 at @s run particle block redstone_block ~ ~ ~ 4 0.75 4 0.1 45
+execute if score @s warrior_ult_timer matches 20..170 if entity @s[nbt={HurtTime:1s}] at @s run effect clear @s slowness
+execute if score @s warrior_ult_timer matches 20..170 if entity @s[nbt={HurtTime:1s}] at @s run effect clear @s jump_boost
+execute if score @s warrior_ult_timer matches 20..170 if entity @s[nbt={HurtTime:1s}] at @s run scoreboard players set @s ult_cool 60
+execute if score @s warrior_ult_timer matches 20..170 if entity @s[nbt={HurtTime:1s}] at @s run playsound ui.button.click player @a[distance=..10]
+execute if score @s warrior_ult_timer matches 20..170 if entity @s[nbt={HurtTime:1s}] run scoreboard players reset @s warrior_ult_timer
+execute if score @s warrior_ult_timer matches 20..170 at @s run particle block redstone_block ~ ~ ~ 2 0.75 2 0.1 45
 execute if score @s warrior_ult_timer matches 20 run effect clear @s slowness
 execute if score @s warrior_ult_timer matches 20 run effect clear @s jump_boost
 execute if score @s warrior_ult_timer matches 20 at @s run particle dust 0.494 0.212 0.02 1.2 ~ ~0.5 ~ 2 1.25 2 1 60 force

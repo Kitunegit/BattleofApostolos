@@ -6,13 +6,14 @@
     scoreboard players operation @s archer_arrow_num_con = @s archer_arrow_num
     scoreboard players operation @s archer_arrow_num_con += @s archer_arrow_count
 
-    execute if entity @s[nbt={Inventory:[{Slot:8b,id:"minecraft:arrow",Count:1b}]}] run title @s actionbar [{"text":"\uF80C\uF80C\uE000\uF809\uF808","font":"test-16"},{"score":{"name":"@s","objective":"archer_arrow_num_con"},"font":"test-16"}]
-    execute if entity @s[nbt={Inventory:[{Slot:8b,id:"minecraft:tipped_arrow",Count:1b,tag:{CustomModelData:1},}]}] run title @s actionbar [{"text":"\uF80C\uF80C\uE002\uF809\uF808","font":"test-16"},{"score":{"name":"@s","objective":"archer_arrow_num_con"},"font":"test-16"}]
-    execute if entity @s[nbt={Inventory:[{Slot:8b,id:"minecraft:tipped_arrow",Count:1b,tag:{CustomModelData:2},}]}] run title @s actionbar [{"text":"\uF80C\uF80C\uE001\uF809\uF808","font":"test-16"},{"score":{"name":"@s","objective":"archer_arrow_num_con"},"font":"test-16"}]
+    #data modify storage archer ItemID set string entity @s Inventory[5].id 10
+    execute if entity @s[nbt={Inventory:[{Slot:8b,id:"minecraft:arrow",Count:1b}]}] run title @s actionbar [{"text":"\uF80C\uF80C\uE000\uF809\uF808","font":"test-16"},{"score":{"name":"@s","objective":"archer_arrow_num_con"},"font":"test-16"},{"nbt":"ItemID","storage":"test","font":"default"}]
+    execute if entity @s[nbt={Inventory:[{Slot:8b,id:"minecraft:tipped_arrow",Count:1b,tag:{CustomModelData:1},}]}] run title @s actionbar [{"text":"\uF80C\uF80C\uE002\uF809\uF808","font":"test-16"},{"score":{"name":"@s","objective":"archer_arrow_num_con"},"font":"test-16"},{"nbt":"ItemID","storage":"test","font":"default"}]
+    execute if entity @s[nbt={Inventory:[{Slot:8b,id:"minecraft:tipped_arrow",Count:1b,tag:{CustomModelData:2},}]}] run title @s actionbar [{"text":"\uF80C\uF80C\uE001\uF809\uF808","font":"test-16"},{"score":{"name":"@s","objective":"archer_arrow_num_con"},"font":"test-16"},{"nbt":"ItemID","storage":"test","font":"default"}]
     execute if entity @s[nbt={Inventory:[{Slot:8b,id:"minecraft:spectral_arrow",Count:1b}]}] run title @s actionbar [{"text":"\uF80C\uF80C\uE003\uF809\uF808","font":"test-16"},{"score":{"name":"@s","objective":"archer_arrow_num_con"},"font":"test-16"}]
 #矢の所持
     execute as @s[nbt=!{Inventory:[{Slot:8b,id:"minecraft:arrow"}]},nbt=!{Inventory:[{Slot:8b,id:"minecraft:tipped_arrow"}]},nbt=!{Inventory:[{Slot:8b,id:"minecraft:spectral_arrow"}]}] if score @s archer_arrow_num matches 1.. run tag @s add archer_arrow_add
-    item replace entity @s[tag=archer_arrow_add] hotbar.8 with arrow
+    item replace entity @s[tag=archer_arrow_add] hotbar.8 with arrow{display:{Name:'{"text":"普通の矢"}'}}
     execute if predicate pvp_data:10_rng run scoreboard players remove @s[tag=archer_arrow_add] archer_arrow_num 1
     tag @s remove archer_arrow_add
 #一定時間に50%で矢を取得

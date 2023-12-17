@@ -20,7 +20,7 @@
     #スロットが空だったら矢を補充するためのタグを付与
     execute as @s[nbt=!{Inventory:[{Slot:8b,id:"minecraft:arrow"}]},nbt=!{Inventory:[{Slot:8b,id:"minecraft:tipped_arrow"}]},nbt=!{Inventory:[{Slot:8b,id:"minecraft:spectral_arrow"}]}] if score @s archer_arrow_num matches 1.. run tag @s add archer_arrow_add
     #タグ持ちに矢を付与
-    item replace entity @s[tag=archer_arrow_add] hotbar.8 with arrow{display:{Name:'{"text":"普通の矢"}'}}
+    item replace entity @s[tag=archer_arrow_add] hotbar.8 with arrow{display:{Name:'{"text":"普通の矢","italic":false}'}}
     execute if predicate pvp_data:10_rng run scoreboard players remove @s[tag=archer_arrow_add] archer_arrow_num 1
     tag @s remove archer_arrow_add
 #一定時間に50%で矢を取得
@@ -28,7 +28,12 @@
     execute if score @s archer_passive_cool matches 0 if score @s archer_arrow_num matches ..14 if predicate pvp_data:50_rng run scoreboard players add @s archer_arrow_num 1
     execute if score @s archer_passive_cool matches 0 run scoreboard players set @s archer_passive_cool 30
     execute if score @s archer_passive_cool matches 0 run scoreboard players set @s archer_passive_cool 30
-    execute at @s if score @s sneaking matches 1 if entity @s[nbt={OnGround:1b}] run scoreboard players set $strength delta.api.launch 10000
-    execute at @s if score @s sneaking matches 1 if entity @s[nbt={OnGround:1b}] rotated ~ -50 run function delta:api/launch_looking
-    execute at @s if score @s sneaking matches 1 if entity @s[nbt={OnGround:1b}] run playsound entity.player.attack.sweep player @s ~ ~ ~
-    execute at @s if score @s sneaking matches 1 if entity @s[nbt={OnGround:1b}] run particle sweep_attack ~ ~ ~
+    execute at @s if score @s sneaking matches 1 if entity @s[nbt={OnGround:1b}] run tag @s add archer_first_jump
+    execute at @s if score @s sneaking matches 1 if entity @s[nbt={OnGround:1b}] run function pvp_data:pvpfunctions/jobs/archer/passive_jump {angle:-60,power:8500,particle_position:"~ ~ ~"}
+    execute at @s if score @s sneaking matches 1 if entity @s[nbt={OnGround:0b},tag=!archer_jump,tag=archer_first_jump] run function pvp_data:pvpfunctions/jobs/archer/passive_jump {angle:-40,power:10000,particle_position:"^ ^ ^-1"}
+    execute at @s if score @s sneaking matches 1 if entity @s[nbt={OnGround:0b},tag=!archer_jump,tag=archer_first_jump] run tag @s add archer_jump
+    execute at @s if score @s sneaking matches 1 if entity @s[nbt={OnGround:0b},tag=!archer_jump,tag=archer_first_jump] run say 強化ジャンプにょーん
+    execute at @s if score @s sneaking matches 1 if entity @s[nbt={OnGround:0b},tag=!archer_jump,tag=archer_first_jump] run tag @s remove archer_first_jump
+    execute at @s if score @s sneaking matches 1 if entity @s[nbt={OnGround:0b},tag=!archer_jump,tag=!archer_first_jump] run function pvp_data:pvpfunctions/jobs/archer/passive_jump {angle:-40,power:4000,particle_position:"^ ^ ^-1"}
+    execute at @s if score @s sneaking matches 1 if entity @s[nbt={OnGround:0b},tag=!archer_jump,tag=!archer_first_jump] run tag @s add archer_jump
+    execute if entity @s[nbt={OnGround:1b}] run tag @s remove archer_jump

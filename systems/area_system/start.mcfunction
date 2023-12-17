@@ -1,3 +1,4 @@
+execute as @a run spreadplayers 288.59 -238.49 15 100 false @s
 kill @e[type=marker,tag=border_center]
 summon marker 288.60 -21 -236.49 {"Tags":["border_center"]}
 execute at @e[tag=border_center,type=marker,limit=1] run worldborder center ~ ~ 

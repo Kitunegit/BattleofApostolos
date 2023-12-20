@@ -7,6 +7,7 @@ execute if predicate pvp_data:r_click/cmd32 if score @s skill_2_cool matches ..0
     execute at @s[scores={jobscore=3,skill_2_cool=601..}] run particle dust 0.008 0.718 0.718 1 ~ ~0.2 ~ 0.4 0.8 0.4 0 8 force
     execute at @s[scores={jobscore=3,skill_2_cool=601}] run particle dust 0.008 0.718 0.718 2 ~ ~0.2 ~ 1 1.5 1 0 100 force
     execute at @s[scores={jobscore=3,skill_2_cool=601}] run playsound minecraft:block.glass.break player @s
+    execute at @s[scores={jobscore=3,skill_2_cool=601}] run effect clear @s
 
 #発動演出(後半)
     execute at @s[scores={jobscore=3,skill_2_cool=600}] run effect give @s resistance 10 0 true

@@ -1,0 +1,1 @@
+$execute as @a run title @s actionbar [{"text":"\uF80B","font":"test-16"},{"text":"$(buff)","font":"test-16"},{"text":"\uF80C","font":"test-16"},{"text":"$(debuff)","font":"test-16"}]

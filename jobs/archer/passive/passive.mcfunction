@@ -28,12 +28,8 @@
     execute if score @s archer_passive_cool matches 0 if score @s archer_arrow_num matches ..14 if predicate pvp_data:50_rng run scoreboard players add @s archer_arrow_num 1
     execute if score @s archer_passive_cool matches 0 run scoreboard players set @s archer_passive_cool 30
     execute if score @s archer_passive_cool matches 0 run scoreboard players set @s archer_passive_cool 30
-    execute at @s if score @s sneaking matches 1 if entity @s[nbt={OnGround:1b}] run tag @s add archer_first_jump
-    execute at @s if score @s sneaking matches 1 if entity @s[nbt={OnGround:1b}] run function pvp_data:pvpfunctions/jobs/archer/passive_jump {angle:-60,power:8500,particle_position:"~ ~ ~"}
-    execute at @s if score @s sneaking matches 1 if entity @s[nbt={OnGround:0b},tag=!archer_jump,tag=archer_first_jump] run function pvp_data:pvpfunctions/jobs/archer/passive_jump {angle:-40,power:10000,particle_position:"^ ^ ^-1"}
-    execute at @s if score @s sneaking matches 1 if entity @s[nbt={OnGround:0b},tag=!archer_jump,tag=archer_first_jump] run tag @s add archer_jump
-    execute at @s if score @s sneaking matches 1 if entity @s[nbt={OnGround:0b},tag=!archer_jump,tag=archer_first_jump] run say 強化ジャンプにょーん
-    execute at @s if score @s sneaking matches 1 if entity @s[nbt={OnGround:0b},tag=!archer_jump,tag=archer_first_jump] run tag @s remove archer_first_jump
-    execute at @s if score @s sneaking matches 1 if entity @s[nbt={OnGround:0b},tag=!archer_jump,tag=!archer_first_jump] run function pvp_data:pvpfunctions/jobs/archer/passive_jump {angle:-40,power:4000,particle_position:"^ ^ ^-1"}
-    execute at @s if score @s sneaking matches 1 if entity @s[nbt={OnGround:0b},tag=!archer_jump,tag=!archer_first_jump] run tag @s add archer_jump
+
+#ジャンプ
+    execute if score @s sneaking matches 1 run function pvp_data:pvpfunctions/jobs/archer/passive/sneaking
     execute if entity @s[nbt={OnGround:1b}] run tag @s remove archer_jump
+    scoreboard players remove @s[scores={archer_jump_count=1..}] archer_jump_count 1

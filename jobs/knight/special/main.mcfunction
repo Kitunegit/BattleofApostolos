@@ -9,7 +9,7 @@
         execute as @a if entity @s[tag=knight_special_switch] run function pvp_data:pvpfunctions/jobs/knight/special/switch
 
 #発動後処理
-        execute if entity @e[tag=knight_special_switch] as @s[scores={jobscore=3,special_count=1}] unless entity @e[tag=knight_special_target] run execute if score @s special_count matches 1 run scoreboard players set @s special_cool 100
+        execute if entity @e[tag=knight_special_switch] as @s[scores={jobscore=3,special_count=1}] if entity @e[tag=knight_special_target] run execute if score @s special_count matches 1 run scoreboard players set @s special_cool 100
 
 #待機処理
     execute as @s if entity @s[tag=!knight_special_switch] run scoreboard players set @s special_count 0

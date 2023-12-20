@@ -1,4 +1,6 @@
 
+#パッシブ
+    effect give @e[scores={jobscore=3}] strength infinite 0 true
 #スキル1
     scoreboard objectives add knight_skill_1_cool dummy
     scoreboard objectives add knight_skill_1_con dummy

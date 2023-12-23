@@ -1,4 +1,2 @@
-function #oh_my_dat:please
-$execute unless score $(type) effect_num_count matches 2 run data modify storage concat: args append from storage minecraft:effect string[$(list_num)]
-$execute if score $(type) effect_num_count matches 2 run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].buff_3 append from storage minecraft:effect string[$(list_num)]
-$scoreboard players add $(type) effect_num_count 1
+$data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].buffs set value "$(0)$(2)$(3)$(5)$(6)$(8)$(8)$(9)$(10)$(13)$(14)$(15)$(16)$(17)$(20)$(22)$(23)$(24)$(25)$(27)$(28)$(30)"
+$data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].debuffs set value "$(1)$(4)$(7)$(11)$(12)$(18)$(19)$(21)$(26)$(29)$(31)$(32)"

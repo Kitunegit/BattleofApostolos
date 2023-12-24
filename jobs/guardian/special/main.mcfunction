@@ -10,7 +10,6 @@ execute as @s[nbt={SelectedItem:{tag:{CustomModelData:8},id:"minecraft:carrot_on
 #クール
     execute if score @s special_cool matches 1.. run scoreboard players operation @s special_con = @s special_cool
     execute if score @s special_cool matches 1.. run scoreboard players operation @s special_con %= $const special_con
-    execute if score @s special_con matches 0 at @s run playsound minecraft:entity.item.pickup player @s ~ ~ ~ 0.05 2
     execute if score @s special_con matches 0 run clear @s stick{CustomModelData:84} 1
 
 

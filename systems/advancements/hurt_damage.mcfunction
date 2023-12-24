@@ -1,2 +1,2 @@
 advancement revoke @s only pvp_data:system/hurt_damage
-execute if score @s sneaking matches 1..2 at @s run function pvp_data:pvpfunctions/jobs/warrior/passive/guard_succes
+execute if entity @s[tag=just_guard] run function pvp_data:pvpfunctions/systems/job_system/justguard_system/guard_succes

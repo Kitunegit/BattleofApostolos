@@ -9,7 +9,7 @@ execute store result bossbar minecraft:area max run scoreboard players get area_
 #ボーダーを適応
 kill @e[type=marker,tag=next_center]
 summon marker 288.60 -21 -236.49 {"Tags":["next_center"]}
-execute at @e[type=minecraft:marker,tag=border_center] run spreadplayers ~ ~ 5 35 false @e[type=minecraft:marker,tag=next_center]
+execute at @e[type=minecraft:marker,tag=border_center] run spreadplayers ~ ~ 5 15 false @e[type=minecraft:marker,tag=next_center]
 function pvp_data:pvpfunctions/systems/area_system/border
 #フェーズを増やす
 scoreboard players add area_phase area_timer 1

@@ -1,4 +1,4 @@
-execute at @e[type=marker,tag=knight_ult,scores={knight_ult_count=..1}] rotated as @s run tp @e[type=marker,tag=knight_ult,scores={knight_ult_count=..1}] ~ ~ ~ facing ^ ^ ^1
+execute at @e[type=marker,tag=knight_ult,tag=!knight_ult_tag] rotated as @s run tp @e[type=marker,tag=knight_ult,tag=!knight_ult_tag] ~ ~ ~ facing ^ ^ ^1
 
 playsound entity.experience_orb.pickup player @s
 scoreboard players set @s ult_cool 10

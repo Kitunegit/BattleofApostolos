@@ -14,3 +14,5 @@ tag @e[type=marker,tag=knight_ult,tag=!knight_special_count] add knight_ult_tag
 
 execute if score @s ult_cool matches 0 run function pvp_data:pvpfunctions/jobs/knight/ult/ult_fin
 scoreboard players add @e[type=marker,tag=knight_ult] knight_ult_count 1
+execute as @e[type=marker,tag=knight_ult,scores={knight_ult_count=100..}] at @s run kill @s
+

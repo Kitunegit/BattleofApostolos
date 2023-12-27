@@ -18,7 +18,7 @@ execute as @e[type=marker,tag=knight_ult] at @s run tp @s ^ ^ ^0.8
     execute as @e[type=marker,tag=knight_ult,scores={knight_ult_count=3..} ] at @s positioned ^-4 ^ ^-1 run damage @a[tag=player,limit=1,distance=..4] 15 player_attack
 
 #斬撃跡演出
-    execute as @e[type=marker,tag=knight_ult] at @s positioned ^ ^ ^ run particle dust 0.227 0.78 0.78 1 ^ ^ ^-1 5 1 3 10 100 force
+    execute as @e[type=marker,tag=knight_ult] at @s positioned ^ ^ ^ run particle dust 0.227 0.78 0.78 1 ^ ^ ^-5 5 1 3 10 50 force
 
 
 execute if score @s ult_cool matches 0 run function pvp_data:pvpfunctions/jobs/knight/ult/ult_fin

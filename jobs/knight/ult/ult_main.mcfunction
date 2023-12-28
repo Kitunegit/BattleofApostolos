@@ -44,5 +44,5 @@ scoreboard players add @e[type=marker,tag=knight_ult] knight_ult_count 1
 scoreboard players add @e[type=marker,tag=knight_ult_player] knight_ult_count 1
 
 scoreboard players add @a[scores={jobscore=3},tag=knight_ult_tag] knight_ult_count 1
-execute as @e[type=marker,tag=knight_ult,scores={knight_ult_count=100..}] at @s run kill @s
+execute as @e[type=marker,scores={knight_ult_count=100..}] at @s run kill @s
 

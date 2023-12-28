@@ -10,7 +10,7 @@ execute as @e[type=marker,tag=knight_ult] at @s run playsound entity.player.atta
 #ため演出
     execute as @s[tag=knight_ult_tag,scores={knight_ult_count=1}] at @s run playsound block.beacon.activate player @a[distance=..20] ~ ~ ~ 1 0.8
     execute as @s[tag=knight_ult_tag,scores={knight_ult_count=1}] at @s run effect give @s slowness 3 255 true
-    execute as @s[tag=knight_ult_tag,scores={knight_ult_count=1}] at @s run effect give @s jump_boosta 3 255 true
+    execute as @s[tag=knight_ult_tag,scores={knight_ult_count=1}] at @s run effect give @s jump_boost 3 255 true
 #斬撃演出
     execute as @e[type=marker,tag=knight_ult] at @s positioned ^ ^ ^ run particle sweep_attack ~ ~ ~ 0.5 0.5 0.5 3 5 force
     execute as @e[type=marker,tag=knight_ult,scores={knight_ult_count=3..}] at @s positioned ^ ^ ^ run damage @a[tag=player,limit=1,distance=..4] 15 player_attack by @s

@@ -11,7 +11,8 @@ execute as @e[type=marker,tag=knight_ult] at @s run playsound entity.player.atta
 #ため演出
     execute if entity @a[tag=knight_ult_tag] at @s run function pvpdata:pvpfunctions/jobs/knight/ult/ult_charge
 
-
+#斬撃演出
+    execute at @e[type=marker,tag=knight_ult] run function pvpdata:pvpfunctions/jobs/knight/ult/ult_slash
 
 
 #終了演出

@@ -3,7 +3,6 @@
 execute if predicate pvp_data:r_click/cmd33 if score @s ult_cool matches ..0 if score @s r_click matches 1.. run tag @s add knight_ult_tag
 execute if predicate pvp_data:r_click/cmd33 if score @s knight_ult_count matches 61 run function pvp_data:pvpfunctions/jobs/knight/ult/ult_start
 
-tag @e[type=marker,tag=knight_ult,tag=!knight_special_count] add knight_ult_tag
 
 execute as @e[type=marker,tag=knight_ult] at @s run tp @s ^ ^ ^0.5
 execute as @e[type=marker,tag=knight_ult] at @s run playsound entity.player.attack.sweep player @a[distance=..15] ~ ~ ~ 1 1

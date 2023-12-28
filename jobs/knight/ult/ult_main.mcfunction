@@ -18,7 +18,7 @@ execute as @e[type=marker,tag=knight_ult] at @s run playsound entity.player.atta
     execute at @e[type=marker,tag=knight_ult_player] rotated as @s run tp @e[type=marker,tag=knight_ult_player] ~ ~ ~ facing ^ ^ ^1
 
     execute at @e[type=marker,tag=knight_ult_player] positioned ^ ^ ^2 run particle dust 0.063 0.243 0.537 1 ~ ~ ~ 0.5 0.1 3 30 40 force
-    execute at @e[type=marker,tag=knight_ult_player] run tp @s ~ ~ ~ facing ~ ~ ~
+    execute at @e[type=marker,tag=knight_ult_player,scores={knight_ult_count=1..}] run tp @s ~ ~ ~ ~1.5 ~
 
 #斬撃演出
     execute as @e[type=marker,tag=knight_ult] at @s positioned ^ ^ ^ run particle sweep_attack ~ ~ ~ 0.5 0.5 0.5 3 5 force
@@ -46,4 +46,5 @@ scoreboard players add @e[type=marker,tag=knight_ult_player] knight_ult_count 1
 
 scoreboard players add @a[scores={jobscore=3},tag=knight_ult_tag] knight_ult_count 1
 execute as @e[type=marker,scores={knight_ult_count=100..}] at @s run kill @s
+execute as @e[type=marker,tag=knight_ult_player,scores={knight_ult_count=15..}] at @s run kill @s
 execute as @e[type=marker,tag=!knight_ult_tag,scores={knight_ult_count=1..}] run kill @s

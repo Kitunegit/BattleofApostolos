@@ -5,7 +5,7 @@
 
 #斬撃演出
     #斬撃移動
-        execute at @e[type=marker,tag=knight_ult] run tp @s ^ ^ ^0.5
+        execute if entity @e[type=marker,tag=knight_ult] as @e[type=marker,tag=knight_ult] at @s run tp @s ^ ^ ^0.5
     #パーティクル&ダメージ
         execute as @e[type=marker,tag=knight_ult] run function pvp_data:pvpfunctions/jobs/knight/ult/slash
     #常時スコア

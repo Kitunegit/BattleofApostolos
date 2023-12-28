@@ -1,5 +1,7 @@
 
 #斬撃演出
+    execute at @s run playsound entity.player.attack.sweep player @a[distance=..15] ~ ~ ~ 1 1
+
     execute at @s positioned ^ ^ ^ run particle sweep_attack ~ ~ ~ 0.5 0.5 0.5 3 5 force
     execute if score @s knight_ult_count matches 3.. at @s positioned ^ ^ ^ run damage @a[tag=player,limit=1,distance=..4] 8 player_attack by @s
     execute at @s positioned ^2 ^ ^-0.5 run particle sweep_attack ~ ~ ~ 0.5 0.5 0.5 3 5 force

@@ -13,14 +13,6 @@ execute as @e[type=marker,tag=knight_ult] at @s run playsound entity.player.atta
     execute as @s[tag=knight_ult_tag,scores={knight_ult_count=1}] at @s run effect give @s slowness 3 255 true
     execute as @s[tag=knight_ult_tag,scores={knight_ult_count=1..}] at @s unless block ~ ~-1 ~ air run effect give @s levitation 1 128 true
 
-#抜刀演出
-    execute as @s[tag=knight_ult_tag,scores={knight_ult_count=59}] at @s run summon marker ~ ~1 ~ {Tags:[knight_ult_player]}
-    execute at @e[type=marker,tag=knight_ult_player] rotated as @s run tp @e[type=marker,tag=knight_ult_player] ~ ~ ~ facing ^ ^ ^1
-
-    execute at @e[type=marker,tag=knight_ult_player] positioned ^ ^ ^2 run particle dust 0.063 0.243 0.537 1 ~ ~ ~ 0.5 0.1 3 30 80 force
-    execute at @e[type=marker,tag=knight_ult_player,scores={knight_ult_count=1..}] run tp @s ~ ~ ~ ~1.5 ~
-
-
 #斬撃演出
     execute at @e[type=marker,tag=knight_ult] run function pvpdata:pvpfunctions/jobs/knight/ult/ult_slash
 
@@ -34,7 +26,6 @@ execute as @e[type=marker,tag=knight_ult] at @s run playsound entity.player.atta
 
     scoreboard players add @a[scores={jobscore=3},tag=knight_ult_tag] knight_ult_count 1
     execute as @e[type=marker,scores={knight_ult_count=100..}] at @s run kill @s
-    execute as @e[type=marker,tag=knight_ult_player,scores={knight_ult_count=30..}] at @s run kill @s
     execute as @e[type=marker,tag=!knight_ult_tag,scores={knight_ult_count=1..}] run kill @s
 
     execute if score @s ult_cool matches 0 run function pvp_data:pvpfunctions/jobs/knight/ult/ult_fin

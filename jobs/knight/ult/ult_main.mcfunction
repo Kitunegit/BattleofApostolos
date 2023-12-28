@@ -24,7 +24,7 @@ execute as @e[type=marker,tag=knight_ult] at @s run playsound entity.player.atta
 
     scoreboard players add @a[scores={jobscore=3},tag=knight_ult_tag] knight_ult_count 1
     execute as @e[type=marker,scores={knight_ult_count=100..}] at @s run kill @s
-    execute as @e[type=marker,tag=knight_ult_player,scores={knight_ult_count=15..}] at @s run kill @s
+    execute as @e[type=marker,tag=knight_ult_player,scores={knight_ult_count=30..}] at @s run kill @s
     execute as @e[type=marker,tag=!knight_ult_tag,scores={knight_ult_count=1..}] run kill @s
 
     execute if score @s ult_cool matches 0 run function pvp_data:pvpfunctions/jobs/knight/ult/ult_fin

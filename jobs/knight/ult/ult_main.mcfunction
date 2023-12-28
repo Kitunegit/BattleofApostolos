@@ -24,7 +24,9 @@ execute as @e[type=marker,tag=knight_ult] at @s run playsound entity.player.atta
 #斬撃跡演出
     execute as @e[type=marker,tag=knight_ult] at @s positioned ^ ^ ^ run particle dust 0.145 0.957 0.957 1 ^ ^ ^-5 5 1 3 10 30 force
 
-
+#終了演出
+    execute as @s[scores={knight_ult_count=65..}] at @s run tag @s remove knight_ult_tag
+    execute as @s[scores={knight_ult_count=65..}] at @s run scoreboard players set @s knight_ult_count 0
 execute if score @s ult_cool matches 0 run function pvp_data:pvpfunctions/jobs/knight/ult/ult_fin
 scoreboard players add @e[type=marker,tag=knight_ult] knight_ult_count 1
 scoreboard players add @a[scores={jobscore=3},tag=knight_ult_tag] knight_ult_count 1

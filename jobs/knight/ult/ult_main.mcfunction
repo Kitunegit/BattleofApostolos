@@ -9,7 +9,7 @@ execute as @e[type=marker,tag=knight_ult] at @s run tp @s ^ ^ ^0.5
 execute as @e[type=marker,tag=knight_ult] at @s run playsound entity.player.attack.sweep player @a[distance=..15] ~ ~ ~ 1 1
 
 #ため演出
-    execute if entity @a[tag=knight_ult_tag] at @s run function pvpdata:pvpfunctions/jobs/knight/ult/ult_charge
+    execute at @s run function pvpdata:pvpfunctions/jobs/knight/ult/ult_charge
 
 #斬撃演出
     execute at @e[type=marker,tag=knight_ult] run function pvpdata:pvpfunctions/jobs/knight/ult/ult_slash

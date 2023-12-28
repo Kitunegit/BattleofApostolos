@@ -8,7 +8,7 @@ tag @e[type=marker,tag=knight_ult,tag=!knight_special_count] add knight_ult_tag
 execute as @e[type=marker,tag=knight_ult] at @s run tp @s ^ ^ ^0.5
 execute as @e[type=marker,tag=knight_ult] at @s run playsound entity.player.attack.sweep player @a[distance=..15] ~ ~ ~ 1 1
 #ため演出
-    execute as @s[tag=knight_ult_tag,scores={knight_ult_count=..55}] at @s run particle dust 0.557 0.859 0.859 1 ~ ~0.2 ~ 0.8 1.2 0.8 1 8 force
+    execute as @s[tag=knight_ult_tag,scores={knight_ult_count=..58}] at @s run particle dust 0.557 0.859 0.859 1 ~ ~0.2 ~ 0.8 1.2 0.8 1 8 force
     execute as @s[tag=knight_ult_tag,scores={knight_ult_count=1}] at @s run playsound block.beacon.activate player @a[distance=..20] ~ ~ ~ 1 0.8
     execute as @s[tag=knight_ult_tag,scores={knight_ult_count=1}] at @s run effect give @s slowness 3 255 true
     execute as @s[tag=knight_ult_tag,scores={knight_ult_count=1..}] at @s unless block ~ ~-1 ~ air run effect give @s levitation 1 128 true

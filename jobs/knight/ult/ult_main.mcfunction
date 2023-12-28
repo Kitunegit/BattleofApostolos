@@ -4,8 +4,8 @@ execute if predicate pvp_data:r_click/cmd33 if score @s ult_cool matches ..0 if 
 execute if predicate pvp_data:r_click/cmd33 if score @s knight_ult_count matches 61 run function pvp_data:pvpfunctions/jobs/knight/ult/ult_start
 
 
-execute as @e[type=marker,tag=knight_ult] at @s run tp @s ^ ^ ^0.5
-execute as @e[type=marker,tag=knight_ult] at @s run playsound entity.player.attack.sweep player @a[distance=..15] ~ ~ ~ 1 1
+execute at @e[type=marker,tag=knight_ult] run tp @s ^ ^ ^0.5
+execute at @e[type=marker,tag=knight_ult] run playsound entity.player.attack.sweep player @a[distance=..15] ~ ~ ~ 1 1
 
 #ため演出/処理
     #チャージ中のパーティクル
@@ -13,7 +13,7 @@ execute as @e[type=marker,tag=knight_ult] at @s run playsound entity.player.atta
     #常時スコア
     scoreboard players add @a[scores={jobscore=3},tag=knight_ult_tag] knight_ult_count 1
     #音&動けなくする
-    execute as @s[tag=knight_ult_tag,scores={knight_ult_count=1}] at @s run playsound block.beacon.activate player @a[distance=..20] ~ ~ ~ 1 0.8
+    execute at @s[tag=knight_ult_tag,scores={knight_ult_count=1}] run playsound block.beacon.activate player @a[distance=..20] ~ ~ ~ 1 0.8
     execute as @s[tag=knight_ult_tag,scores={knight_ult_count=1}] at @s run effect give @s slowness 3 255 true
     execute as @s[tag=knight_ult_tag,scores={knight_ult_count=1..}] at @s unless block ~ ~-1 ~ air run effect give @s levitation 1 128 true
 

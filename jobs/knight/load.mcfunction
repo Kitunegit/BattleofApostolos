@@ -1,6 +1,7 @@
 
 #パッシブ
     effect give @e[scores={jobscore=3}] strength infinite 0 true
+    effect give @e[scores={jobscore=3}] slowness infinite 0 true
 
 #スペシャル
     #スペシャルの発動秒数やタイミングの管理

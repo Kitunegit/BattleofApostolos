@@ -29,6 +29,6 @@
         execute as @s[scores={knight_ult_count=65..}] at @s run tag @s remove knight_ult_tag
         execute as @s[scores={knight_ult_count=65..}] at @s run scoreboard players set @s knight_ult_count 0
     #一定値でマーカーをkill
-        execute as @e[type=marker,scores={knight_ult_count=100..}] at @s run kill @s
+        execute as @e[type=marker,scores={knight_ult_count=50..}] at @s run kill @s
     #ウルトCT終了処理
         execute if score @s ult_cool matches 1 run function pvp_data:pvpfunctions/jobs/knight/ult/fin

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 #発動時演出
     execute at @s run playsound block.anvil.land player @a[distance=..10] ~ ~ ~ 0.5 2
@@ -10,7 +9,6 @@ item replace entity @s hotbar.1 with barrier{display:{Name:'{"text":"クール�
 
 #後処理
     scoreboard players set @s skill_1_cool 800
-=======
 
 #発動時演出
     execute at @s run playsound block.anvil.land player @a[distance=..10] ~ ~ ~ 0.5 2
@@ -21,5 +19,4 @@ item replace entity @s hotbar.1 with barrier{display:{Name:'{"text":"クール�
 
 #後処理
     scoreboard players set @s skill_1_cool 800
->>>>>>> 2a45811 ( m)
     scoreboard players set @s r_click 0

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 #パッシブ
     effect give @e[scores={jobscore=3}] strength infinite 0 true
@@ -10,7 +9,6 @@
 
 #ウルト
     #ウルトの発動秒数やタイミングの管理
-=======
 
 #パッシブ
     effect give @e[scores={jobscore=3}] strength infinite 0 true
@@ -21,5 +19,4 @@
 
 #ウルト
     #ウルトの発動秒数やタイミングの管理
->>>>>>> 2a45811 ( m)
         scoreboard objectives add knight_ult_count dummy

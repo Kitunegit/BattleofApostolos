@@ -20,7 +20,7 @@
     execute if score @s[scores={jobscore=3}] special_count matches 23.. run tag @e[tag=player] remove knight_special_target
 
 #待機処理
-    execute as @s if entity @s[tag=!knight_special_switch] run scoreboard players set @s special_count 0
-    execute as @s[scores={jobscore=3,special_cool=1}] run playsound item.armor.equip_iron player @s ~ ~ ~ 10 1
-    execute as @s[scores={jobscore=3,special_cool=1}] run playsound item.armor.equip_iron player @s ~ ~ ~ 10 
+    execute at @s if entity @s[tag=!knight_special_switch] run scoreboard players set @s special_count 0
+    execute at @s[scores={jobscore=3,special_cool=1}] run playsound item.armor.equip_iron player @s ~ ~ ~ 10 1
+    execute at @s[scores={jobscore=3,special_cool=1}] run playsound item.armor.equip_iron player @s ~ ~ ~ 10 
     execute if score @s special_con matches 0 run clear @s stick{CustomModelData:34} 1

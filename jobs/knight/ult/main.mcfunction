@@ -28,6 +28,7 @@
     #プレイヤーのタグ,スコア消し
         execute as @s[scores={knight_ult_count=65..}] at @s run tag @s remove knight_ult_tag
         execute as @s[scores={knight_ult_count=65..}] at @s run scoreboard players set @s knight_ult_count 0
+        execute as @s[scores={knight_ult_count=65..}] at @s run effect clear @s levitation
     #一定値でマーカーをkill
         execute as @e[type=marker,scores={knight_ult_count=50..}] at @s run kill @s
     #ウルトCT終了処理

@@ -26,6 +26,10 @@
 
 
 #終了演出
+
+    #壁にぶつかったらマーカーをkill
+        execute as @e[type=marker,tag=knight_ult] if score @s collision_check matches 0 at @s run scoreboard players set @s knight_special_count 51
+
     #プレイヤーのタグ,スコア消し
         execute as @s[scores={knight_ult_count=65..}] at @s run tag @s remove knight_ult_tag
         execute as @s[scores={knight_ult_count=65..}] at @s run scoreboard players set @s knight_ult_count 0

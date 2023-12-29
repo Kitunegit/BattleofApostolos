@@ -9,4 +9,3 @@ item replace entity @s hotbar.1 with barrier{display:{Name:'{"text":"クール�
 
 #後処理
     scoreboard players set @s skill_1_cool 800
-    scoreboard players set @s r_click 0

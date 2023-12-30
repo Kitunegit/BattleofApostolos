@@ -6,3 +6,4 @@
     execute at @s[scores={jobscore=3,skill_2_cool=401}] run particle dust 0.302 0.012 0.012 2 ~ ~0.2 ~ 1 1.5 1 0 100 force
     execute at @s[scores={jobscore=3,skill_2_cool=401}] run playsound entity.blaze.shoot player @s ~ ~ ~ 1 0.8
     execute at @s[scores={jobscore=3,skill_2_cool=400}] run effect give @s strength infinite 0 true
+    execute at @s[scores={jobscore=3,skill_2_cool=400}] run effect give @s slowness infinite 0 true

@@ -29,3 +29,5 @@ execute as @a if score @s death matches 1.. run attribute @s generic.max_health 
 execute as @a if score @s death matches 1.. run effect give @s instant_health 1 50 true
 execute as @a if score @s death matches 1.. run gamemode spectator @s
 execute as @a if score @s death matches 1.. run scoreboard players set @s death 0
+
+#execute as @a[scores={jobscore=0..}] at @s if entity @e[type=item,distance=..2] run function pvp_data:pvpfunctions/systems/job_system/get_item/first

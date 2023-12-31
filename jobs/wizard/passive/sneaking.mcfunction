@@ -1,0 +1,2 @@
+execute if score @s sneaking matches 20 unless entity @s[tag=wizard_black] run function pvp_data:pvpfunctions/jobs/wizard/passive/change_black
+execute if score @s sneaking matches 20 if entity @s[tag=wizard_black] run function pvp_data:pvpfunctions/jobs/wizard/passive/change_white

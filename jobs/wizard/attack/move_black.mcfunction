@@ -1,6 +1,6 @@
     scoreboard players add @s wizard_normal_count 1
     execute at @s run particle enchanted_hit ~ ~ ~ 0.25 0.25 0.25 0.25 5
-    execute at @s run particle dust 0.039 0.027 0.043 1 ~ ~ ~ 0.1 0.1 0.1 1 4
+    execute at @s run particle dust 0.667 0 0.886 1 ~ ~ ~ 0.1 0.1 0.1 1 4
     execute at @s positioned ~-0.5 ~ ~-0.5 if entity @e[dx=0] if score @s wizard_normal_count matches 2.. run damage @e[tag=player,dx=0,sort=nearest,limit=1] 8 minecraft:bad_respawn_point by @a[scores={jobscore=2},limit=1]
     execute at @s positioned ^ ^ ^1 run function collision_check:main/
     execute at @s if score @s collision_check matches 0 run tp @s ^ ^ ^1

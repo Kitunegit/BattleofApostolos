@@ -1,5 +1,6 @@
 
 #斬撃演出
+    execute at @s run tp @s ^ ^ ^0.5
     execute at @s run playsound entity.player.attack.sweep player @a[distance=..15] ~ ~ ~ 1 1
 
     execute at @s positioned ^ ^ ^ run particle sweep_attack ~ ~ ~ 0.5 0.5 0.5 3 5 force

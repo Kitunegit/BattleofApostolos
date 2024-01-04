@@ -4,7 +4,7 @@
         "item": "minecraft:oak_sign"
       },
       "title": "平和への道",
-      "description": "平和への旅を始めよう。",
+      "description": "平和への旅を始めよう",
       "background": "minecraft:textures/block/stripped_spruce_log.png",
       "frame": "task",
       "show_toast": false,

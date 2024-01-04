@@ -1,0 +1,9 @@
+{
+    "values": [
+        "#collision_check:change_collision/mob_head",
+        "#collision_check:change_collision/amethyst",
+        "#collision_check:change_collision/panes_bars",
+        "#collision_check:change_collision/lantern",
+        "#collision_check:change_collision/chests"
+    ]
+}

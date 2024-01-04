@@ -1,0 +1,23 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:stick",
+        "nbt": "{CustomModelData:7}"
+      },
+      "title": "弓兵の境地",
+      "description": "弓兵で1000回試合を行う",
+      "background": "minecraft:textures/block/stripped_spruce_log.png",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "pvp_data:jobs/archer/100c_archer",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible",
+        "conditions": {}
+      }
+    }
+  }
+  

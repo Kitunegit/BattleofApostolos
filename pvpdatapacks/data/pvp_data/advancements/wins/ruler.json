@@ -1,0 +1,21 @@
+{
+    "display": {
+      "icon": {
+        "item": "wither_skeleton_skull"
+      },
+      "title": "支配者",
+      "description": "敵を全て独りでほぼ被弾せず滅ぼす。",
+      "background": "minecraft:textures/block/stripped_spruce_log.png",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "pvp_data:achieve/kills_start",
+    "criteria": {
+        "requirement": {
+          "trigger": "minecraft:impossible",
+          "conditions": {}
+        }
+      }
+  }

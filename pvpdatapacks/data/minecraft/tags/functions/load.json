@@ -1,0 +1,8 @@
+{
+    "values":[
+        "pvp_data:pvpfunctions/systems/load",
+        "delta:internal/technical/load",
+        "oh_my_dat:sys/load",
+        "marker_motion:load"
+    ]
+}

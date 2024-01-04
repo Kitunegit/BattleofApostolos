@@ -1,0 +1,9 @@
+{
+    "replace": true,
+    "values": [
+        "minecraft:frogspawn",
+        "minecraft:sculk_vein",
+        "minecraft:cobweb",
+        "minecraft:scaffolding"
+      ]
+}

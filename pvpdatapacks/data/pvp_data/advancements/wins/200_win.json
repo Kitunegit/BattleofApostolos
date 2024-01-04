@@ -1,0 +1,21 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:cake"
+      },
+      "title": "覇王",
+      "description": "勝利の栄光を200回得る。",
+      "background": "minecraft:textures/block/stripped_spruce_log.png",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "pvp_data:achieve/game_start",
+    "criteria": {
+        "requirement": {
+          "trigger": "minecraft:impossible",
+          "conditions": {}
+        }
+      }
+  }

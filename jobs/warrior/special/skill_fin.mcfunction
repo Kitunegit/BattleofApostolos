@@ -1,1 +1,0 @@
-execute at @s run playsound entity.generic.extinguish_fire player @s ~ ~ ~ 0.5 

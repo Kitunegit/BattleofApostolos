@@ -1,0 +1,9 @@
+{
+    "values": [
+        "#collision_check:change_collision/piston",
+        "minecraft:cake",
+        "minecraft:end_portal_frame",
+        "minecraft:sea_pickle",
+        "minecraft:turtle_egg"
+    ]
+}

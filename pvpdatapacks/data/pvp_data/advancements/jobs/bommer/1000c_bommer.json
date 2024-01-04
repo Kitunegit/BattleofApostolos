@@ -1,0 +1,23 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:stick",
+        "nbt": "{CustomModelData:5}"
+      },
+      "title": "爆弾魔の境地",
+      "description": "爆弾魔で1000回試合を行う",
+      "background": "minecraft:textures/block/stripped_spruce_log.png",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "pvp_data:jobs/bommer/100c_bommer",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible",
+        "conditions": {}
+      }
+    }
+  }
+  

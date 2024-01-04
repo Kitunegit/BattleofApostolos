@@ -1,8 +1,0 @@
-
-#発動時演出
-    playsound entity.experience_bottle.throw player @s
-
-item replace entity @s hotbar.2 with barrier{display:{Name:'{"text":"クールタイム中です","color":"blue","bold":true,"italic":false}',Lore:['{"text":"攻撃も守りも共に。","color":"white","italic":false}','{"text":"高めた技は役に立つだろう。","color":"white","italic":false}','{"text":"─────発動効果-前半─────","color":"gray","italic":false}','[{"text":"\\uE010","color":"white","italic":false},{"text":"攻撃","color":"white","bold":true,"italic":false},{"text":"+6","color":"dark_green","bold":false},{"text":"(0:10)","color":"dark_green","bold":false}]','[{"text":"\\uE011","color":"white","italic":false},{"text":"HP","color":"white","bold":true,"italic":false},{"text":"-25%","color":"dark_red","bold":false},{"text":"(0:10)","color":"dark_green","bold":false}]','{"text":"─────発動効果-後半─────","color":"gray","italic":false}','[{"text":"\\uE014","color":"white","italic":false},{"text":"耐性","color":"white","bold":true,"italic":false},{"text":"+20%","color":"dark_green","bold":false},{"text":"(0:10)","color":"dark_green","bold":false}]','[{"text":"\\uE010","color":"white","italic":false},{"text":"攻撃","color":"white","bold":true,"italic":false},{"text":"-4","color":"dark_red","bold":false},{"text":"(0:10)","color":"dark_green","bold":false}]','{"text":"─────────────────","color":"gray","italic":false}','[{"text":"\\uE017","color":"white","italic":false},{"text":"効果時間","color":"white","bold":false},{"text":" 0:20","color":"dark_green","bold":false,"italic":false}]','[{"text":"\\uE017","color":"white","italic":false},{"text":"クールタイム","color":"white","bold":true},{"text":"0:40","color":"dark_green","bold":false}]']},CustomModelData:32} 41
-
-#後処理
-    scoreboard players set @s skill_2_cool 800

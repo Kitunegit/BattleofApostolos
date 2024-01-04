@@ -1,2 +1,0 @@
-scoreboard objectives add wizard_normal_cool dummy
-scoreboard objectives add wizard_normal_count dummy

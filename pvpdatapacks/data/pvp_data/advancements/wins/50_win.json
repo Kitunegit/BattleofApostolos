@@ -1,0 +1,21 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:cake"
+      },
+      "title": "私は最強！！",
+      "description": "50回試合に参加し生き延びる",
+      "background": "minecraft:textures/block/stripped_spruce_log.png",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "pvp_data:wins/first_win",
+    "criteria": {
+        "requirement": {
+          "trigger": "minecraft:impossible",
+          "conditions": {}
+        }
+      }
+  }

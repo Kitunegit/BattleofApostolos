@@ -1,0 +1,9 @@
+{
+    "values": [
+        "#collision_check:fixed_collision/carpets",
+        "#minecraft:rails",
+        "#minecraft:flower_pots",
+        "#collision_check:fixed_collision/dirt",
+        "#collision_check:fixed_collision/sculk"
+    ]
+}

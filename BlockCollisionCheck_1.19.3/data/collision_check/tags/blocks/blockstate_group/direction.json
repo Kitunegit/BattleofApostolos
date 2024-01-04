@@ -1,0 +1,20 @@
+{
+    "values": [
+        "#collision_check:change_collision/mob_head",
+        "#collision_check:change_collision/amethyst",
+        "#collision_check:change_collision/chests",
+        "#collision_check:change_collision/piston",
+        "#collision_check:change_collision/rods",
+        "minecraft:ladder",
+        "minecraft:bell",
+        "minecraft:hopper",
+        "minecraft:cocoa",
+        "minecraft:grindstone",
+        "#minecraft:anvil",
+        "#minecraft:trapdoors",
+        "#minecraft:stairs",
+        "#minecraft:beds",
+        "#minecraft:fence_gates",
+        "#minecraft:doors"
+      ]
+}

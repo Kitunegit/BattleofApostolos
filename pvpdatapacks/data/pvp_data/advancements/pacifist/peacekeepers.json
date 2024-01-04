@@ -1,0 +1,21 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:poppy"
+      },
+      "title": "平和維持者",
+      "description": "敵を攻撃せずに勝利する",
+      "background": "minecraft:textures/block/stripped_spruce_log.png",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "pvp_data:pacifist/pacifister",
+    "criteria": {
+        "requirement": {
+          "trigger": "minecraft:impossible",
+          "conditions": {}
+        }
+      }
+  }

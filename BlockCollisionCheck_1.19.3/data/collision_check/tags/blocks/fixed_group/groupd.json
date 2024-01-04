@@ -1,0 +1,8 @@
+{
+    "values": [
+        "minecraft:lectern",
+        "minecraft:brewing_stand",
+        "minecraft:composter",
+        "#minecraft:cauldrons"
+    ]
+}

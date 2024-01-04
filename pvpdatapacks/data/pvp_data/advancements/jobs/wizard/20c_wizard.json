@@ -1,0 +1,23 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:stick",
+        "nbt": "{CustomModelData:2}"
+      },
+      "title": "見習い魔導士",
+      "description": "魔導士で20回試合を行う",
+      "background": "minecraft:textures/block/stripped_spruce_log.png",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "pvp_data:jobs/wizard/3c_wizard",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible",
+        "conditions": {}
+      }
+    }
+  }
+  

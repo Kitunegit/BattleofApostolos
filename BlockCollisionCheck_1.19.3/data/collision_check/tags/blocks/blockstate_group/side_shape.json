@@ -1,0 +1,8 @@
+{
+    "values": [
+        "#collision_check:change_collision/panes_bars",
+        "minecraft:chorus_plant",
+        "#minecraft:fences",
+        "#minecraft:walls"
+      ]
+}

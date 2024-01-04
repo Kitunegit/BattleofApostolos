@@ -1,0 +1,9 @@
+{
+    "values": [
+        "#minecraft:beds",
+        "#minecraft:fence_gates",
+        "#minecraft:fences",
+        "#minecraft:walls",
+        "#minecraft:doors"
+    ]
+}

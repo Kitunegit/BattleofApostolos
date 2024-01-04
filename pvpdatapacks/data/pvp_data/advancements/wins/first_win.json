@@ -1,0 +1,21 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:cake"
+      },
+      "title": "私が一番！",
+      "description": "初めて試合に参加し生き延びる",
+      "background": "minecraft:textures/block/stripped_spruce_log.png",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "pvp_data:joingame",
+    "criteria": {
+        "requirement": {
+          "trigger": "minecraft:impossible",
+          "conditions": {}
+        }
+      }
+  }

@@ -1,0 +1,28 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:bow"
+      },
+      "title": "射撃ッ！",
+      "description": "弓矢を放つ。",
+      "background": "minecraft:textures/block/stripped_spruce_log.png",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "pvp_data:joingame",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": [
+              "minecraft:bow"
+            ]
+          }
+        }
+      }
+    }
+  }
+  

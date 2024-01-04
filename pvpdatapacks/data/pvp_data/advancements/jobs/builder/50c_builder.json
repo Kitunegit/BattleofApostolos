@@ -1,0 +1,23 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:stick",
+        "nbt": "{CustomModelData:1}"
+      },
+      "title": "熟練建築士",
+      "description": "建築士で50回試合を行う",
+      "background": "minecraft:textures/block/stripped_spruce_log.png",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "pvp_data:jobs/builder/20c_builder",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible",
+        "conditions": {}
+      }
+    }
+  }
+  

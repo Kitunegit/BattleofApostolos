@@ -1,0 +1,23 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:stick",
+        "nbt": "{CustomModelData:1}"
+      },
+      "title": "建築士の境地",
+      "description": "建築士で1000回試合を行う",
+      "background": "minecraft:textures/block/stripped_spruce_log.png",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "pvp_data:jobs/builder/100c_builder",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible",
+        "conditions": {}
+      }
+    }
+  }
+  

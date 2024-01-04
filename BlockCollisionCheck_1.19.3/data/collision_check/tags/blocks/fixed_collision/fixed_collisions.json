@@ -1,0 +1,23 @@
+{
+    "values": [
+        "#collision_check:fixed_collision/dirt",
+        "#collision_check:fixed_collision/sculk",
+        "#collision_check:fixed_collision/carpets",
+        "#collision_check:fixed_collision/azalea",
+        "#minecraft:candle_cakes",
+        "#minecraft:rails",
+        "#minecraft:campfires",
+        "#minecraft:cauldrons",
+        "#minecraft:flower_pots",
+        "minecraft:composter",
+        "minecraft:enchanting_table",
+        "minecraft:stonecutter",
+        "minecraft:daylight_detector",
+        "minecraft:lectern",
+        "minecraft:brewing_stand",
+        "minecraft:lily_pad",
+        "minecraft:dragon_egg",
+        "minecraft:cactus",
+        "minecraft:conduit"
+      ]
+}

@@ -1,0 +1,23 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:stick",
+        "nbt": "{CustomModelData:2}"
+      },
+      "title": "熟練魔導士",
+      "description": "魔導士で50回試合を行う",
+      "background": "minecraft:textures/block/stripped_spruce_log.png",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "pvp_data:jobs/wizard/20c_wizard",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible",
+        "conditions": {}
+      }
+    }
+  }
+  

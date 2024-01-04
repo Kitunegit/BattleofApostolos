@@ -1,0 +1,21 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:skeleton_skull"
+      },
+      "title": "キラー",
+      "description": "1回の試合で敵全て一人でキルして勝利する",
+      "background": "minecraft:textures/block/stripped_spruce_log.png",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "pvp_data:wins/killer",
+    "criteria": {
+        "requirement": {
+          "trigger": "minecraft:impossible",
+          "conditions": {}
+        }
+      }
+  }

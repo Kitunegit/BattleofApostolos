@@ -1,0 +1,10 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:effects_changed"
+      }
+    },
+    "rewards": {
+      "function": "pvp_data:pvpfunctions/systems/ui/effect_changed"
+    }
+  }  

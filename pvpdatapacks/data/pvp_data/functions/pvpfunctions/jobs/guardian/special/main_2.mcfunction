@@ -12,11 +12,10 @@ execute at @s if score @s special_cool matches 280.. rotated ~ 0 positioned ^ ^ 
 execute at @s if score @s special_cool matches 300 run playsound item.shield.block player @a ~ ~ ~ 2.5 0.5
 execute at @s if score @s special_cool matches 292 run playsound item.shield.block player @a ~ ~ ~ 2.5 0.9
 execute at @s if score @s special_cool matches 284 run playsound item.shield.block player @a ~ ~ ~ 2.5 1.3
-execute at @s if score @s special_cool matches 276..280 rotated ~ 0 if block ^ ^ ^2.5 air run tp @s ^ ^ ^2.5
+execute at @s if score @s special_cool matches 277..280 run scoreboard players set $strength delta.api.launch 25000
+execute at @s if score @s special_cool matches 277..280 rotated ~ 0 run function delta:api/launch_looking
 execute at @s if score @s special_cool matches 276..280 run particle sweep_attack ~ ~0.15 ~
-execute at @s if score @s special_cool matches 276..280 run damage @e[distance=0.1..2,limit=1,tag=player] 5 player_attack by @s
-execute at @s if score @s special_cool matches 276..280 if entity @e[distance=0.1..2,limit=1,tag=player] run scoreboard players set $strength delta.api.launch 15000
-execute at @s if score @s special_cool matches 276..280 as @e[distance=0.1..2,limit=1,tag=player] at @s rotated as @e[scores={special_cool=276..280},limit=1,tag=player] rotated ~ ~-20 run function delta:api/launch_looking
+execute at @s if score @s special_cool matches 276..280 run function pvp_data:pvpfunctions/systems/job_system/damage/apply {amount: 5f, type: player_attack, knockback_strength: 4d, target: "@e[distance=0.1..2,limit=1,tag=player]"}
 execute at @s if score @s special_cool matches 276..280 as @e[distance=0.1..2,tag=player] run effect give @s slowness 5 4 true
 execute at @s if score @s special_cool matches 276 run playsound entity.zombie.break_wooden_door player @a ~ ~ ~ 0.5 1.5
 execute at @s if score @s special_cool matches 276 run particle minecraft:block oak_planks ~ ~0.15 ~ 1 1 1 1 35

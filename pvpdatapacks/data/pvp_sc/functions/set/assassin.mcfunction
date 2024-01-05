@@ -19,5 +19,5 @@ item replace entity @s hotbar.3 with carrot_on_a_stick{CustomModelData:63,displa
 item replace entity @s hotbar.4 with cooked_cod 64
 item replace entity @s hotbar.7 with stick{CustomModelData:64,display:{Name:'{"text":"瞬撃","color":"blue","bold":true,"italic":false}',Lore:['{"text":"背後に回り込む。","color":"white","italic":false}','{"text":"後ろからグサッ！","color":"white","italic":false}','{"text":"─────発動効果─────","color":"gray","italic":false}','[{"text":"大鎌右クリで発動","color":"white","bold":true,"italic":false}]','[{"text":"\\uE010","color":"white","italic":false},{"text":"背後ｶﾗ攻撃:","color":"white","bold":true,"italic":false},{"text":"8","color":"dark_green","bold":true,"italic":false}]','[{"text":"\\uE017","color":"white","italic":false},{"text":"前隙","color":"white","bold":false},{"text":"0:01","color":"dark_green","bold":false,"italic":false}]','[{"text":"\\uE017","color":"white","italic":false},{"text":"クールタイム","color":"white","bold":true},{"text":"0:15","color":"dark_green","bold":false}]']}} 1
 
-scoreboard players set @s ult_cool 32
-scoreboard players set @s ult_cool_data 32
+scoreboard players set @s ult_cool 90
+scoreboard players set @s ult_cool_data 90

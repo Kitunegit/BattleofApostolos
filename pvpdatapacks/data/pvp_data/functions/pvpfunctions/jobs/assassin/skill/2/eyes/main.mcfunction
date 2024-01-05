@@ -9,6 +9,6 @@
  #ブロックに当たったとき
     execute unless score @s collision_check matches 0 run function pvp_data:pvpfunctions/jobs/assassin/skill/2/eyes/hit
 #敵に当たったとき
-    execute at @s if entity @a[distance=..1.5,tag=player] run function pvp_data:pvpfunctions/jobs/assassin/skill/2/eyes/hit
+    execute at @s positioned ~-0.5 ~ ~-0.5 if entity @e[dx=0] run function pvp_data:pvpfunctions/jobs/assassin/skill/2/eyes/hit
     
     execute if score @s assassin_skill_2_tmr matches ..25 run function pvp_data:pvpfunctions/jobs/assassin/skill/2/eyes/main

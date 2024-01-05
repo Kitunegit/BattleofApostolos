@@ -14,9 +14,9 @@ execute if score @s assassin_ult_charge matches ..10 at @s run playsound entity.
 execute if score @s assassin_ult_charge matches ..10 at @s run playsound entity.player.attack.crit player @a[distance=..10] ~ ~ ~ 1 1
 execute if score @s assassin_ult_charge matches ..10 at @s run particle dust -1 0 -1 3 ~ ~1 ~ 1 1 1 0.2 10
 execute if score @s assassin_ult_charge matches ..10 at @s run particle sweep_attack ~ ~ ~ 1 1 1 0.2 2
-execute if score @s assassin_ult_charge matches ..10 at @s rotated ~ 0 positioned ^ ^ ^1 run function collision_check:main/
-execute if score @s assassin_ult_charge matches ..10 at @s rotated ~ 0 if score @s collision_check matches 0 run tp @s ^ ^ ^1
+execute if score @s assassin_ult_charge matches ..10 at @s run scoreboard players set $strength delta.api.launch 10000
+execute if score @s assassin_ult_charge matches ..10 at @s rotated ~ 0 run function delta:api/launch_looking
 execute if score @s assassin_ult_charge matches ..10 at @s if entity @e[tag=player,distance=0.1..2,limit=1] run playsound minecraft:block.sculk_shrieker.shriek player @a[distance=..10] ~ ~ ~ 5
-execute if score @s assassin_ult_charge matches ..10 at @s run damage @e[tag=player,distance=0.1..2,limit=1] 35000 player_attack by @s
+execute if score @s assassin_ult_charge matches ..10 at @s run function pvp_data:pvpfunctions/systems/job_system/damage/apply {amount: 35000f, type: magic, knockback_strength: 4d, target: "@e[tag=player,distance=0.1..2]"}
 execute if score @s assassin_ult_charge matches ..10 run kill @e[tag=assassin_ult_trgt]
 scoreboard players remove @s assassin_ult_charge 1

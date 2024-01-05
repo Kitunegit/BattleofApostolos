@@ -1,6 +1,6 @@
 #スキル1処理
     #発動処理
-        execute as @s[nbt={SelectedItem:{tag:{CustomModelData:82},id:"minecraft:carrot_on_a_stick"}},scores={skill_2_cool=..0,r_click=1..}] run function pvp_data:pvpfunctions/jobs/guardian/skill/2/skill_start
+        execute if predicate pvp_data:r_click/cmd82 if score @s skill_2_cool matches ..0 if score @s r_click matches 1.. run function pvp_data:pvpfunctions/jobs/guardian/skill/1/skill_start
     #バリア減らし
         execute if score @s skill_2_con matches 0 run clear @s barrier{CustomModelData:82} 1
     #スキルエフェクト

@@ -1,9 +1,17 @@
 function pvp_sc:set/reset
+
+scoreboard players set @s generic.attck 100
+scoreboard players set @s generic.defence 0
+scoreboard players set @s generic.speed 110
+scoreboard players set @s generic.max_health 33
+
 scoreboard players set @s jobscore 7
+
 scoreboard players set @s archer_arrow_count 16
 scoreboard players set @s skill_1_cool 0
 scoreboard players set @s skill_2_cool 0
 scoreboard players set @s ult_cool 0
+
 scoreboard players set @s archer_passive_cool 1
 scoreboard players set @s archer_arrow_num_con 0
 scoreboard players set @s archer_arrow_num 0

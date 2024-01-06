@@ -5,6 +5,11 @@ scoreboard players set @s skill_2_cool 0
 scoreboard players set @s ult_cool 0
 scoreboard players add @s knight_used 1
 
+scoreboard players set @s generic.attck 300
+scoreboard players set @s generic.defence 200
+scoreboard players set @s generic.speed 100
+scoreboard players set @s generic.max_health 39
+
 item replace entity @s armor.head with leather_helmet{Unbreakable:1b}
 item replace entity @s armor.chest with leather_chestplate{Unbreakable:1b}
 item replace entity @s armor.legs with leather_leggings{Unbreakable:1b}

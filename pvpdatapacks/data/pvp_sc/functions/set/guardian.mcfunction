@@ -7,8 +7,13 @@ scoreboard players set @s ult_cool 0
 scoreboard players set @s special_cool 0
 scoreboard players add @s guardian_used 1
 
-effect give @s slowness infinite 1 true
-effect give @s resistance infinite 1 true
+scoreboard players set @s generic.attck 200
+scoreboard players set @s generic.defence 600
+scoreboard players set @s generic.speed 85
+scoreboard players set @s generic.max_health 40
+
+#effect give @s slowness infinite 1 true
+#effect give @s resistance infinite 1 true
 
 item replace entity @s armor.head with iron_helmet{Unbreakable:1b}
 item replace entity @s armor.chest with iron_chestplate{Unbreakable:1b}

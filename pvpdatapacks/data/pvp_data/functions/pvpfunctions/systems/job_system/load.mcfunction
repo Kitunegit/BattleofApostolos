@@ -1,15 +1,27 @@
 
 #スコア定義
+    #ステータス
+
+        #攻撃力(100倍の値)
+        scoreboard objectives add generic.attck dummy
+        #防御力(100倍の値)
+        scoreboard objectives add generic.defence dummy
+        #速度(1000倍の値)
+        scoreboard objectives add generic.speed dummy
+        #HP(等倍)
+        scoreboard objectives add generic.max_health dummy
+
     #どの役職についてるか判別するためのスコア
     scoreboard objectives add jobscore dummy
+
     #右クリ検知用共通スコア
     scoreboard objectives add r_click minecraft.used:minecraft.carrot_on_a_stick
+
     #スニーク検知用共通スコア
     scoreboard objectives add sneaking dummy
+
     #死亡数カウント
     scoreboard objectives add death deathCount
-    #体力スコア
-    scoreboard objectives add Health health
 #クールタイム
     #スキル1のCT
     scoreboard objectives add skill_1_cool dummy

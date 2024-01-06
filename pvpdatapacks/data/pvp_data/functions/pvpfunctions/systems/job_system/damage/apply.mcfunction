@@ -6,9 +6,12 @@
 # @input
 #   args
 #       target: string ダメージを与えられる側のエンティティ
-#       amount: float ダメージの量
-#       type: string ダメージタイプ
-#       knockback_strength: double 横方向のノックバックの強さ
+#       damage:
+#           amount: float ダメージの量
+#           type: string ダメージタイプ
+#       knockback:
+#           horizontal: double 横方向の強さ
+#           vertical: double 縦方向の強さ
 #
 # @api
 
@@ -21,14 +24,14 @@
     $tag $(target) add damage.apply_all_targets
 
 #ダメージ
-    $execute as @e[tag=damage.apply_all_targets] run damage @s $(amount) $(type) by @e[tag=damage.apply_source,limit=1]
+    $execute as @e[tag=damage.apply_all_targets] run function pvp_data:pvpfunctions/systems/job_system/damage/hurt $(damage)
 
 #ノックバック
     #プレイヤー
-        $execute as @e[tag=damage.apply_all_targets] if entity @s[type=player] run function pvp_data:pvpfunctions/systems/job_system/damage/to/player {knockback_strength: $(knockback_strength)d}
+        $execute as @e[tag=damage.apply_all_targets] if entity @s[type=player] run function pvp_data:pvpfunctions/systems/job_system/damage/knockback/player $(knockback)
 
     #エンティティ
-        $execute as @e[tag=damage.apply_all_targets] unless entity @s[type=player] run function pvp_data:pvpfunctions/systems/job_system/damage/to/entity {knockback_strength: $(knockback_strength)d}
+        $execute as @e[tag=damage.apply_all_targets] unless entity @s[type=player] run function pvp_data:pvpfunctions/systems/job_system/damage/knockback/entity $(knockback)
 
 #リセット
     tag @s remove damage.apply_source

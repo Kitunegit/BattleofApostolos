@@ -2,6 +2,7 @@
 #
 # 実行者から、引数に渡したエンティティにダメージとノックバックを与えます。
 # 与えられる側のエンティティのセレクターは複数を受け付けます。
+# 渡されたダメージを基に演算が行われます。
 #
 # @input
 #   args
@@ -24,7 +25,67 @@
     $tag $(target) add damage.apply_all_targets
 
 #ダメージ
-    $execute as @e[tag=damage.apply_all_targets] run function pvp_data:pvpfunctions/systems/job_system/damage/hurt $(damage)
+    # ストレージに代入
+        #declare storage temporary:
+        $data modify storage temporary: value set value $(damage)
+
+    # 計算用オブジェクト作成
+        #declare objective damage.apply-temporary
+        scoreboard objectives add damage.apply-temporary dummy
+
+        #declare score_holder $total_damage
+        #declare score_holder $item_damage
+        #declare score_holder $input_damage
+        #declare score_holder $defense_damage
+        #declare score_holder #constant
+
+    # 基礎攻撃力を代入
+        scoreboard players operation $total_damage damage.apply-temporary = @s generic.attack
+
+        scoreboard players add $total_damage damage.apply-temporary 0
+
+    # 武器攻撃力を100倍して代入
+        execute store result score $item_damage damage.apply-temporary run data get entity @s SelectedItem.tag.weapon.damage.amount
+
+        scoreboard players add $item_damage damage.apply-temporary 0
+
+        scoreboard players set #constant damage.apply-temporary 100
+
+        scoreboard players operation $item_damage damage.apply-temporary *= #constant damage.apply-temporary
+
+    # 入力ダメージを100倍して代入
+        execute store result score $input_damage damage.apply-temporary run data get storage temporary: value.amount 100
+
+    # 全て足し合わせる
+        scoreboard players operation $total_damage damage.apply-temporary += $item_damage damage.apply-temporary
+
+        scoreboard players operation $total_damage damage.apply-temporary += $input_damage damage.apply-temporary
+
+    # 防御力を引く
+        scoreboard players operation $defense_damage damage.apply-temporary = @s generic.defense
+
+        scoreboard players add $defense_damage damage.apply-temporary 0
+
+        # めも: ダメージ = 攻撃力 - 攻撃力 * 防御力 / 200
+
+        scoreboard players operation $defense_damage damage.apply-temporary *= $total_damage damage.apply-temporary
+
+        scoreboard players set #constant damage.apply-temporary 20000
+
+        scoreboard players operation $defense_damage damage.apply-temporary /= #constant damage.apply-temporary
+
+        scoreboard players operation $total_damage damage.apply-temporary -= $defense_damage damage.apply-temporary
+
+    # ストレージに再代入
+        execute store result storage temporary: value.amount float 0.01 run scoreboard players get $total_damage damage.apply-temporary
+
+        #テスト用: tellraw @a {"nbt": "value", "storage": "temporary:"}
+
+    # リセット
+        scoreboard objectives remove damage.apply-temporary
+
+    # ダメージ処理
+        execute as @e[tag=damage.apply_all_targets] run function pvp_data:pvpfunctions/systems/job_system/damage/hurt with storage temporary: value
 
 #ノックバック
     #プレイヤー

@@ -8,7 +8,6 @@
 # @within function pvp_data:pvpfunctions/systems/job_system/damage/apply
 
 #ストレージに一時保存
-    #declare storage temporary: double→10000倍intへの変換用一時データベース
     $data modify storage temporary: value set value [$(horizontal)d, $(vertical)d]
 
 #scoreboardに10000倍して代入

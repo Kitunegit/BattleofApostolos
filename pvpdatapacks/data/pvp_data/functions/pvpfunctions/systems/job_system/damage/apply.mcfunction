@@ -36,7 +36,6 @@
         #declare score_holder $total_damage
         #declare score_holder $item_damage
         #declare score_holder $input_damage
-        #declare score_holder $defense_damage
         #declare score_holder #constant
 
     # 基礎攻撃力を代入
@@ -61,31 +60,11 @@
 
         scoreboard players operation $total_damage damage.apply-temporary += $input_damage damage.apply-temporary
 
-    # 防御力を引く
-        scoreboard players operation $defense_damage damage.apply-temporary = @s generic.defense
-
-        scoreboard players add $defense_damage damage.apply-temporary 0
-
-        # めも: ダメージ = 攻撃力 - 攻撃力 * 防御力 / 200
-
-        scoreboard players operation $defense_damage damage.apply-temporary *= $total_damage damage.apply-temporary
-
-        scoreboard players set #constant damage.apply-temporary 20000
-
-        scoreboard players operation $defense_damage damage.apply-temporary /= #constant damage.apply-temporary
-
-        scoreboard players operation $total_damage damage.apply-temporary -= $defense_damage damage.apply-temporary
-
-    # ストレージに再代入
-        execute store result storage temporary: value.amount float 0.01 run scoreboard players get $total_damage damage.apply-temporary
-
-        #テスト用: tellraw @a {"nbt": "value", "storage": "temporary:"}
+    # ダメージ処理
+        execute as @e[tag=damage.apply_all_targets] run function pvp_data:pvpfunctions/systems/job_system/damage/operation with storage temporary: value
 
     # リセット
         scoreboard objectives remove damage.apply-temporary
-
-    # ダメージ処理
-        execute as @e[tag=damage.apply_all_targets] run function pvp_data:pvpfunctions/systems/job_system/damage/hurt with storage temporary: value
 
 #ノックバック
     #プレイヤー

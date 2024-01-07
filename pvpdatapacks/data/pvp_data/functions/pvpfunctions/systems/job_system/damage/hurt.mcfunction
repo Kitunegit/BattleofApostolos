@@ -4,7 +4,7 @@
 #
 # @within
 #   function
-#       pvp_data:pvpfunctions/systems/job_system/damage/apply
+#       pvp_data:pvpfunctions/systems/job_system/damage/operation
 #       pvp_data:pvpfunctions/systems/job_system/damage/apply_fixed
 
 # マクロで代入

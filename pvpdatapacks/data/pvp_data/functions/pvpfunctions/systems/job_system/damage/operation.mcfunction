@@ -27,4 +27,4 @@
     execute store result storage temporary: value.amount float 0.01 run scoreboard players get @s damage.apply-temporary
 
 # 与える
-    function pvp_data:pvpfunctions/systems/job_system/damage/hurt
+    function pvp_data:pvpfunctions/systems/job_system/damage/hurt with storage temporary: value

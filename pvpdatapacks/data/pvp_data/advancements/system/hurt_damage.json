@@ -1,11 +1,18 @@
 {
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:entity_hurt_player"
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "dealt": {
+            "min": 0.078125,
+            "max": 1
+          }
+        }
       }
-    },
-    "rewards": {
-      "function": "pvp_data:pvpfunctions/systems/advancements/hurt_damage"
     }
+  },
+  "rewards": {
+    "function": "pvp_data:pvpfunctions/systems/advancements/hurt_damage"
   }
-  
+}

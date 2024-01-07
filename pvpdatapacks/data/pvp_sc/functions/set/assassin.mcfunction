@@ -1,8 +1,8 @@
 function pvp_sc:set/reset
 effect give @s speed infinite 0 true
 
-scoreboard players set @s generic.attck 260
-scoreboard players set @s generic.defence 0
+scoreboard players set @s generic.attack 260
+scoreboard players set @s generic.defense 0
 scoreboard players set @s generic.speed 120
 scoreboard players set @s generic.max_health 34
 

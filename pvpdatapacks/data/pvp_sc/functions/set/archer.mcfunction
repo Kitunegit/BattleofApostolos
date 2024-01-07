@@ -1,7 +1,7 @@
 function pvp_sc:set/reset
 
-scoreboard players set @s generic.attck 100
-scoreboard players set @s generic.defence 0
+scoreboard players set @s generic.attack 100
+scoreboard players set @s generic.defense 0
 scoreboard players set @s generic.speed 110
 scoreboard players set @s generic.max_health 33
 

@@ -5,8 +5,8 @@ scoreboard players set @s skill_2_cool 0
 scoreboard players set @s ult_cool 0
 scoreboard players add @s knight_used 1
 
-scoreboard players set @s generic.attck 300
-scoreboard players set @s generic.defence 200
+scoreboard players set @s generic.attack 300
+scoreboard players set @s generic.defense 200
 scoreboard players set @s generic.speed 100
 scoreboard players set @s generic.max_health 39
 

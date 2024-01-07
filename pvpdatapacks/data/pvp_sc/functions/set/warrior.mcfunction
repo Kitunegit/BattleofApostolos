@@ -6,8 +6,8 @@ scoreboard players set @s ult_cool 0
 scoreboard players set @s special_cool 0
 scoreboard players add @s warrior_used 1
 
-scoreboard players set @s generic.attck 400
-scoreboard players set @s generic.defence 300
+scoreboard players set @s generic.attack 400
+scoreboard players set @s generic.defense 300
 scoreboard players set @s generic.speed 85
 scoreboard players set @s generic.max_health 40
 

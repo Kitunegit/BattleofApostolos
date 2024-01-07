@@ -3,9 +3,9 @@
     #ステータス
 
         #攻撃力(100倍の値)
-        scoreboard objectives add generic.attck dummy
+        scoreboard objectives add generic.attack dummy
         #防御力(100倍の値)
-        scoreboard objectives add generic.defence dummy
+        scoreboard objectives add generic.defense dummy
         #速度(1000倍の値)
         scoreboard objectives add generic.speed dummy
         #HP(等倍)

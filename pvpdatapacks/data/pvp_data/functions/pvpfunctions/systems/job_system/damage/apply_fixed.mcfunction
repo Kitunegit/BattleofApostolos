@@ -24,15 +24,15 @@
     #declare tag damage.apply_all_targets ノックバックするエンティティ全てが保持する一時タグ
     $tag $(target) add damage.apply_all_targets
 
-#ダメージ
-    $execute as @e[tag=damage.apply_all_targets] run function pvp_data:pvpfunctions/systems/job_system/damage/hurt $(damage)
-
 #ノックバック
     #プレイヤー
         $execute as @e[tag=damage.apply_all_targets] if entity @s[type=player] run function pvp_data:pvpfunctions/systems/job_system/damage/knockback/player $(knockback)
 
     #エンティティ
         $execute as @e[tag=damage.apply_all_targets] unless entity @s[type=player] run function pvp_data:pvpfunctions/systems/job_system/damage/knockback/entity $(knockback)
+
+#ダメージ
+    $execute as @e[tag=damage.apply_all_targets] run function pvp_data:pvpfunctions/systems/job_system/damage/hurt $(damage)
 
 #リセット
     tag @s remove damage.apply_source

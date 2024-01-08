@@ -1,1 +1,0 @@
-execute on attacker run tag @s add damage.hurt_player

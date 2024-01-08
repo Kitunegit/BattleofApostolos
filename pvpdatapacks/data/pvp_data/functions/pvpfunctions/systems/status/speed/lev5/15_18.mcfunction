@@ -1,2 +1,0 @@
-execute if score @s generic.speed matches 15..16 run function pvp_data:pvpfunctions/systems/status/speed/lev6/15_16
-execute if score @s generic.speed matches 17..18 run function pvp_data:pvpfunctions/systems/status/speed/lev6/17_18

@@ -1,0 +1,7 @@
+{
+    "message_id": "warrior_sp",
+    "exhaustion": 0,
+    "scaling": "when_caused_by_living_non_player",
+    "effects": "hurt",
+    "death_message_type": "default"
+  }

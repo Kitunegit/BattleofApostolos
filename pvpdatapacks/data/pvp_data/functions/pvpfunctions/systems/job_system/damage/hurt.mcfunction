@@ -5,7 +5,7 @@
 # @within
 #   function
 #       pvp_data:pvpfunctions/systems/job_system/damage/operation
-#       pvp_data:pvpfunctions/systems/job_system/damage/apply_fixed
+#       pvp_data:pvpfunctions/systems/job_system/damage/operation_fixed
 
 # advancement回避
     #declare tag damage.avoid_advancement

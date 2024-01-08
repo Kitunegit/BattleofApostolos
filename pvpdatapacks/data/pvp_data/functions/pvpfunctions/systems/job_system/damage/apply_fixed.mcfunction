@@ -32,7 +32,21 @@
         $execute as @e[tag=damage.apply_all_targets] unless entity @s[type=player] run function pvp_data:pvpfunctions/systems/job_system/damage/knockback/entity $(knockback)
 
 #ダメージ
-    $execute as @e[tag=damage.apply_all_targets] run function pvp_data:pvpfunctions/systems/job_system/damage/hurt $(damage)
+    # ストレージに代入
+        #declare storage temporary:
+        $data modify storage temporary: value set value $(damage)
+
+    # 計算用オブジェクト作成
+        scoreboard objectives add damage.apply-temporary dummy
+
+    # スコアに代入
+        execute store result score @e[tag=damage.apply_all_targets] damage.apply-temporary run data get storage temporary: value.amount 100
+
+    # ダメージ処理
+        execute as @e[tag=damage.apply_all_targets] run function pvp_data:pvpfunctions/systems/job_system/damage/operation_fixed with storage temporary: value
+
+    # リセット
+        scoreboard objectives remove damage.apply-temporary
 
 #リセット
     tag @s remove damage.apply_source

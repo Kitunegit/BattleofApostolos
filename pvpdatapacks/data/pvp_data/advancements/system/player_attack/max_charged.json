@@ -1,0 +1,27 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "nbt": "{Tags:[\"damage.avoid_advancement\"]}"
+                            }
+                        }
+                    }
+                ],
+                "damage": {
+                    "dealt": 0.015625
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "pvp_data:pvpfunctions/systems/player_attack/max_charged"
+    }
+}

@@ -1,6 +1,7 @@
 {
     "values": [
       "pvp_data:wizard/wizard_normal_magic",
-      "pvp_data:system/override"
+      "pvp_data:system/override",
+      "minecraft:player_attack"
     ]
 }

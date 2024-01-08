@@ -1,1 +1,2 @@
 scoreboard objectives add dark_scientist_passive dummy
+scoreboard objectives add dark_scientist_skill1_charge dummy

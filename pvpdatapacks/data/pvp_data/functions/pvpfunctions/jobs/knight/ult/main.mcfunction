@@ -21,4 +21,6 @@
         execute as @e[type=marker] if score @s knight_ult_count matches 50.. run kill @s
     #ウルトCT終了処理
         execute if score @s ult_cool matches 1 run function pvp_data:pvpfunctions/jobs/knight/ult/fin
+    #バリア化
+        execute if score @s ult_con matches 0 run clear @s barrier{CustomModelData:33} 1
 

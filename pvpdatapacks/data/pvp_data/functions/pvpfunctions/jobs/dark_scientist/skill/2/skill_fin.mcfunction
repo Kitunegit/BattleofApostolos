@@ -1,4 +1,4 @@
-  say zikkou
+#層の確率取得とつけるデバフ用の0~100を振る
   execute at @s run execute at @s if entity @e[distance=0.1..3,tag=player] if predicate pvp_data:75_rng run scoreboard players add @s dark_scientist_passive 1
   execute as @s run function pvp_data:pvpfunctions/systems/rng_system/generated
 #デバフ対象にタグ

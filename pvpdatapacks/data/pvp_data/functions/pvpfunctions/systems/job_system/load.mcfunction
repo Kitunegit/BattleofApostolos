@@ -10,6 +10,8 @@
         scoreboard objectives add generic.speed dummy
         #HP(等倍)
         scoreboard objectives add generic.max_health dummy
+        #HP(等倍)
+        scoreboard objectives add generic.attack_speed dummy
 
     #どの役職についてるか判別するためのスコア
     scoreboard objectives add jobscore dummy

@@ -1,3 +1,7 @@
 scoreboard objectives add dark_scientist_passive dummy
 scoreboard objectives add dark_scientist_skill1_charge dummy
 scoreboard objectives add dark_scientist_skill2_charge dummy
+scoreboard objectives add dark_scientist_skill_2_spead_debuff dummy
+scoreboard objectives add dark_scientist_skill_2_debuff_time dummy
+scoreboard players set ds.skill2_15% dark_scientist_skill_2_spead_debuff 15
+scoreboard players set ds.skill2_1% dark_scientist_skill_2_spead_debuff 100

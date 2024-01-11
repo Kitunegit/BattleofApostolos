@@ -3,7 +3,7 @@ function pvp_sc:set/reset
 scoreboard players set @s generic.attack 100
 scoreboard players set @s generic.defense 0
 scoreboard players set @s generic.speed 110
-scoreboard players set @s generic.max_health 33
+function pvp_data:pvpfunctions/systems/status/apply {apply_effect:"generic.max_health",apply_num:33}
 
 scoreboard players set @s jobscore 7
 

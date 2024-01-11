@@ -10,7 +10,7 @@
         scoreboard objectives add generic.speed dummy
         #HP(等倍)
         scoreboard objectives add generic.max_health dummy
-        #HP(等倍)
+        #攻撃速度(100倍)
         scoreboard objectives add generic.attack_speed dummy
 
     #どの役職についてるか判別するためのスコア
@@ -24,6 +24,10 @@
 
     #死亡数カウント
     scoreboard objectives add death deathCount
+#その他
+    #チャージチェック用
+        scoreboard objectives add charge_check.Health dummy
+        scoreboard players set $2 charge_check.Health 2
 #クールタイム
     #スキル1のCT
     scoreboard objectives add skill_1_cool dummy

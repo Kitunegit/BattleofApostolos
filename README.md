@@ -151,11 +151,14 @@ target: string
 ・関数の使用方法
 
 ```function pvp_data:pvpfunctions/systems/status/apply {apply_effect:"generic.max_health",apply_num:15}```
+
 引数は以下の通り
-```{
+```
+{
     apply_effect: generic.attack_speed,  //変更するステータスID
     apply_num: 100,  //変更するステータス量
-}```
+}
+```
 
 ・ステータスIDは以下の通り
 攻撃速度:``generic.attack_speed``

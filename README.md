@@ -89,7 +89,8 @@
 
 
 引数は以下です
-```{
+```
+{
     damage: {
         amount: 1.0f, //ダメージの量
         type: "arrow" //ダメージタイプ
@@ -99,13 +100,15 @@
         vertical: 0.5d //縦のKB
     },
     target: "@e" // ダメージを受ける側のセレクター
-}```
+}
+```
 
 
 セレクターは""で囲ってください
 
 型
-```damage:compound
+```
+damage:compound
 damage.amount: float
 damage.type: string
 
@@ -113,7 +116,8 @@ knockback: compound
 knockback.horizontal: double
 knockback.vertical: double
 
-target: string```
+target: string
+```
 
 
 上記のような構造にした副作用として、damage: {}とするとダメージの処理のみ行わないようにすることができ、またknockbackについても同様に{}にするとノックバックの処理のみ行わないようにできます

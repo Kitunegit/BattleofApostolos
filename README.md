@@ -125,3 +125,38 @@ target: string
 
 
 上記のような構造にした副作用として、damage: {}とするとダメージの処理のみ行わないようにすることができ、またknockbackについても同様に{}にするとノックバックの処理のみ行わないようにできます
+
+・ステータスの変更
+
+# ・スコアボードで変更するステータス
+・攻撃力
+・防御力
+
+``/scoreboard players set``等で変更してください。
+
+・スコアの名前は以下の通り
+攻撃:``generic.attack``
+防御:``generic.defense``
+
+# ・関数にて変更するステータス
+・ 攻撃速度
+・ 速度
+・ 最大体力
+
+・関数の使用方法
+
+```function pvp_data:pvpfunctions/systems/status/apply {apply_effect:"generic.max_health",apply_num:15}```
+引数は以下の通り
+```{
+    apply_effect: generic.attack_speed,  //変更するステータスID
+    apply_num: 100,  //変更するステータス量
+}```
+
+・ステータスIDは以下の通り
+攻撃速度:``generic.attack_speed``
+移動速度:``generic.speed``
+最大体力:``generic.max_health``
+
+# ・代入する数値
+最大体力は**等倍**です。
+その他は***すべて*100倍**の数値を記述してください。

@@ -1,22 +1,15 @@
-execute if score @s assassin_ult_charge matches 10..50 at @s run tp @s ~ ~ ~ facing entity @e[tag=assassin_ult_trgt,limit=1]
-execute if score @s assassin_ult_charge matches 30..40 at @s run particle dust 0 0 0 1 ~ ~1 ~ 0.8 0.8 0.8 0.2 30
-execute if score @s assassin_ult_charge matches 20..30 at @s run particle dust 0.161 0.016 0.259 1 ~ ~1 ~ 0.8 0.8 0.8 0.2 30
-execute if score @s assassin_ult_charge matches 10..20 at @s run particle dust 0.329 0.008 0.541 1 ~ ~1 ~ 0.8 0.8 0.8 0.2 30
-execute if score @s assassin_ult_charge matches 0..10 at @s run particle dust 0.596 0 0.992 1 ~ ~1 ~ 0.8 0.8 0.8 0.2 30
-
-
-execute if score @s assassin_ult_charge matches 60 at @s run playsound block.anvil.land player @a[distance=..10] ~ ~ ~ 1 1
-execute if score @s assassin_ult_charge matches 50 at @s run playsound entity.experience_orb.pickup player @a[distance=..10] ~ ~ ~ 1 0.7
-execute if score @s assassin_ult_charge matches 40 at @s run playsound entity.experience_orb.pickup player @a[distance=..10] ~ ~ ~ 1 0.8
-execute if score @s assassin_ult_charge matches 30 at @s run playsound entity.experience_orb.pickup player @a[distance=..10] ~ ~ ~ 1 0.9
-execute if score @s assassin_ult_charge matches 20 at @s run playsound entity.experience_orb.pickup player @a[distance=..10] ~ ~ ~ 1 1.0
-execute if score @s assassin_ult_charge matches ..10 at @s run playsound entity.player.attack.nodamage player @a[distance=..10] ~ ~ ~ 1 1.8
-execute if score @s assassin_ult_charge matches ..10 at @s run playsound entity.player.attack.crit player @a[distance=..10] ~ ~ ~ 1 1
-execute if score @s assassin_ult_charge matches ..10 at @s run particle dust -1 0 -1 3 ~ ~1 ~ 1 1 1 0.2 10
-execute if score @s assassin_ult_charge matches ..10 at @s run particle sweep_attack ~ ~ ~ 1 1 1 0.2 2
-execute if score @s assassin_ult_charge matches ..10 at @s run scoreboard players set $strength delta.api.launch 10000
-execute if score @s assassin_ult_charge matches ..10 at @s rotated ~ 0 run function delta:api/launch_looking
-execute if score @s assassin_ult_charge matches ..10 at @s if entity @e[tag=player,distance=0.1..2,limit=1] run playsound minecraft:block.sculk_shrieker.shriek player @a[distance=..10] ~ ~ ~ 5
-execute if score @s assassin_ult_charge matches ..10 at @s run function pvp_data:pvpfunctions/systems/job_system/damage/apply {amount: 35000f, type: magic, knockback_strength: 4d, target: "@e[tag=player,distance=0.1..2]"}
-execute if score @s assassin_ult_charge matches ..10 run kill @e[tag=assassin_ult_trgt]
+#視点をチャージ中固定
+    execute if score @s assassin_ult_charge matches 40..120 at @s run tp @s ~ ~ ~ facing entity @e[tag=assassin_ult_trgt,limit=1]
+#チャージ中のパーティクル
+    execute if score @s assassin_ult_charge matches 40..120 at @s run particle dust 0 0 0 1 ~ ~1 ~ 0.8 0.8 0.8 0.2 30
+#詠唱キャンセル
+    execute if score @s assassin_ult_charge matches 40..120 if score @s assassin_ult_health >= @s Health run function pvp_data:pvpfunctions/jobs/assassin/ult/failed
+#チャージ音
+    execute if score @s assassin_ult_charge matches 120 at @s run playsound block.anvil.land player @a[distance=..10] ~ ~ ~ 1 1
+    execute if score @s assassin_ult_charge matches 100 at @s run playsound entity.experience_orb.pickup player @a[distance=..10] ~ ~ ~ 1 0.7
+    execute if score @s assassin_ult_charge matches 80 at @s run playsound entity.experience_orb.pickup player @a[distance=..10] ~ ~ ~ 1 0.8
+    execute if score @s assassin_ult_charge matches 60 at @s run playsound entity.experience_orb.pickup player @a[distance=..10] ~ ~ ~ 1 0.9
+    execute if score @s assassin_ult_charge matches 40 at @s run playsound entity.experience_orb.pickup player @a[distance=..10] ~ ~ ~ 1 1.0
+#突撃
+execute if score @s assassin_ult_charge matches ..20 run function pvp_data:pvpfunctions/jobs/assassin/ult/ult_dash
 scoreboard players remove @s assassin_ult_charge 1

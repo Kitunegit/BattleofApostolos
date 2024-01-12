@@ -5,8 +5,7 @@
 #例外処理
     execute if predicate pvp_data:r_click/cmd63 if score @s ult_cool matches ..0 if score @s r_click matches 1.. at @e[tag=player] positioned ^ ^ ^-5 unless entity @s[distance=..4.9] run tag @s add assassin_ult_no_enmy
 
-    execute if entity @s[tag=assassin_ult_no_enmy] at @s run playsound block.cherry_wood_button.click_on player @s ~ ~ ~ 0.5 1.2
-    execute if entity @s[tag=assassin_ult_no_enmy] run tellraw @s {"text":"敵の背後にいません"}
+    execute if entity @s[tag=assassin_ult_no_enmy] at @s run playsound minecraft:block.note_block.bass player @s ~ ~ ~ 1 0.5
     execute if entity @s[tag=assassin_ult_no_enmy] run scoreboard players set @s r_click 0
 
     tag @s remove assassin_ult_no_enmy

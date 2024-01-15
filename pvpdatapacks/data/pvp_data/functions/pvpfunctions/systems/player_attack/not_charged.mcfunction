@@ -7,6 +7,6 @@
     # 攻撃の種類の判別用
         #declare storage temporary:
         data modify storage temporary: attack_type set value "not_charged"
-say test
+
     # 共通の処理
         function pvp_data:pvpfunctions/systems/player_attack/

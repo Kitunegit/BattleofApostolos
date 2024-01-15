@@ -33,16 +33,16 @@
     # 最大チャージ (1.0倍なのでそのまま)
         #execute if data storage temporary: {attack_type: "max_charged"}
 
-    #1.5倍にするためにいったん15倍
-        scoreboard players set #constant damage.apply-temporary 15
-
     # 最大チャージ + クリティカル
-        execute if data storage temporary: {attack_type: "max_charged_critical"} run scoreboard players operation @s damage.apply-temporary *= #constant damage.apply-temporary
+        # 1.5倍にするためにいったん15倍
+            scoreboard players set #constant damage.apply-temporary 15
 
-    #15倍されたものを10の1にする
-        scoreboard players set #constant damage.apply-temporary 10
+            execute if data storage temporary: {attack_type: "max_charged_critical"} run scoreboard players operation @s damage.apply-temporary *= #constant damage.apply-temporary
 
-        execute if data storage temporary: {attack_type: "max_charged_critical"} run scoreboard players operation @s damage.apply-temporary /= #constant damage.apply-temporary
+        # 15倍されたものを10分の1にする
+            scoreboard players set #constant damage.apply-temporary 10
+
+            execute if data storage temporary: {attack_type: "max_charged_critical"} run scoreboard players operation @s damage.apply-temporary /= #constant damage.apply-temporary
 
 # ストレージに再代入
     execute store result storage temporary: value.amount float 0.01 run scoreboard players get @s damage.apply-temporary

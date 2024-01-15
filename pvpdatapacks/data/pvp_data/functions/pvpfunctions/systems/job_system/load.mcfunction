@@ -29,6 +29,9 @@
         scoreboard objectives add charge_check.Health dummy
         scoreboard players set $2 charge_check.Health 2
 #クールタイム
+    #CT計算用
+    scoreboard objectives add temp.cool_can dummy
+    scoreboard players set $20 temp.cool_can 20
     #スキル1のCT
     scoreboard objectives add skill_1_cool dummy
     #スキル2のCT

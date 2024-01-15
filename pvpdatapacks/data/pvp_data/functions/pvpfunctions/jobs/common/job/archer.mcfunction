@@ -1,0 +1,3 @@
+execute if predicate pvp_data:r_click/71 run function pvp_data:pvpfunctions/jobs/common/start_ability {job_name:archer,func_pass:"skill/1",ab_type:skill_1,cool:10}
+execute if predicate pvp_data:r_click/72 run function pvp_data:pvpfunctions/jobs/common/start_ability {job_name:archer,func_pass:"skill/2",ab_type:skill_2,cool:20}
+execute if predicate pvp_data:r_click/73 run function pvp_data:pvpfunctions/jobs/common/start_ability {job_name:archer,func_pass:"ult",ab_type:ult,cool:120}

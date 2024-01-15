@@ -13,6 +13,9 @@
 
 # マクロで代入
     $damage @s $(amount) $(type) by @e[tag=damage.apply_source,limit=1]
-$say $(amount)
+
 # リセット
     tag @e[tag=damage.apply_source] remove damage.avoid_advancement
+
+# デバッグ用メッセージ
+    $say $(amount)

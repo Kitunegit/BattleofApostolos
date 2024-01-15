@@ -5,4 +5,5 @@ execute if score @s jobscore matches 4 run function pvp_data:pvpfunctions/jobs/c
 execute if score @s jobscore matches 5 run function pvp_data:pvpfunctions/jobs/common/job/dark_scientist
 execute if score @s jobscore matches 6 run function pvp_data:pvpfunctions/jobs/common/job/assassin
 execute if score @s jobscore matches 7 run function pvp_data:pvpfunctions/jobs/common/job/archer
+#あーちゃだけ書いてる
 execute if score @s jobscore matches 8 run function pvp_data:pvpfunctions/jobs/common/job/guardian

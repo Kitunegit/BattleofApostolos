@@ -1,8 +1,8 @@
-#> no_drop:exception/
+#> no_drop:exception
 #
 # @within no_drop:tick
 
-# マクロ
+# 例外的なドロップ
     data modify entity @s PickupDelay set value 0s
 
     #declare tag no_drop.exception_item

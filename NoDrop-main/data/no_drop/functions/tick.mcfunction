@@ -5,4 +5,4 @@
 
     scoreboard players reset @a no_drop.joined
 
-    execute as @e[type=item, nbt={Item: {tag: {data: ["no_drop"]}}, Age: 0s}] if data entity @s Thrower run function no_drop:exception
+    execute as @e[type=item] if predicate no_drop:target if data entity @s Thrower run function no_drop:exception

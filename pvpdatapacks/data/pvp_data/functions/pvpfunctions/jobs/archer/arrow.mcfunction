@@ -7,5 +7,5 @@ execute if score @s skill_2_cool matches 300.. as @e[type=arrow] if entity @s[nb
 execute if score @s skill_2_cool matches 300.. as @e[type=arrow] if entity @s[nbt={life:1s}] at @s run particle flash ~ ~ ~ 10 10 10 0.5 80
 #着弾処理
 execute as @e[type=arrow] at @s if entity @s[nbt={life:1s}] run particle dust 0 1 0.45108 2 ~ ~ ~
-execute as @e[type=arrow] if entity @s[nbt={life:1s}] run kill @s
+#execute as @e[type=arrow] if entity @s[nbt={life:1s}] run kill @s
 execute as @e[type=spectral_arrow] if entity @s[nbt={life:1s}] run kill @s

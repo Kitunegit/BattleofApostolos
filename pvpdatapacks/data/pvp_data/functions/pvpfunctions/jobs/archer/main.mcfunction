@@ -16,6 +16,4 @@
     item replace entity @a[tag=bow_changes] hotbar.0 with stick{display:{Name:'{"text":"弓兵の長弓","color":"dark_green","bold":true,"italic":false}',Lore:['{"text":"よーく狙って","color":"white","italic":false}','{"text":"敵を打ち抜こう。","color":"white","italic":false}','{"text":"─────武器効果─────","color":"gray","italic":false}','[{"text":"\\uE013","color":"white","italic":false},{"text":"射撃ダメージ","color":"white","bold":true,"italic":false},{"text":"+10","color":"green","bold":false,"italic":false}]']},Unbreakable:1b,CustomModelData:7,HideFlags:6} 1
     tag @a[tag=bow_changes] remove bow_changes
 #射撃ダメアップ
-    execute as @e[type=arrow] run data merge entity @s {damage:3}
-
-
+    execute as @e[type=arrow] run data merge entity @s {damage:-0.984375}

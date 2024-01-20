@@ -6,7 +6,6 @@ execute as @a[scores={jobscore=3}] run function pvp_data:pvpfunctions/jobs/knigh
 execute as @a[scores={jobscore=2}] run function pvp_data:pvpfunctions/jobs/wizard/main
 execute as @a[scores={jobscore=0..}] run function pvp_data:pvpfunctions/systems/job_system/ult_system/main
 execute as @a[scores={jobscore=0..}] run function pvp_data:pvpfunctions/systems/ui/main
-execute as @a[scores={jobscore=0..}] run function pvp_data:pvpfunctions/systems/status/apply
 execute as @a unless score @s jobscore matches 7 unless score @s jobscore matches 2 run function pvp_data:pvpfunctions/systems/job_system/justguard_system/main
 
 execute as @a[scores={jobscore=0..}] if score @s skill_1_cool matches 1.. run scoreboard players operation @s skill_1_con = @s skill_1_cool

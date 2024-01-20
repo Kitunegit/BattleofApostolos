@@ -1,6 +1,6 @@
-#> no_drop:dropped/restore/hotbar
+#> no_drop:dropped/restore/hotbar/macro
 #
-# アイテムを元のスロットに復元します。
+# ホットバーのアイテムを元のスロットに復元します。
 #
 # @input
 #   args
@@ -9,7 +9,7 @@
 #       tag: compound
 #       Slot: byte
 #
-# @within function no_drop:dropped/restore/
+# @within function no_drop:dropped/restore/hotbar/
 
 # マクロで復元
     $item replace entity @s hotbar.$(Slot) with $(id)$(tag) $(Count)

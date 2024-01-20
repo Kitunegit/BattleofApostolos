@@ -1,4 +1,4 @@
-#> no_drop:joined
+#> no_drop:player/joined
 #
 # @within function no_drop:tick
 

@@ -16,7 +16,12 @@
                     }
                 ],
                 "damage": {
-                    "dealt": 0.015625
+                    "dealt": 0.015625,
+                    "type": {
+                        "direct_entity": {
+                            "type": "minecraft:player"
+                        }
+                    }
                 }
             }
         }

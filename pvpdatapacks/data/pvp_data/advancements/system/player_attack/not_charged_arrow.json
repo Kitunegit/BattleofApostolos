@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "type": "#minecraft:arrows",
+                            "nbt": "{crit: false}"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "pvp_data:pvpfunctions/systems/player_attack/not_charged_arrow"
+    }
+}

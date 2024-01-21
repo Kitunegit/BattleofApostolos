@@ -18,6 +18,11 @@
                 "damage": {
                     "dealt": {
                         "max": 0.014
+                    },
+                    "type": {
+                        "direct_entity": {
+                            "type": "minecraft:player"
+                        }
                     }
                 }
             }

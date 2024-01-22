@@ -54,6 +54,13 @@
     scoreboard players set $const skill_1_con 20
     scoreboard players set $const skill_2_con 20
     scoreboard players set $const special_con 20
+#カウント
+    #スキル1
+    scoreboard objectives add skill_1_count dummy
+    #スキル2
+    scoreboard objectives add skill_2_count dummy
+    scoreboard players set $3 skill_2_count 3
+    scoreboard players set $10 skill_2_count 10
 #各役職の読み込み
     function pvp_data:pvpfunctions/jobs/knight/load
     function pvp_data:pvpfunctions/jobs/guardian/load

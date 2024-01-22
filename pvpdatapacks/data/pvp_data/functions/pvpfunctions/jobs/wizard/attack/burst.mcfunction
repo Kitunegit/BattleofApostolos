@@ -6,4 +6,4 @@ execute if score @s wizard_normal_burst matches 5 run function pvp_data:pvpfunct
 execute if score @s wizard_normal_burst matches 5 if entity @s[tag=wizard.enm_hit] run effect give @s instant_health 1 0 true
 execute if score @s wizard_normal_burst matches 5 if entity @s[tag=wizard.enm_hit] at @s run playsound minecraft:entity.player.burp player @a[distance=..5] ~ ~ ~ 1 1.78
 execute if score @s wizard_normal_burst matches 5 run tag @s remove wizard.enm_hit
-execute if score @s wizard_normal_burst matches 1 run scoreboard players set @s wizard_normal_cool 100
+execute if score @s wizard_normal_burst matches 1 run scoreboard players set @s wizard_normal_cool 50

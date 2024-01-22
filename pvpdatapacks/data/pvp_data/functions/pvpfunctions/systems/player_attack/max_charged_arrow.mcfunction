@@ -18,7 +18,7 @@
 
         # ダメージ
             #declare tag/damage_type pvp_data:system/override
-            function pvp_data:pvpfunctions/systems/job_system/damage/apply_fixed {target: "@e[tag=system.player_attack.attacked_candidate]", damage: {amount: 6.0f, type: "pvp_data:system/override"}, knockback: {horizontal: 0.25d, vertical: 0.4d}}
+            function pvp_data:pvpfunctions/systems/job_system/damage/apply {target: "@e[tag=system.player_attack.attacked_candidate]", damage: {amount: 6.0f, type: "pvp_data:system/override"}, knockback: {horizontal: 0.25d, vertical: 0.4d}}
 
     # リセット&同tickに攻撃するプレイヤーへの対策
         tag @e[tag=system.player_attack.attacked_candidate] add system.player_attack.attacked_marker

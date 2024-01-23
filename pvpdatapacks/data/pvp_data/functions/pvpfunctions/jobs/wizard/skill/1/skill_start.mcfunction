@@ -1,5 +1,6 @@
 scoreboard players add @s ult_cool 4
 scoreboard players set @s skill_2_cool 300
+execute at @s positioned ~ ~1.4 ~ run summon item_display ^ ^ ^1 {billboard:"center",item:{id:"minecraft:quartz",Count:1b,tag:{CustomModelData:3}},Tags:[Magic.SkillCircle],brightness:{sky:15,block:15}}
 tag @s add wizard.skill1_ready
 effect give @s slowness 2 9 true
 effect give @s jump_boost 2 128 true

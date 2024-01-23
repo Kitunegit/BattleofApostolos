@@ -7,6 +7,7 @@ scoreboard players add @s wizard_used 1
 
 scoreboard players set @s generic.attack 150
 scoreboard players set @s generic.defense 100
+function pvp_data:pvpfunctions/systems/status/apply {apply_effect:"generic.attack_speed",apply_num:1000}
 function pvp_data:pvpfunctions/systems/status/apply {apply_effect:"generic.speed",apply_num:100}
 function pvp_data:pvpfunctions/systems/status/apply {apply_effect:"generic.max_health",apply_num:35}
 

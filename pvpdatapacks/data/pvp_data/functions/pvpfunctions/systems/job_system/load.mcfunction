@@ -24,6 +24,9 @@
 
     #死亡数カウント
     scoreboard objectives add death deathCount
+
+    #ダメージディスプレイ
+    scoreboard objectives add damage.display_time dummy
 #その他
     #チャージチェック用
         scoreboard objectives add charge_check.Health dummy

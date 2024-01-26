@@ -1,0 +1,13 @@
+{
+    "values": [
+        "score_to_attribute:armor/remove",
+        "score_to_attribute:armor_toughness/remove",
+        "score_to_attribute:attack_damage/remove",
+        "score_to_attribute:attack_speed/remove",
+        "score_to_attribute:knockback_resistance/remove",
+        "score_to_attribute:luck/remove",
+        "score_to_attribute:max_absorption/remove",
+        "score_to_attribute:max_health/remove",
+        "score_to_attribute:movement_speed/remove"
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "replace": false,
+    "values": [
+        "score_to_attribute:load"
+    ]
+}

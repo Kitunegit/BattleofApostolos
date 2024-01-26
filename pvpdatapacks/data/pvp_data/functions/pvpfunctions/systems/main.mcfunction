@@ -7,3 +7,6 @@ execute as @a[tag=sand] at @s run fill ~-15 ~-5 ~-15 ~15 ~15 ~15 grass_block rep
 
 # プレイヤーによる攻撃検知のための常時実行
     function pvp_data:pvpfunctions/systems/player_attack/tick
+
+# ステータス関連の常時実行
+    function pvp_data:pvpfunctions/systems/status/tick

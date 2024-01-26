@@ -1,3 +1,7 @@
+#> pvp_data:pvpfunctions/systems/status/apply
+#
+# @deprecated
+
 $scoreboard players set @s $(apply_effect) $(apply_num)
 $say $(apply_effect)を$(apply_num)に変えました
 function #oh_my_dat:please

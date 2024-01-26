@@ -5,10 +5,12 @@ scoreboard players set @s skill_2_cool 0
 scoreboard players set @s ult_cool 0
 scoreboard players add @s knight_used 1
 
-scoreboard players set @s generic.attack 300
-scoreboard players set @s generic.defense 200
-scoreboard players set @s generic.speed 100
-scoreboard players set @s generic.max_health 39
+scoreboard players set @s generic.attack.base 300
+scoreboard players set @s generic.defense.base 200
+scoreboard players set @s generic.speed.base 100
+scoreboard players set @s generic.max_health.base 39
+scoreboard players set @s generic.attack_speed.base 140
+function pvp_data:pvpfunctions/systems/status/update
 
 item replace entity @s armor.head with leather_helmet{Unbreakable:1b,data: ["no_drop"]}
 item replace entity @s armor.chest with leather_chestplate{Unbreakable:1b,data: ["no_drop"]}

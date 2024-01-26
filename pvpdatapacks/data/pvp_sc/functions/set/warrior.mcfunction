@@ -6,11 +6,12 @@ scoreboard players set @s ult_cool 0
 scoreboard players set @s special_cool 0
 scoreboard players add @s warrior_used 1
 
-scoreboard players set @s generic.attack 400
-scoreboard players set @s generic.defense 300
-scoreboard players set @s generic.speed 85
-scoreboard players set @s generic.max_health 40
-scoreboard players set @s generic.attack_speed 60
+scoreboard players set @s generic.attack.base 400
+scoreboard players set @s generic.defense.base 300
+scoreboard players set @s generic.speed.base 85
+scoreboard players set @s generic.max_health.base 40
+scoreboard players set @s generic.attack_speed.base 60
+function pvp_data:pvpfunctions/systems/status/update
 
 item replace entity @s armor.head with iron_helmet{Unbreakable:1b,data: ["no_drop"]}
 item replace entity @s armor.chest with iron_chestplate{Unbreakable:1b,data: ["no_drop"]}

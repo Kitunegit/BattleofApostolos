@@ -1,10 +1,11 @@
 function pvp_sc:set/reset
 
-scoreboard players set @s generic.attack 250
-scoreboard players set @s generic.defense 0
-scoreboard players set @s generic.speed 120
-function pvp_data:pvpfunctions/systems/status/apply {apply_effect:"generic.max_health",apply_num:34}
-function pvp_data:pvpfunctions/systems/status/apply {apply_effect:"generic.attack_speed",apply_num:133}
+scoreboard players set @s generic.attack.base 250
+scoreboard players set @s generic.defense.base 0
+scoreboard players set @s generic.speed.base 12
+scoreboard players set @s generic.max_health.base 34
+scoreboard players set @s generic.attack_speed.base 133
+function pvp_data:pvpfunctions/systems/status/update
 
 scoreboard players set @s jobscore 6
 

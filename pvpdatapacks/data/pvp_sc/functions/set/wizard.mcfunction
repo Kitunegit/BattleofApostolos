@@ -5,12 +5,12 @@ scoreboard players set @s skill_2_cool 0
 scoreboard players set @s ult_cool 0
 scoreboard players add @s wizard_used 1
 
-scoreboard players set @s generic.attack 100
-scoreboard players set @s generic.defense 100
-
-function pvp_data:pvpfunctions/systems/status/apply {apply_effect:"generic.attack_speed",apply_num:1000}
-function pvp_data:pvpfunctions/systems/status/apply {apply_effect:"generic.speed",apply_num:100}
-function pvp_data:pvpfunctions/systems/status/apply {apply_effect:"generic.max_health",apply_num:35}
+scoreboard players set @s generic.attack.base 100
+scoreboard players set @s generic.defense.base 100
+scoreboard players set @s generic.attack_speed 1000
+scoreboard players set @s generic.speed 100
+scoreboard players set @s generic.max_health 35
+function pvp_data:pvpfunctions/systems/status/update
 
 item replace entity @s armor.head with leather_helmet{Unbreakable:1b,data: ["no_drop"]}
 item replace entity @s armor.chest with leather_chestplate{Unbreakable:1b,data: ["no_drop"]}

@@ -7,10 +7,11 @@ scoreboard players set @s ult_cool 0
 scoreboard players set @s special_cool 0
 scoreboard players add @s guardian_used 1
 
-scoreboard players set @s generic.attack 200
-scoreboard players set @s generic.defense 600
-scoreboard players set @s generic.speed 85
-scoreboard players set @s generic.max_health 40
+scoreboard players set @s generic.attack.base 200
+scoreboard players set @s generic.defense.base 600
+scoreboard players set @s generic.speed.base 85
+scoreboard players set @s generic.max_health.base 40
+function pvp_data:pvpfunctions/systems/status/update
 
 #effect give @s slowness infinite 1 true
 #effect give @s resistance infinite 1 true

@@ -17,5 +17,8 @@
 # リセット
     tag @e[tag=damage.apply_source] remove damage.avoid_advancement
 
+# 被ダメ時回復阻害
+    scoreboard players set @s healing_cool 100
+    
 # デバッグ用メッセージ
     $say $(amount)

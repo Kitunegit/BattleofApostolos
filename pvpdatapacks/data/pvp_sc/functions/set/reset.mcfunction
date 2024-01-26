@@ -9,3 +9,4 @@ scoreboard players set @s generic.attack 0
 scoreboard players set @s generic.defense 0
 scoreboard players set @s generic.speed 100
 scoreboard players set @s generic.max_health 40
+scoreboard players set @s generic.healing_speed 100

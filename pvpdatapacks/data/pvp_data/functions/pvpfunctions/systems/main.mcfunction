@@ -10,3 +10,6 @@ tag @a[gamemode=!spectator] add player
 
 # プレイヤーによる攻撃検知のための常時実行
     function pvp_data:pvpfunctions/systems/player_attack/tick
+
+# ステータス関連の常時実行
+    function pvp_data:pvpfunctions/systems/status/tick

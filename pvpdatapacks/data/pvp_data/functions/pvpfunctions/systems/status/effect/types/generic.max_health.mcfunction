@@ -21,10 +21,3 @@
         execute if data storage temporary: {_: {overwrite: true}} run scoreboard players operation @s generic.max_health.effect_depth = $modifier_depth system.status.effect.calc_modifier
 
         execute if data storage temporary: {_: {overwrite: true}} run scoreboard players operation @s generic.max_health.effect_duration = $modifier_duration system.status.effect.calc_modifier
-
-    # 現在の値へ代入
-        scoreboard players operation $modifier_depth system.status.effect.calc_modifier = @s generic.max_health.effect_depth
-
-        scoreboard players operation $modifier_depth system.status.effect.calc_modifier += @s generic.max_health.base
-
-        scoreboard players operation @s generic.max_health = $modifier_depth system.status.effect.calc_modifier

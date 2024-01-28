@@ -44,7 +44,7 @@
         scoreboard players operation $temporary system.status.effect.calc_modifier += @s generic.speed.effect_depth
 
         scoreboard players operation @s generic.speed = $temporary system.status.effect.calc_modifier
-    
+
     # リセット
         scoreboard objectives remove system.status.effect.calc_modifier
 

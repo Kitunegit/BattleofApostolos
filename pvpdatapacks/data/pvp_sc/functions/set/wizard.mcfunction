@@ -8,7 +8,7 @@ scoreboard players add @s wizard_used 1
 scoreboard players set @s generic.attack.base 100
 scoreboard players set @s generic.defense.base 100
 scoreboard players set @s generic.attack_speed 1000
-scoreboard players set @s generic.speed 100
+scoreboard players set @s generic.speed 10
 scoreboard players set @s generic.max_health 35
 function pvp_data:pvpfunctions/systems/status/update
 

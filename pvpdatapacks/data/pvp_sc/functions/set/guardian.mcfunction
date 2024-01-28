@@ -9,7 +9,7 @@ scoreboard players add @s guardian_used 1
 
 scoreboard players set @s generic.attack.base 200
 scoreboard players set @s generic.defense.base 600
-scoreboard players set @s generic.speed.base 85
+scoreboard players set @s generic.speed.base 8
 scoreboard players set @s generic.max_health.base 40
 function pvp_data:pvpfunctions/systems/status/update
 

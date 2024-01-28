@@ -1,3 +1,8 @@
+#> pvp_data:pvpfunctions/systems/job_system/main
+#
+# 役職ごとの処理の振り分け、共通処理です
+#
+# @within function pvp_data:pvpfunctions/systems/main
 
 # 各役職常時実行
 

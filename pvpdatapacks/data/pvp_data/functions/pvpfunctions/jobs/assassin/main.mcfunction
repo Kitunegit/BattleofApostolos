@@ -1,4 +1,9 @@
-#暗殺者-imageColor_purple
+#> pvp_data:pvpfunctions/jobs/assassin/main
+#
+# 暗殺者の常時実行処理です
+#
+# @within function pvp_data:pvpfunctions/jobs/assassin/main
+
 #暗殺者
 
 

@@ -7,7 +7,7 @@ scoreboard players add @s knight_used 1
 
 scoreboard players set @s generic.attack.base 300
 scoreboard players set @s generic.defense.base 200
-scoreboard players set @s generic.speed.base 100
+scoreboard players set @s generic.speed.base 10
 scoreboard players set @s generic.max_health.base 39
 scoreboard players set @s generic.attack_speed.base 140
 function pvp_data:pvpfunctions/systems/status/update

@@ -1,3 +1,9 @@
+#> pvp_data:pvpfunctions/jobs/assassin/skill/1/skill_start
+#
+# 暗殺者のスキル1開始処理です。
+#
+# @within function pvp_data:pvpfunctions/jobs/assassin/skill/1/skill_main
+
 #カウント付与
 scoreboard players set @s assassin_skill_1_charge 60
 tag @s add assassin.skill_1_charge

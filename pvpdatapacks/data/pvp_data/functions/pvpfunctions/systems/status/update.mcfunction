@@ -68,3 +68,5 @@
 
         # リセット
             scoreboard players reset $temporary generic.max_health
+# UI更新
+function pvp_data:pvpfunctions/systems/ui/effect_changed

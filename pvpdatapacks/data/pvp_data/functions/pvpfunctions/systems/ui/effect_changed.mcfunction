@@ -22,8 +22,8 @@
     execute if entity @s[nbt={active_effects:[{id:"minecraft:resistance"}]}] run data modify storage effect_temp buff.23 set from storage effect string[23]
     execute if entity @s[nbt={active_effects:[{id:"minecraft:saturation"}]}] run data modify storage effect_temp buff.24 set from storage effect string[24]
     execute if entity @s[nbt={active_effects:[{id:"minecraft:slow_falling"}]}] run data modify storage effect_temp buff.25 set from storage effect string[25]
-    execute if entity @s[nbt={active_effects:[{id:"minecraft:speed"}]}] run data modify storage effect_temp buff.27 set from storage effect string[27]
-    execute if entity @s[nbt={active_effects:[{id:"minecraft:strength"}]}] run data modify storage effect_temp buff.28 set from storage effect string[28]
+    execute if score @s generic.speed.effect_depth matches 1.. run data modify storage effect_temp buff.27 set from storage effect string[27]
+    execute if score @s generic.attack.effect_depth matches 1.. run data modify storage effect_temp buff.28 set from storage effect string[28]
     execute if entity @s[nbt={active_effects:[{id:"minecraft:water_breathing"}]}] run data modify storage effect_temp buff.30 set from storage effect string[30]
 #デバフの種類に応じて個人ストレージに絵文字データを保存しておく
     execute if entity @s[nbt={active_effects:[{id:"minecraft:bad_omen"}]}] run data modify storage effect_temp buff.1 set from storage effect string[1]

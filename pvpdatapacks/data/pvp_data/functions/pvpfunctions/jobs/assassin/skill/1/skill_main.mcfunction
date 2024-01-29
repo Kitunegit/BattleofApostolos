@@ -28,3 +28,4 @@
 
     # 終了処理
         execute if score @s skill_1_cool matches 1 run function pvp_data:pvpfunctions/jobs/assassin/skill/1/skill_fin
+        

@@ -10,6 +10,7 @@ scoreboard players set @s generic.defense.base 200
 scoreboard players set @s generic.speed.base 10
 scoreboard players set @s generic.max_health.base 39
 scoreboard players set @s generic.attack_speed.base 140
+scoreboard players set @s generic.healing_speed 50
 function pvp_data:pvpfunctions/systems/status/update
 
 item replace entity @s armor.head with leather_helmet{Unbreakable:1b,data: ["no_drop"]}

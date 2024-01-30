@@ -15,6 +15,7 @@
     execute if entity @s[nbt={active_effects:[{id:"minecraft:instant_health"}]}] run data modify storage effect_temp buff.13 set from storage effect string[13]
     execute if entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] run data modify storage effect_temp buff.14 set from storage effect string[14]
     execute if entity @s[nbt={active_effects:[{id:"minecraft:jump_boost"}]}] run data modify storage effect_temp buff.15 set from storage effect string[15]
+
     execute if entity @s[nbt={active_effects:[{id:"minecraft:levitation"}]}] run data modify storage effect_temp buff.16 set from storage effect string[16]
     execute if entity @s[nbt={active_effects:[{id:"minecraft:luck"}]}] run data modify storage effect_temp buff.17 set from storage effect string[17]
     execute if entity @s[nbt={active_effects:[{id:"minecraft:night_vision"}]}] run data modify storage effect_temp buff.20 set from storage effect string[20]
@@ -33,6 +34,7 @@
     execute if entity @s[nbt={active_effects:[{id:"minecraft:hunger"}]}] run data modify storage effect_temp buff.11 set from storage effect string[11]
     execute if entity @s[nbt={active_effects:[{id:"minecraft:instant_damage"}]}] run data modify storage effect_temp buff.12 set from storage effect string[12]
     execute if entity @s[nbt={active_effects:[{id:"minecraft:mining_fatigue"}]}] run data modify storage effect_temp buff.18 set from storage effect string[18]
+    
     execute if entity @s[nbt={active_effects:[{id:"minecraft:nausea"}]}] run data modify storage effect_temp buff.19 set from storage effect string[19]
     execute if entity @s[nbt={active_effects:[{id:"minecraft:poison"}]}] run data modify storage effect_temp buff.21 set from storage effect string[21]
     execute if entity @s[nbt={active_effects:[{id:"minecraft:slowness"}]}] run data modify storage effect_temp buff.26 set from storage effect string[26]

@@ -40,11 +40,11 @@
 
     execute if data storage temporary: {_: {name: "generic.attack_speed"}} run scoreboard players reset @s generic.attack_speed.effect_duration
 
-    execute if data storage temporary: {_: {name: "generic.speed"}} run scoreboard players reset @s generic.defense.effect_duration
+    execute if data storage temporary: {_: {name: "generic.defense"}} run scoreboard players reset @s generic.defense.effect_duration
 
-    execute if data storage temporary: {_: {name: "generic.defense"}} run scoreboard players reset @s generic.max_health.effect_duration
+    execute if data storage temporary: {_: {name: "generic.max_health"}} run scoreboard players reset @s generic.max_health.effect_duration
 
-    execute if data storage temporary: {_: {name: "generic.max_health"}} run scoreboard players reset @s generic.speed.effect_duration
+    execute if data storage temporary: {_: {name: "generic.speed"}} run scoreboard players reset @s generic.speed.effect_duration
 
     scoreboard objectives remove system.status.effect.calc_modifier
 

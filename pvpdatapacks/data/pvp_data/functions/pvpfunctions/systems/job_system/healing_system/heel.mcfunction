@@ -14,8 +14,14 @@ scoreboard players set $100 healing_cool 100
 
 # temp + temp_healing
     scoreboard players operation $temp healing_cool += $temp_healing healing_cool
+
 # 【デバッグ用】
-tellraw @s {"score":{"name":"$temp_healing","objective":"healing_cool"}}
+    tellraw @s {"score":{"name":"$temp_healing","objective":"healing_cool"}}
+
+# 回復エフェクト
+    execute at @s positioned ~ ~1 ~ run particle minecraft:wax_on ^ ^ ^0.5 0.3 0.3 0.3 7 5 force @s
+    #execute at @s run playsound minecraft:entity.wandering_trader.drink_potion player @s ~ ~ ~ 1 2
+
 # tempをScoreTohealthに代入
     scoreboard players operation @s ScoreToHealth = $temp healing_cool
 

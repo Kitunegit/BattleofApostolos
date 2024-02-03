@@ -1,8 +1,8 @@
-function pvp_data:pvpfunctions/systems/status/effect/clear {generic.attack}
-function pvp_data:pvpfunctions/systems/status/effect/clear {generic.defense}
-function pvp_data:pvpfunctions/systems/status/effect/clear {generic.speed}
-function pvp_data:pvpfunctions/systems/status/effect/clear {generic.max_health}
-function pvp_data:pvpfunctions/systems/status/effect/clear {generic.healing_speed}
+function pvp_data:pvpfunctions/systems/status/effect/clear {name:generic.attack}
+function pvp_data:pvpfunctions/systems/status/effect/clear {name:generic.defense}
+function pvp_data:pvpfunctions/systems/status/effect/clear {name:generic.speed}
+function pvp_data:pvpfunctions/systems/status/effect/clear {name:generic.max_health}
+function pvp_data:pvpfunctions/systems/status/effect/clear {name:generic.healing_speed}
 effect clear @s
 clear @s
 scoreboard players reset @s jobscore

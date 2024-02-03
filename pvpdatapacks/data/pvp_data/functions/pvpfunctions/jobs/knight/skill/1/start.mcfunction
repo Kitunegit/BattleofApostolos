@@ -1,3 +1,8 @@
+#> pvp_data:pvpfunctions/jobs/knight/skill/1/start
+#
+# 騎士スキル1開始処理
+#
+# @within function pvp_data:pvpfunctions/jobs/knight/skill/1/main
 
 # 発動時演出
     execute at @s run playsound block.anvil.land player @a[distance=..10] ~ ~ ~ 0.5 2

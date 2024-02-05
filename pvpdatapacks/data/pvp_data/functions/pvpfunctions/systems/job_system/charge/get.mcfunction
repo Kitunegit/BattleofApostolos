@@ -1,1 +1,0 @@
-execute if score @s charge_check.Health >= @s Health run tag @s add charge_check

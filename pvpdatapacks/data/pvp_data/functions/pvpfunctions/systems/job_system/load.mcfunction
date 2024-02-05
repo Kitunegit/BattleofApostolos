@@ -68,6 +68,8 @@
     scoreboard objectives add skill_2_count dummy
     scoreboard players set $3 skill_2_count 3
     scoreboard players set $10 skill_2_count 10
+    #ウルト
+    scoreboard objectives add ult_cool dummy
 # 各役職の読み込み
     function pvp_data:pvpfunctions/jobs/knight/load
     function pvp_data:pvpfunctions/jobs/guardian/load

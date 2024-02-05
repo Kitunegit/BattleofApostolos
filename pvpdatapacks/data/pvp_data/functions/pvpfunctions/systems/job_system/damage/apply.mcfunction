@@ -16,22 +16,22 @@
 #
 # @api
 
-#実行者の保存
+# 実行者の保存
     #declare tag damage.apply_source ダメージを引き起こすエンティティが保持する一時タグ
     tag @s add damage.apply_source
 
-#負荷回避のためtarget保存
+# 負荷回避のためtarget保存
     #declare tag damage.apply_all_targets ノックバックするエンティティ全てが保持する一時タグ
     $tag $(target) add damage.apply_all_targets
 
-#ノックバック
-    #プレイヤー
+# ノックバック
+    # プレイヤー
         $execute as @e[tag=damage.apply_all_targets] if entity @s[type=player] run function pvp_data:pvpfunctions/systems/job_system/damage/knockback/player $(knockback)
 
-    #エンティティ
+    # エンティティ
         $execute as @e[tag=damage.apply_all_targets] unless entity @s[type=player] run function pvp_data:pvpfunctions/systems/job_system/damage/knockback/entity $(knockback)
 
-#ダメージ
+# ダメージ
     # ストレージに代入
         #declare storage temporary:
         $data modify storage temporary: value set value $(damage)
@@ -68,15 +68,18 @@
         scoreboard players operation $total_damage damage.apply-temporary += $input_damage damage.apply-temporary
 
     # ダメージ処理
-        execute as @e[tag=damage.apply_all_targets] run function pvp_data:pvpfunctions/systems/job_system/damage/operation with storage temporary: value
+        data modify storage temporary: config set value {fixed: false}
+
+        execute as @e[tag=damage.apply_all_targets] run function pvp_data:pvpfunctions/systems/job_system/damage/operation/
 
     # リセット
         scoreboard objectives remove damage.apply-temporary
 
-#リセット
+# リセット
     tag @s remove damage.apply_source
 
     tag @e remove damage.apply_all_targets
     tag @a remove damage.apply_all_targets
 
     data remove storage temporary: value
+    data remove storage temporary: config

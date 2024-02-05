@@ -77,3 +77,6 @@
     function pvp_data:pvpfunctions/jobs/assassin/load
     function pvp_data:pvpfunctions/jobs/warrior/load
     function pvp_data:pvpfunctions/jobs/wizard/load
+
+# シールド
+    scoreboard objectives add damage.shield.durability dummy

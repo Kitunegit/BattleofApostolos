@@ -1,0 +1,2 @@
+scoreboard players set @s aj.knight_sword.rig_loaded 1
+execute unless score @s aj.knight_sword.export_version = aj.knight_sword.export_version aj.i at @s run function animated_java:knight_sword/zzzzzzzz/mark_outdated_rig

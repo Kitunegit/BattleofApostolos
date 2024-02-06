@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.knight_sword.animation.test_ult] run function animated_java:knight_sword/zzzzzzzz/animations/test_ult/tick

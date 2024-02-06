@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.knight_sword.root] run function animated_java:knight_sword/zzzzzzzz/tick_as_root

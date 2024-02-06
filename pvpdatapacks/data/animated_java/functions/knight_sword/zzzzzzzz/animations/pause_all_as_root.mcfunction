@@ -1,0 +1,1 @@
+function animated_java:knight_sword/zzzzzzzz/animations/test_ult/pause_as_root

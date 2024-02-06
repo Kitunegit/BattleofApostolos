@@ -1,0 +1,2 @@
+execute if score @s aj.anim_time matches 0..63 run function animated_java:knight_sword/zzzzzzzz/animations/test_ult/tree/branch_0_63
+execute if score @s aj.anim_time matches 64..71 run function animated_java:knight_sword/zzzzzzzz/animations/test_ult/tree/branch_64_71

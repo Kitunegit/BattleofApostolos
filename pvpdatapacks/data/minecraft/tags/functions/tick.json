@@ -1,3 +1,6 @@
 {
-    "values":["pvp_data:pvpfunctions/systems/main"]
+	"values": [
+		"pvp_data:pvpfunctions/systems/main",
+		"animated_java:tick"
+	]
 }

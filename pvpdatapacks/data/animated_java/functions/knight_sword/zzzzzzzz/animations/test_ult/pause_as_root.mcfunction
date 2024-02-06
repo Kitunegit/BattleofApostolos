@@ -1,0 +1,1 @@
+tag @s remove aj.knight_sword.animation.test_ult

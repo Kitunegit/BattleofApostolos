@@ -1,0 +1,3 @@
+execute if score @s aj.knight_sword.animation.test_ult.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:knight_sword/zzzzzzzz/animations/test_ult/end_loop
+execute if score @s aj.knight_sword.animation.test_ult.loop_mode = $aj.loop_mode.once aj.i run function animated_java:knight_sword/animations/test_ult/stop
+execute if score @s aj.knight_sword.animation.test_ult.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:knight_sword/animations/test_ult/pause

@@ -68,7 +68,7 @@
         scoreboard players operation $total_damage damage.apply-temporary += $input_damage damage.apply-temporary
 
     # ダメージ処理
-        data modify storage temporary: config set value {fixed: false}
+        data modify storage temporary: config.fixed set value false
 
         execute as @e[tag=damage.apply_all_targets] run function pvp_data:pvpfunctions/systems/job_system/damage/operation/
 

@@ -43,7 +43,7 @@
         execute store result score @e[tag=damage.apply_all_targets] damage.apply-temporary run data get storage temporary: value.amount 100
 
     # ダメージ処理
-        data modify storage temporary: config set value {fixed: true}
+        data modify storage temporary: config.fixed set value true
 
         execute as @e[tag=damage.apply_all_targets] run function pvp_data:pvpfunctions/systems/job_system/damage/operation/
 

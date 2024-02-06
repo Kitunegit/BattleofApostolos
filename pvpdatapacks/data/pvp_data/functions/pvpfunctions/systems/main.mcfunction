@@ -15,7 +15,7 @@ tag @a[gamemode=!spectator] add player
     function pvp_data:pvpfunctions/systems/status/tick
 
 # シールド
-    execute as @e[scores={damage.shield.durability=1..}] at @s run particle dust 0 0.75 1 1 ~ ~ ~ 0.4 0.8 0.4 0 8 force
+    execute as @e[scores={damage.shield.durability=1..}] at @s run particle dust 0 0.75 1 1 ~ ~ ~ 0.4 0.8 0.4 0 2 force
 
 # ダメージ表示
     scoreboard players add @e[tag=damage.indicate_display] damage.display_time 1

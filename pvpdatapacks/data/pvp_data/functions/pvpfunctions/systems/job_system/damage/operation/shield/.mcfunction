@@ -19,7 +19,7 @@
 # モンテカルロ法による球面描画
     # あまりに長すぎたので、まだDHPが対応してないけど改行機能使ってます
     execute as @e[tag=damage.shield.center] at @e[tag=damage.shield.axis] at @e[tag=damage.shield.axis] at @e[tag=damage.shield.axis] at @e[tag=damage.shield.axis] \
-    at @e[tag=damage.shield.axis] at @e[tag=damage.shield.axis] at @e[tag=damage.shield.axis] at @e[tag=damage.shield.axis] at @s \
+    at @e[tag=damage.shield.axis] at @e[tag=damage.shield.axis] at @e[tag=damage.shield.axis] at @s \
     rotated as @e[tag=damage.shield.axis,sort=random,limit=1] rotated ~ 0 positioned ^ ^ ^4 \
     rotated as @e[tag=damage.shield.axis,sort=random,limit=1] positioned ^4 ^ ^ \
     rotated as @e[tag=damage.shield.axis,sort=random,limit=1] positioned ^ ^ ^4 \

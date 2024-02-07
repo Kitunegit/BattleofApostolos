@@ -23,3 +23,6 @@ tag @a[gamemode=!spectator] add player
     execute as @e[tag=damage.indicate_display] at @s rotated ~ -15 run tp ^ ^ ^0.02
 
     kill @e[tag=damage.indicate_display,scores={damage.display_time=20..}]
+
+# 消費アイテム関連
+    function pvp_data:pvpfunctions/systems/consume_item/tick

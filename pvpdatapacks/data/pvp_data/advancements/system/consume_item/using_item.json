@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "nbt": "{consume: {}}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "pvp_data:pvpfunctions/systems/consume_item/using"
+    }
+}

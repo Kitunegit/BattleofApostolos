@@ -25,6 +25,6 @@
 
     execute if data entity @s SelectedItem.tag.consume if score $remainder system.consume_item.using_time matches 0 unless entity @s[tag=system.consume_item.completed] if score @s system.consume_item.cool_time matches 0 run function pvp_data:pvpfunctions/systems/consume_item/sound with entity @s SelectedItem.tag.consume.sound
 
-    execute unless data entity @s SelectedItem.tag.consume if data entity @s Inventory[{Slot: -106b}].tag.consume if score $remainder system.consume_item.using_time matches 0 run function pvp_data:pvpfunctions/systems/consume_item/sound with entity @s Inventory[{Slot: -106b}].tag.consume.sound
+    execute unless data entity @s SelectedItem.tag.consume if data entity @s Inventory[{Slot: -106b}].tag.consume if score $remainder system.consume_item.using_time matches 0 unless entity @s[tag=system.consume_item.completed] if score @s system.consume_item.cool_time matches 0 run function pvp_data:pvpfunctions/systems/consume_item/sound with entity @s Inventory[{Slot: -106b}].tag.consume.sound
 
     scoreboard players reset $remainder system.consume_item.using_time

@@ -11,7 +11,9 @@
     # マーカー召喚
         execute at @s run summon marker ~ ~ ~ {Tags:["Charge.ViewPointSet"]}
     # マーカーの向きを変更
-        execute at @s at @e[tag=Charge.ViewPointSet,tag=!Charge.facing] rotated as @s as @e[tag=Charge.ViewPointSet,tag=!Charge.facing] run tp @s ^ ^ ^10 facing ^ ^ ^1
+        execute rotated as @s as @e[tag=Charge.ViewPointSet,tag=!Charge.facing] run tp @s ^ ^ ^-1 facing ~ ~ ~
+    # 位置調整
+        execute as @e[tag=Charge.ViewPointSet,tag=!Charge.facing] at @s run tp @s ^ ^ ^2
     # マーカーにスコアを割り振る
         scoreboard players operation @e[tag=Charge.ViewPointSet,tag=!Charge.facing] Charge.id = @s Charge.id
     # マーカーにタグを付与

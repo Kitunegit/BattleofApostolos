@@ -43,4 +43,5 @@
     execute if score @s death matches 1.. run effect give @s instant_health 1 50 true
     execute if score @s death matches 1.. run gamemode spectator @s
     execute if score @s death matches 1.. run tag @s remove player
+    execute if score @s death matches 1.. run function pvp_data:pvpfunctions/systems/status/update
     execute if score @s death matches 1.. run scoreboard players set @s death 0

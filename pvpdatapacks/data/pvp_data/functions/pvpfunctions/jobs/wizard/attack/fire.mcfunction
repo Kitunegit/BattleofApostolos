@@ -5,5 +5,4 @@ execute at @s run playsound minecraft:block.enchantment_table.use player @a[dist
 tag @s add wizard.magic_fire
 $execute if entity @s[tag=wizard_black] run function pvp_data:pvpfunctions/jobs/wizard/attack/fire/black {pos:"$(summon_pos)"}
 $execute if entity @s[tag=wizard_white] run function pvp_data:pvpfunctions/jobs/wizard/attack/fire/white {pos:"$(summon_pos)"}
-$execute unless entity @s[tag=wizard_white] unless entity @s[tag=wizard_black] run function pvp_data:pvpfunctions/jobs/wizard/attack/fire/no_atr {pos:"$(summon_pos)"}
 tag @s remove wizard.magic_fire

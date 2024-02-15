@@ -12,4 +12,4 @@ execute if predicate pvp_data:r_click/cmd31 if score @s skill_1_cool matches ..0
     execute if score @s skill_1_cool matches 1 run function pvp_data:pvpfunctions/jobs/knight/skill/1/fin
 
 #バリア
-    execute if score @s skill_1_con matches 0 run clear @s barrier{CustomModelData:31} 1
+    #execute if score @s skill_1_con matches 0 run clear @s barrier{CustomModelData:31} 1

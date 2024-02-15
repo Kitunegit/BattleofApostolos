@@ -1,8 +1,9 @@
 {
     "values": [
       "pvp_data:wizard/wizard_normal_magic",
-      "pvp_data:wizard/asassin_sp",
-      "pvp_data:wizard/warrior_sp",
+      "pvp_data:assassin/asassin_sp",
+      "pvp_data:knight/knight_sp",
+      "pvp_data:warrior/warrior_sp",
       "pvp_data:system/override"
     ]
 }

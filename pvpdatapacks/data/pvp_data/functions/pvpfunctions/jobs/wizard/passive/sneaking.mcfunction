@@ -5,5 +5,4 @@ execute if score @s sneaking matches 15 at @s run playsound minecraft:entity.end
 # Sneaking20
     execute if score @s sneaking matches 20 run scoreboard players add @s ult_cool 1
     execute if score @s sneaking matches 20 if entity @s[tag=wizard_white] run function pvp_data:pvpfunctions/jobs/wizard/passive/change_black
-    execute if score @s sneaking matches 20 if entity @s[tag=wizard_black] run function pvp_data:pvpfunctions/jobs/wizard/passive/change_no
-    execute if score @s sneaking matches 20 unless entity @s[tag=wizard_black] unless entity @s[tag=wizard_white] run function pvp_data:pvpfunctions/jobs/wizard/passive/change_white
+    execute if score @s sneaking matches 20 if entity @s[tag=wizard_black] run function pvp_data:pvpfunctions/jobs/wizard/passive/change_white

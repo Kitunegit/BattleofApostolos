@@ -37,20 +37,31 @@
         #CT計算用
         scoreboard objectives add temp.cool_can dummy
         scoreboard players set $20 temp.cool_can 20
+        
         #スキル1のCT
         scoreboard objectives add skill_1_cool dummy
         #スキル2のCT
         scoreboard objectives add skill_2_cool dummy
         #特殊技のCT
         scoreboard objectives add special_cool dummy
+        
         #特殊技のカウントダウン等用共通スコア
         scoreboard objectives add special_count dummy
-        #スキル1のバリア減らし用共通スコア
+        
+        #スキル1のCT初期地(1/10)
         scoreboard objectives add skill_1_con dummy
-        #スキル2のバリア減らし用共通スコア
+        #スキル2のCT初期地(1/10)
         scoreboard objectives add skill_2_con dummy
-        #特殊技のバリア減らし用共通スコア
+        #特殊技のCT初期地(1/10)
         scoreboard objectives add special_con dummy
+
+        #スキル1のCT初期地(1/10)
+        scoreboard objectives add skill1.ct_data dummy
+        #スキル2のCT初期地(1/10)
+        scoreboard objectives add skill2.ct_data dummy
+        #特殊技のCT初期地(1/10)
+        scoreboard objectives add special.ct_data dummy
+
         #ジャストガードの判定用
         scoreboard objectives add just_guard dummy
         #ジャストガードのCT

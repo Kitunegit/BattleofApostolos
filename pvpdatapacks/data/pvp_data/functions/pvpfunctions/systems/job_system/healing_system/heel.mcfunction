@@ -1,22 +1,17 @@
 scoreboard players set $100 healing_cool 100
+scoreboard players set $5 healing_cool 5
+scoreboard players set $10 healing_cool 10
 
 # tempに体力を代入
     scoreboard players operation $temp healing_cool = @s Health
-
 # tempを100倍
     scoreboard players operation $temp healing_cool *= $100 healing_cool
-
-# temp_healingに1を代入
-    scoreboard players set $temp_healing healing_cool 1
-
-# temp_healingにgeneric.healing_speedを掛ける
-    scoreboard players operation $temp_healing healing_cool *= @s generic.healing_speed
-
-# temp + temp_healing
+# temp_healingに100を代入
+    scoreboard players set $temp_healing healing_cool 100
+# temp_healingにgeneric.healing_speedを足す
+    scoreboard players operation $temp_healing healing_cool += @s generic.healing_speed
+# 回復バフを足す
     scoreboard players operation $temp healing_cool += $temp_healing healing_cool
-
-# 【デバッグ用】
-    tellraw @s {"score":{"name":"$temp_healing","objective":"healing_cool"}}
 
 # 回復エフェクト
     execute at @s positioned ~ ~1 ~ run particle minecraft:wax_on ^ ^ ^0.5 0.3 0.3 0.3 7 5 force @s
@@ -28,6 +23,7 @@ scoreboard players set $100 healing_cool 100
 # リセット
     scoreboard players reset $temp healing_cool
     scoreboard players reset $temp_healing healing_cool
+    scoreboard players reset $100 healing_cool
 # ct
     scoreboard players set @s healing_cool 15
 

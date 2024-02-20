@@ -1,0 +1,17 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "player": [],
+          "damage": {
+            "blocked": true
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "pvp_data:pvpfunctions/systems/advancements/shield_blocked"
+    }
+  }
+  

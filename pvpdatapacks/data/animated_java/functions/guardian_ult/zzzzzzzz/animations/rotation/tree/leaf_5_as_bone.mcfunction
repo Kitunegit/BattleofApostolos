@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.guardian_ult.bone.bone] run data modify entity @s {} merge value {transformation:[-1.7320508075688772f,0f,1f,-0.15817562500000001f,0f,2f,0f,0.5556238940020035f,-1f,0f,-1.7320508075688772f,0.33250793868263706f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.guardian_ult.bone.bone5] run data modify entity @s {} merge value {transformation:[1.7320508075688774f,0f,-0.9999999999999998f,0.18557437499999999f,0f,2f,0f,0.6073274425843002f,0.9999999999999998f,0f,1.7320508075688774f,-0.2628845264191645f,0f,0f,0f,1f],start_interpolation:0}

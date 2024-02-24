@@ -44,7 +44,10 @@
         scoreboard objectives add skill_2_cool dummy
         #特殊技のCT
         scoreboard objectives add special_cool dummy
-        
+        #パッシブ用
+        scoreboard objectives add passive_cool dummy
+        #パッシブ用
+        scoreboard objectives add passive_con dummy
         #特殊技のカウントダウン等用共通スコア
         scoreboard objectives add special_count dummy
         
@@ -77,6 +80,8 @@
     scoreboard objectives add skill_1_count dummy
     #スキル2
     scoreboard objectives add skill_2_count dummy
+    #ウルト
+    scoreboard objectives add ult_count dummy
     scoreboard players set $3 skill_2_count 3
     scoreboard players set $10 skill_2_count 10
     #ウルト

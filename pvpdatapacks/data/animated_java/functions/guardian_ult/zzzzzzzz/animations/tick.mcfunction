@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.guardian_ult.animation.rotation] run function animated_java:guardian_ult/zzzzzzzz/animations/rotation/tick

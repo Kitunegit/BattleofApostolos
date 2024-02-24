@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:guardian_ult/zzzzzzzz/animations/rotation/tree/leaf_48_as_bone

@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:guardian_ult/zzzzzzzz/apply_variant/default/as_bone

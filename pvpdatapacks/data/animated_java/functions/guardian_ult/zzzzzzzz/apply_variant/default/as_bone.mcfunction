@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.guardian_ult.bone.bone] run data modify entity @s item.tag.CustomModelData set value 6
+execute if entity @s[tag=aj.guardian_ult.bone.bone5] run data modify entity @s item.tag.CustomModelData set value 7

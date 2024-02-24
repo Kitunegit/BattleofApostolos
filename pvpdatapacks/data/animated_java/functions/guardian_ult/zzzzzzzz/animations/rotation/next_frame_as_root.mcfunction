@@ -1,0 +1,1 @@
+function animated_java:guardian_ult/zzzzzzzz/animations/rotation/tick_animation

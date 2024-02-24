@@ -1,6 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"animated_java:knight_sword/zzzzzzzz/tick"
+		"animated_java:knight_sword/zzzzzzzz/tick",
+		"animated_java:guardian_ult/zzzzzzzz/tick"
 	]
 }

@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.guardian_ult.root] run function animated_java:guardian_ult/zzzzzzzz/tick_as_root

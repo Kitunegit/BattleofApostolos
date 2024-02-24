@@ -1,3 +1,9 @@
+#> pvp_data:pvpfunctions/jobs/guardian/ult/ult_fin
+#
+# 守護者ウルトCT終了処理
+#
+# @internal
+
 #守護者終了処理
 scoreboard players set @s ult_cool -1
 execute at @s run playsound entity.generic.extinguish_fire player @s ~ ~ ~ 0.5 

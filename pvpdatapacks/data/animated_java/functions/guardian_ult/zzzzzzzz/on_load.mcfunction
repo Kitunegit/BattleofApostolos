@@ -1,0 +1,2 @@
+scoreboard players set @s aj.guardian_ult.rig_loaded 1
+execute unless score @s aj.guardian_ult.export_version = aj.guardian_ult.export_version aj.i at @s run function animated_java:guardian_ult/zzzzzzzz/mark_outdated_rig

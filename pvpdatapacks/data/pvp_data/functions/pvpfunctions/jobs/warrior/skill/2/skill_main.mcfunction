@@ -1,8 +1,13 @@
-execute if score @s warrior_skill_2_timer matches 15 run effect give @s levitation 1 255 true
-execute if score @s warrior_skill_2_timer matches 3..15 run effect give @s levitation 1 255 true
-execute if score @s warrior_skill_2_timer matches 2 run effect clear @s levitation
-execute if score @s warrior_skill_2_timer matches 1 run effect give @s levitation 1 128 true
-execute if score @s warrior_skill_2_timer matches 1 at @s rotated ~ 90 run function delta:api/launch_looking
-execute if score @s warrior_skill_2_timer matches 1 run tag @s add warrior_jump_hover
+#> pvp_data:pvpfunctions/jobs/warrior/skill/2/skill_main
+#
+# 戦士スキル2効果中処理
+#
+# @internal
 
-scoreboard players remove @s warrior_skill_2_timer 1
+execute if score @s skill_2_count matches 15 run scoreboard players set $strength delta.api.launch 11000
+execute if score @s skill_2_count matches 15 run execute rotated ~ -90 run function delta:api/launch_looking
+execute if score @s skill_2_count matches 2 run scoreboard players set $strength delta.api.launch 50000
+execute if score @s skill_2_count matches 2 at @s rotated ~ 90 run function delta:api/launch_looking
+execute if score @s skill_2_count matches 1 run tag @s add warrior_jump_hover
+
+scoreboard players remove @s skill_2_count 1

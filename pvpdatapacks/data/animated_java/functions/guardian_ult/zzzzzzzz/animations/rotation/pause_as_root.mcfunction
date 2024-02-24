@@ -1,0 +1,1 @@
+tag @s remove aj.guardian_ult.animation.rotation

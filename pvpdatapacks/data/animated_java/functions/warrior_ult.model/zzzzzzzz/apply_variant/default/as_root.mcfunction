@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:warrior_ult.model/zzzzzzzz/apply_variant/default/as_bone

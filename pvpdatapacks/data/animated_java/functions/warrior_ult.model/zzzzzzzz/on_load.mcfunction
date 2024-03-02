@@ -1,0 +1,2 @@
+scoreboard players set @s aj.warrior_ult.model.rig_loaded 1
+execute unless score @s aj.warrior_ult.model.export_version = aj.warrior_ult.model.export_version aj.i at @s run function animated_java:warrior_ult.model/zzzzzzzz/mark_outdated_rig

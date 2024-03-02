@@ -1,0 +1,1 @@
+tag @s remove aj.warrior_ult.model.animation.ult_animation

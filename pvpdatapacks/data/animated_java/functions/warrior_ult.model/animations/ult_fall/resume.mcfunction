@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.warrior_ult.model.root] run function animated_java:warrior_ult.model/zzzzzzzz/animations/ult_fall/resume_as_root
+execute if entity @s[tag=!aj.warrior_ult.model.root] run tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},{"text":"ERROR ☠","color":"red"},{"text":" > ","color":"gray"},[{"text":"The function","color":"yellow"},{"text":" animated_java:warrior_ult.model/animations/ult_fall/resume ","color":"blue"},{"text":"must be run"},{"text":" as ","color":"red"},{"text":"the root entity!"}]]

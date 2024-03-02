@@ -4,6 +4,7 @@
 		"delta:internal/technical/load",
 		"oh_my_dat:sys/load",
 		"animated_java:knight_sword/zzzzzzzz/load",
-		"animated_java:guardian_ult/zzzzzzzz/load"
+		"animated_java:guardian_ult/zzzzzzzz/load",
+		"animated_java:warrior_ult.model/zzzzzzzz/load"
 	]
 }

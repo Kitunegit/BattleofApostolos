@@ -1,0 +1,2 @@
+function animated_java:warrior_ult.model/zzzzzzzz/animations/ult_animation/pause_as_root
+function animated_java:warrior_ult.model/zzzzzzzz/animations/ult_fall/pause_as_root

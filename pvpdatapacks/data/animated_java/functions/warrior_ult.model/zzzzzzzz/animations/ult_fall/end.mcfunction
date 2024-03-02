@@ -1,0 +1,3 @@
+execute if score @s aj.warrior_ult.model.animation.ult_fall.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:warrior_ult.model/zzzzzzzz/animations/ult_fall/end_loop
+execute if score @s aj.warrior_ult.model.animation.ult_fall.loop_mode = $aj.loop_mode.once aj.i run function animated_java:warrior_ult.model/animations/ult_fall/stop
+execute if score @s aj.warrior_ult.model.animation.ult_fall.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:warrior_ult.model/animations/ult_fall/pause

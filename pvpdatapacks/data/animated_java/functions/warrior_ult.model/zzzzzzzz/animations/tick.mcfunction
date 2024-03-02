@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.warrior_ult.model.animation.ult_animation] run function animated_java:warrior_ult.model/zzzzzzzz/animations/ult_animation/tick
+execute if entity @s[tag=aj.warrior_ult.model.animation.ult_fall] run function animated_java:warrior_ult.model/zzzzzzzz/animations/ult_fall/tick

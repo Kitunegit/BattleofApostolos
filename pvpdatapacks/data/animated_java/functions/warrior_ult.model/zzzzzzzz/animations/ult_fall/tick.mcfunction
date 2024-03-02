@@ -1,0 +1,2 @@
+execute if score @s aj.tween_time matches 1.. run function animated_java:warrior_ult.model/zzzzzzzz/animations/ult_fall/tick_tween
+execute unless score @s aj.tween_time matches 1.. run function animated_java:warrior_ult.model/zzzzzzzz/animations/ult_fall/tick_animation

@@ -6,4 +6,4 @@
 #スコア設定
     item modify entity @s hotbar.2 pvp_data:system/tool_damage/set_damage
     scoreboard players set @s skill_2_count 30
-    scoreboard players set @s skill_2_cool 400
+    scoreboard players set @s skill_2_cool 20

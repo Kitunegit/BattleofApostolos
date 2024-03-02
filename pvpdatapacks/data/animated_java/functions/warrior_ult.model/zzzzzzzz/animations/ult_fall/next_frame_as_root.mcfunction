@@ -1,0 +1,1 @@
+function animated_java:warrior_ult.model/zzzzzzzz/animations/ult_fall/tick_animation

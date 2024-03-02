@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.warrior_ult.model.root] run function animated_java:warrior_ult.model/zzzzzzzz/tick_as_root

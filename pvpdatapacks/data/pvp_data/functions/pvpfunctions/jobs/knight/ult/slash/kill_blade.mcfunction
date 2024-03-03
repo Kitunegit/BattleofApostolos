@@ -4,4 +4,4 @@
 #
 # @internal
 
-kill @e[tag=Knight_ult.kill]
+execute as @e[tag=Knight_ult.kill] run function animated_java:knight_sword/remove/rigs

@@ -19,6 +19,7 @@
     scoreboard objectives add Charge.Health dummy
 # 消し忘れ対策
     tag @s remove Charge.Stop
+    tag @s remove Charge.Miss
 # 入力値をストレージに代入
     $data modify storage temporary: charge set value {isMoving: $(isMoving)b ,isRotation:$(isRotation)b,isCheckHealth:$(isCheckHealth),duration:$(duration)}
 # 効果時間をスコアに代入

@@ -5,4 +5,4 @@
 # @internal
 
 tag @s remove knight_ult.FirstCharge
-function pvp_data:pvpfunctions/systems/job_system/charge/apply {isMoving:false,isRotation:false,isCheckHealth:15,duration:30}
+function pvp_data:pvpfunctions/systems/job_system/charge/apply {isMoving:false,isRotation:false,isCheckHealth:15,duration:31}

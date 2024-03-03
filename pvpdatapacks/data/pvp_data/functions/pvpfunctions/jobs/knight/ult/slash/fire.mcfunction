@@ -16,7 +16,7 @@
     tag @e[tag=Knight_ult.Blade,tag=!Knight_ult.facing] add Knight_ult.facing
 # リセット
     tag @s remove Charge.Stop
-    tag @e[tag=knight_ult] add Knight_ult.kill
+    execute at @s run tag @e[tag=knight_ult,limit=1,sort=nearest] add Knight_ult.kill
     schedule function pvp_data:pvpfunctions/jobs/knight/ult/slash/kill_blade 10t
     team remove Glowing.Red
 # タグ付け

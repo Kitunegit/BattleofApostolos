@@ -7,7 +7,7 @@
 # 演出
     execute at @s run playsound block.beacon.deactivate player @a[distance=..10] ~ ~ ~ 0.7 0.5
 # チャージ開始
-    function pvp_data:pvpfunctions/systems/job_system/charge/apply {isMoving:false,isRotation:true,isCheckHealth:15,duration:200}
+    function pvp_data:pvpfunctions/systems/job_system/charge/apply {isMoving:false,isRotation:true,isCheckHealth:15,duration:100}
 # モデル
     execute at @s rotated ~ 0 positioned ~ ~1 ~ run function animated_java:warrior_ult.model/summon
     execute at @s positioned ~ ~1 ~ run tag @e[type=#animated_java:root,type=item_display] add warrior.ult_model
@@ -18,3 +18,4 @@
 # スコア設定
     scoreboard players set @s ult_count 120
     scoreboard players set @s ult_cool 120
+    tag @s add Warrior.Ult

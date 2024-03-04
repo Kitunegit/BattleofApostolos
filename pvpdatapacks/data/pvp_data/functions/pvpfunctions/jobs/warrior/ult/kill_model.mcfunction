@@ -5,4 +5,3 @@
 # @internal
 
 execute as @e[tag=warrior.ult_model.kill] run function animated_java:warrior_ult.model/remove/rigs
-say test

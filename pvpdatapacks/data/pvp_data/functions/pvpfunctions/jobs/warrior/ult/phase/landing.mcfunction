@@ -11,13 +11,13 @@
 # モデルアニメーション変更
     execute at @s as @e[tag=warrior.ult_model,limit=1] run function animated_java:warrior_ult.model/animations/ult_fall/play
     execute at @s run tag @e[tag=warrior.ult_model,limit=1,sort=nearest] add warrior.ult_model.kill
-    schedule function pvp_data:pvpfunctions/jobs/warrior/ult/kill_model 10t
+    schedule function pvp_data:pvpfunctions/jobs/warrior/ult/kill_model 20t
 # ダメージ
     # 自爆回避
         tag @s add Warrior.Ult_Avoid
     # 与える
-    execute at @s run function pvp_data:pvpfunctions/systems/job_system/damage/apply_fixed {damage: {amount: 777.0f,type: "pvp_data:warrior/warrior_ult"},knockback: {horizontal: 2.5d,vertical: 3.5d},target: "@e[tag=player,r=8,tag=!Warrior.Ult_Avoid]"}
-    execute at @s if entity @e[tag=player,distance=..8,tag=!Warrior.Ult_Avoid] at @s run playsound minecraft:item.trident.return player @s ~ ~ ~ 3 0.1
+    execute at @s if entity @e[tag=player,distance=..8,tag=!Warrior.Ult_Avoid] at @s run playsound minecraft:item.trident.return player @s ~ ~ ~ 3 0.5
+    execute at @s run function pvp_data:pvpfunctions/systems/job_system/damage/apply_fixed {damage: {amount: 777.0f,type: "pvp_data:warrior/warrior_ult"},knockback: {horizontal: 2.5d,vertical: 3.5d},target: "@e[tag=player,distance=..8,tag=!Warrior.Ult_Avoid]"}
 # リセット
     tag @s remove Warrior.Ult_Jump
     tag @s remove Warrior.Ult_Avoid

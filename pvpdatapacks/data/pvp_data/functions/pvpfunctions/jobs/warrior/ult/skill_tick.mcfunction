@@ -18,3 +18,6 @@
     execute if score @s ult_count matches 20 run function pvp_data:pvpfunctions/jobs/warrior/ult/phase/jump
 # 落下開始
     execute if score @s ult_count matches 0 run function pvp_data:pvpfunctions/jobs/warrior/ult/phase/fall
+
+# 失敗処理
+    execute if entity @s[tag=Charge.Miss] run function pvp_data:pvpfunctions/jobs/warrior/ult/miss

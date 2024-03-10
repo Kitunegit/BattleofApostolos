@@ -19,8 +19,8 @@
 # macro
     $data modify storage border: config set value $(config)
 
-# disable_by_reloading
-    data modify storage border: config.disable_by_reloading set from storage border: temporary.disable_by_reloading
+# disabled_by_reloading
+    data modify storage border: config.disabled_by_reloading set from storage border: temporary.disabled_by_reloading
 
 # remove
     data remove storage data_checker: _

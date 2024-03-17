@@ -4,4 +4,4 @@
 #
 # @internal
 execute at @s facing entity @e[tag=assassin.sp_target,limit=1] eyes run tp @s ^ ^ ^0.2
-execute unless entity @e[tag=assassin.sp_target,limit=1,distance=..2] run function pvp_data:pvpfunctions/jobs/assassin/special/rush
+execute at @s unless entity @e[tag=assassin.sp_target,distance=..2] run function pvp_data:pvpfunctions/jobs/assassin/special/rush

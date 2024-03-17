@@ -1,12 +1,10 @@
-#スキル1処理
+#> pvp_data:pvpfunctions/jobs/assassin/special/skill_main
+#
+# 暗殺者特殊攻撃常時実行
+#
+# @internal
     #発動処理
-        execute if predicate pvp_data:r_click/cmd6 if score @s special_cool matches ..0 if score @s r_click matches 1.. at @s positioned ^ ^ ^8 at @e[distance=..7.99,tag=player] rotated ~ 0 if block ^ ^ ^-1 air run function pvp_data:pvpfunctions/jobs/assassin/special/skill_start
-        execute if predicate pvp_data:r_click/cmd6 if score @s special_cool matches ..0 if score @s r_click matches 1.. at @s positioned ^ ^ ^8 unless entity @e[distance=..7.99,tag=player] run tag @s add assassin_sp_no_enmy
-        execute if entity @s[tag=assassin_sp_no_enmy] run scoreboard players set @s r_click 0
-        execute if entity @s[tag=assassin_sp_no_enmy] at @s run playsound minecraft:block.note_block.bass player @s ~ ~ ~ 1 0.5
-        tag @s remove assassin_sp_no_enmy
-        execute if predicate pvp_data:r_click/cmd6 if score @s special_cool matches 0.. if score @s r_click matches 1.. at @s run playsound minecraft:block.note_block.bass player @s ~ ~ ~ 1 0.5
-        execute if predicate pvp_data:r_click/cmd6 if score @s special_cool matches 0.. if score @s r_click matches 1.. run scoreboard players set @s r_click 0
+        execute if predicate pvp_data:r_click/cmd6 if score @s special_cool matches ..0 if score @s r_click matches 1.. run function pvp_data:pvpfunctions/jobs/assassin/special/start
     #バリア減らし
         execute if score @s special_cool matches 595 run function pvp_data:pvpfunctions/jobs/assassin/special/skill2
 

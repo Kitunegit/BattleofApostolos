@@ -7,7 +7,7 @@ scoreboard players set @s special_cool 0
 scoreboard players add @s warrior_used 1
 
 scoreboard players set @s skill1.ct_data 30
-scoreboard players set @s skill2.ct_data 16
+scoreboard players set @s skill2.ct_data 17
 
 scoreboard players set @s generic.attack.base 400
 scoreboard players set @s generic.defense.base 300

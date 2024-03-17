@@ -14,3 +14,6 @@ say load.mcfunctionがロードされました
     scoreboard objectives add system.consume_item.time_required dummy
 
     scoreboard objectives add system.consume_item.cool_time dummy
+
+# ボーダー
+    function pvp_data:pvpfunctions/systems/border/init

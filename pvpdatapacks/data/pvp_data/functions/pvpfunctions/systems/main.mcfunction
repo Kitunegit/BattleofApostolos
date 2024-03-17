@@ -26,3 +26,6 @@ tag @a[gamemode=!spectator] add player
 
 # 消費アイテム関連
     function pvp_data:pvpfunctions/systems/consume_item/tick
+
+# ボーダー
+    function pvp_data:pvpfunctions/systems/border/tick

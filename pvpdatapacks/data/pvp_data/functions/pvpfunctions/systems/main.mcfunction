@@ -1,5 +1,4 @@
-function pvp_data:gimmick_system/main
-function pvp_data:pvpfunctions/systems/advancements/main
+#function pvp_data:pvpfunctions/systems/advancements/main
 execute as @a[scores={jobscore=0..}] run function pvp_data:pvpfunctions/systems/job_system/main
 function pvp_data:pvpfunctions/systems/area_system/main
 

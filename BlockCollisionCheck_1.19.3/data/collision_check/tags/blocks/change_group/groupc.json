@@ -1,9 +1,0 @@
-{
-    "values": [
-        "minecraft:snow",
-        "minecraft:ladder",
-        "minecraft:chain",
-        "#collision_check:change_collision/rods",
-        "minecraft:bell"
-    ]
-}

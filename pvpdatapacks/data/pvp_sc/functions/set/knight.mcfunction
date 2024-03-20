@@ -4,7 +4,7 @@ scoreboard players set @s skill_1_cool 0
 scoreboard players set @s skill_2_cool 0
 scoreboard players set @s ult_cool 0
 scoreboard players add @s knight_used 1
-scoreboard players set @s special.ct_data 30
+scoreboard players set @s special.ct_data 100
 scoreboard players set @s skill1.ct_data 19
 scoreboard players set @s skill2.ct_data 25
 scoreboard players set @s generic.attack.base 300

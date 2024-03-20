@@ -14,10 +14,12 @@
 # 処理
     execute at @s positioned ^ ^ ^4 run tag @e[distance=..3.99,tag=player,limit=1,sort=nearest] add assassin.sp_target
     execute at @s run function pvp_data:pvpfunctions/jobs/assassin/special/rush
-
+# CT
+    item modify entity @s hotbar.0 pvp_data:system/tool_damage/set_damage
+    scoreboard players set @s special_cool 300
 # 演出
     execute at @s run playsound minecraft:entity.player.attack.crit player @a[distance=..2] ~ ~ ~ 1 0.75
-    execute at @e[tag=assassin.sp_target,limit=1] rotated as @e[tag=assassin.sp_target,limit=1] positioned ^ ^ ^-1 run tp @s ~ ~ ~
+    execute at @e[tag=assassin.sp_target,limit=1] rotated as @e[tag=assassin.sp_target,limit=1] positioned ^ ^ ^-1 run tp @s ~ ~ ~ facing entity @e[tag=assassin.sp_target,limit=1] feet
 
 # ダメージ
     execute at @s run function pvp_data:pvpfunctions/systems/job_system/damage/apply_fixed {damage: {amount: 4.0f,type: "pvp_data:assassin/assassin_sp"},knockback: {horizontal: 0.5d,vertical: 0.5d},target: "@e[tag=assassin.sp_target]"}

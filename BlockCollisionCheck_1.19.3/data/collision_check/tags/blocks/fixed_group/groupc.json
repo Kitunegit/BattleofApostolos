@@ -1,9 +1,0 @@
-{
-    "values": [
-        "minecraft:lily_pad",
-        "minecraft:dragon_egg",
-        "minecraft:conduit",
-        "#minecraft:candle_cakes",
-        "#collision_check:fixed_collision/azalea"
-    ]
-}

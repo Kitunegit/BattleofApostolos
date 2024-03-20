@@ -1,7 +1,0 @@
-{
-    "replace": true,
-    "values": [
-        "minecraft:light",
-        "minecraft:structure_void"
-      ]
-}

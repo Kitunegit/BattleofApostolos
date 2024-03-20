@@ -16,7 +16,7 @@ scoreboard players set @s special_cool 0
 scoreboard players add @s assassin_used 1
 scoreboard players set @s special.ct_data 75
 scoreboard players set @s skill1.ct_data 25
-scoreboard players set @s skill2.ct_data 25
+scoreboard players set @s skill2.ct_data 12
 
 item replace entity @s armor.chest with leather_chestplate{Unbreakable:1b,data: ["no_drop"]}
 item replace entity @s armor.legs with leather_leggings{Unbreakable:1b,data: ["no_drop"]}

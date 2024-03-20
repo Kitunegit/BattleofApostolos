@@ -1,3 +1,9 @@
-#守護者終了処理
-execute at @s run playsound entity.generic.extinguish_fire player @s ~ ~ ~ 0.5 
-item replace entity @s hotbar.2 with carrot_on_a_stick{display:{Name:'{"text":"漆黒の瞳","color":"blue","bold":true,"italic":false}',Lore:['{"text":"漆黒の靄を飛ばす。","color":"white","italic":false}','{"text":"この靄に触れたら視界を奪われる。","color":"white","italic":false}','{"text":"─────発動効果─────","color":"gray","italic":false}','[{"text":"漆黒の靄を飛ばす。","color":"white","bold":true,"italic":false}]','[{"text":"\\uE016","color":"white","italic":false},{"text":"盲目","color":"white","bold":true,"italic":false},{"text":"(0:05)","color":"dark_red","bold":true,"italic":false}]','[{"text":"\\uE017","color":"white","italic":false},{"text":"クールタイム","color":"white","bold":true},{"text":"1:00","color":"dark_green","bold":false}]']},CustomModelData:62} 1
+#> pvp_data:pvpfunctions/jobs/assassin/skill/2/skill_fin
+#
+# 暗殺者スキル2CT終了処理
+#
+# @internal
+
+# CT終了処理
+    execute at @s run playsound ui.button.click player @s ~ ~ ~ 0.5 1
+    item modify entity @s hotbar.2 pvp_data:system/tool_damage/all_heel

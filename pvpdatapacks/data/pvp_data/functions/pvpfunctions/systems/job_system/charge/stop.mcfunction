@@ -7,6 +7,7 @@
 # 動けるようにする
     effect clear @s slowness
     effect clear @s jump_boost
+    effect clear @s weakness
 # プレイヤーにタグ
     tag @s add Charge.Player
     tag @s add Charge.Stop
@@ -17,3 +18,4 @@
     tag @s remove Charge.NoMove
     tag @s remove Charge.NoRotation
     tag @e[type=marker] remove Charge.ViewPointSelector
+    

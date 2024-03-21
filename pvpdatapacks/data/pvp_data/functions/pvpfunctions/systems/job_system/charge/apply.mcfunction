@@ -27,6 +27,7 @@
 # 動け無くする
     execute if data storage temporary: {charge: {isMoving: false}} run effect give @s jump_boost infinite 128 true
     execute if data storage temporary: {charge: {isMoving: false}} run effect give @s slowness infinite 6 true
+    execute if data storage temporary: {charge: {isMoving: false}} run effect give @s weakness infinite 6 true
     execute if data storage temporary: {charge: {isMoving: false}} run tag @s add Charge.NoMove
 # 視点を動けなくする
     execute if data storage temporary: {charge: {isRotation: false}} run function pvp_data:pvpfunctions/systems/job_system/charge/no_rotation

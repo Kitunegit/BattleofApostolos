@@ -1,7 +1,7 @@
-scoreboard players reset @s assassin_ult_charge
-effect clear @s weakness
+#> pvp_data:pvpfunctions/jobs/assassin/ult/failed
+#
+# 暗殺者ウルトチャージ中
+#
+# @internal
 effect clear @s blindness
-effect clear @s slowness
-effect clear @s minecraft:jump_boost
-kill @e[type=marker,tag=assassin_ult_trgt]
 execute at @s run playsound ui.button.click player @a[distance=..20] ~ ~ ~ 1 1.2

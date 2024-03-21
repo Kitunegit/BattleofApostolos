@@ -1,12 +1,13 @@
-item replace entity @s hotbar.3 with barrier{CustomModelData:63,display:{Name:'{"text":"クールタイム中です","color":"yellow","bold":true,"italic":false}',Lore:['{"text":"暗殺者の究極の力","color":"white","italic":false}','{"text":"背後から一心不乱に突撃する。","color":"white","italic":false}','{"text":"─────発動条件─────","color":"gray","italic":false}','{"text":"敵の背後にいる時のみ発動可能","color":"white","italic":false}','{"text":"─────発動効果─────","color":"gray","italic":false}','[{"text":"\\uE010","color":"white","italic":false},{"text":"突進攻撃:","color":"white","bold":true,"italic":false},{"text":"999","color":"dark_green","bold":true,"italic":false}]','[{"text":"\\uE017","color":"white","italic":false},{"text":"必要詠唱時間","color":"white","bold":false},{"text":"0:05","color":"dark_green","bold":false,"italic":false}]','[{"text":"\\uE017","color":"white","italic":false},{"text":"クールタイム","color":"white","bold":true},{"text":"2:00","color":"dark_green","bold":false}]']}} 1
-scoreboard players set @s assassin_ult_charge 120
-scoreboard players set @s ult_cool 90
-scoreboard players set @s r_click 0
-effect give @s weakness 6 10 true
-effect give @s blindness 5 25 true
-effect give @s slowness 6 20 true
-effect give @s minecraft:jump_boost 6 150 true
-execute at @s run summon marker ^ ^ ^50 {Tags:[assassin_ult_trgt]}
+#> pvp_data:pvpfunctions/jobs/assassin/ult/start
+#
+# 暗殺者ウルト開始処理
+#
+# @internal
 
-scoreboard players operation @s assassin_ult_health = @s Health
-scoreboard players operation @s assassin_ult_health -= $16 assassin_ult_health
+# 条件不一致処理
+    execute at @s at @e[tag=player,distance=0.1..,limit=1,sort=nearest] positioned ^ ^ ^-5 unless entity @s[distance=..4.9] run return 0
+# タグ付ける
+    tag @s add assassin.ult
+# チャージ状態にする
+    function pvp_data:pvpfunctions/systems/job_system/charge/apply {isMoving:false,isRotation:true,isCheckHealth:16,duration:100}
+    effect give @s blindness 5 25 true

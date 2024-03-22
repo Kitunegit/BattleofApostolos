@@ -29,10 +29,6 @@
 
     #ダメージディスプレイ
     scoreboard objectives add damage.display_time dummy
-    # その他
-        #チャージチェック用
-            scoreboard objectives add charge_check.Health dummy
-            scoreboard players set $2 charge_check.Health 2
     # クールタイム
         #CT計算用
         scoreboard objectives add temp.cool_can dummy
@@ -82,6 +78,8 @@
     scoreboard objectives add skill_2_count dummy
     #ウルト
     scoreboard objectives add ult_count dummy
+    #パッシブ
+    scoreboard objectives add passive_count dummy
     scoreboard players set $3 skill_2_count 3
     scoreboard players set $10 skill_2_count 10
     #ウルト

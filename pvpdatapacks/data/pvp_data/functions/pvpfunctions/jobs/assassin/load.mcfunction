@@ -1,5 +1,5 @@
-scoreboard objectives add assassin_skill_1_charge dummy
-scoreboard objectives add assassin_skill_2_tmr dummy
-scoreboard objectives add assassin_ult_charge dummy
-scoreboard objectives add assassin_ult_health dummy
-scoreboard players set $16 assassin_ult_health 16
+#> pvp_data:pvpfunctions/jobs/assassin/load
+#
+# 暗殺者読み込み
+#
+# @internal

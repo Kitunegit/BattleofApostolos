@@ -1,0 +1,113 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:ender_eye",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{consume: {duration: 30,cool_time: 160,rarity: 2,sound: {id: \"entity.generic.drink\",pitch: 1},on_consume: [{type: \"run_command\",content: \"scoreboard players add @s damage.shield.durability 400\"}]}}"
+              },
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 0,
+                  "max": 5
+                },
+                "add": true
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "translate": "boa.item.minishield",
+                  "italic": false
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "translate": "boa.lore.minishield.2",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "boa.lore.minishield.2",
+                    "color": "white",
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "translate": "boa.status.use_details",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:ender_eye",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{consume: {duration: 100,cool_time: 300,rarity: 3,sound: {id: \"entity.generic.drink\",pitch: 1},on_consume: [{type: \"run_command\",content: \"scoreboard players add @s damage.shield.durability 400\"}]}}"
+              },
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 0,
+                  "max": 5
+                },
+                "add": true
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "translate": "boa.item.shield",
+                  "italic": false
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "translate": "boa.lore.shield.2",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "boa.lore.shield.2",
+                    "color": "white",
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "translate": "boa.status.use_details",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

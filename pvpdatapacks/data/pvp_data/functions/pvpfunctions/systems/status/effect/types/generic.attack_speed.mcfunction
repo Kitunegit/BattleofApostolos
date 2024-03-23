@@ -21,4 +21,3 @@
         execute if data storage temporary: {_: {overwrite: true}} run scoreboard players operation @s generic.attack_speed.effect_depth = $modifier_depth system.status.effect.calc_modifier
 
         execute if data storage temporary: {_: {overwrite: true}} run scoreboard players operation @s generic.attack_speed.effect_duration = $modifier_duration system.status.effect.calc_modifier
-

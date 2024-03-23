@@ -12,6 +12,12 @@
         #declare objective generic.attack.effect_duration
         scoreboard objectives add generic.attack.effect_duration dummy
 
+        #declare objective generic.attack.negative_effect_depth
+        scoreboard objectives add generic.attack.negative_effect_depth dummy
+
+        #declare objective generic.attack.negative_effect_duration
+        scoreboard objectives add generic.attack.negative_effect_duration dummy
+
         #declare objective generic.attack.base
         scoreboard objectives add generic.attack.base dummy
 
@@ -21,6 +27,12 @@
 
         #declare objective generic.attack_speed.effect_duration
         scoreboard objectives add generic.attack_speed.effect_duration dummy
+
+        #declare objective generic.attack_speed.negative_effect_depth
+        scoreboard objectives add generic.attack_speed.negative_effect_depth dummy
+
+        #declare objective generic.attack_speed.negative_effect_duration
+        scoreboard objectives add generic.attack_speed.negative_effect_duration dummy
 
         #declare objective generic.attack_speed.base
         scoreboard objectives add generic.attack_speed.base dummy
@@ -32,6 +44,12 @@
         #declare objective generic.speed.effect_duration
         scoreboard objectives add generic.speed.effect_duration dummy
 
+        #declare objective generic.speed.negative_effect_depth
+        scoreboard objectives add generic.speed.negative_effect_depth dummy
+
+        #declare objective generic.speed.negative_effect_duration
+        scoreboard objectives add generic.speed.negative_effect_duration dummy
+
         #declare objective generic.speed.base
         scoreboard objectives add generic.speed.base dummy
 
@@ -42,6 +60,12 @@
         #declare objective generic.max_health.effect_duration
         scoreboard objectives add generic.max_health.effect_duration dummy
 
+        #declare objective generic.max_health.negative_effect_depth
+        scoreboard objectives add generic.max_health.negative_effect_depth dummy
+
+        #declare objective generic.max_health.negative_effect_duration
+        scoreboard objectives add generic.max_health.negative_effect_duration dummy
+
         #declare objective generic.max_health.base
         scoreboard objectives add generic.max_health.base dummy
 
@@ -51,6 +75,12 @@
 
         #declare objective generic.defense.effect_duration
         scoreboard objectives add generic.defense.effect_duration dummy
+
+        #declare objective generic.defense.negative_effect_depth
+        scoreboard objectives add generic.defense.negative_effect_depth dummy
+
+        #declare objective generic.defense.negative_effect_duration
+        scoreboard objectives add generic.defense.negative_effect_duration dummy
 
         #declare objective generic.defense.base
         scoreboard objectives add generic.defense.base dummy

@@ -16,6 +16,7 @@
         scoreboard players operation $temporary system.status.effect.calc_modifier = @s generic.attack_speed.base
 
         scoreboard players operation $temporary system.status.effect.calc_modifier += @s generic.attack_speed.effect_depth
+        scoreboard players operation $temporary system.status.effect.calc_modifier -= @s generic.attack_speed.negative_effect_depth
 
         scoreboard players operation $previous system.status.effect.calc_modifier = @s generic.attack_speed
 
@@ -25,6 +26,7 @@
         scoreboard players operation $temporary system.status.effect.calc_modifier = @s generic.attack.base
 
         scoreboard players operation $temporary system.status.effect.calc_modifier += @s generic.attack.effect_depth
+        scoreboard players operation $temporary system.status.effect.calc_modifier -= @s generic.attack.negative_effect_depth
 
         scoreboard players operation @s generic.attack = $temporary system.status.effect.calc_modifier
 
@@ -32,6 +34,7 @@
         scoreboard players operation $temporary system.status.effect.calc_modifier = @s generic.defense.base
 
         scoreboard players operation $temporary system.status.effect.calc_modifier += @s generic.defense.effect_depth
+        scoreboard players operation $temporary system.status.effect.calc_modifier -= @s generic.defense.negative_effect_depth
 
         scoreboard players operation @s generic.defense = $temporary system.status.effect.calc_modifier
 
@@ -39,6 +42,7 @@
         scoreboard players operation $temporary system.status.effect.calc_modifier = @s generic.max_health.base
 
         scoreboard players operation $temporary system.status.effect.calc_modifier += @s generic.max_health.effect_depth
+        scoreboard players operation $temporary system.status.effect.calc_modifier -= @s generic.max_health.negative_effect_depth
 
         scoreboard players operation $previous system.status.effect.calc_modifier = @s generic.max_health
 
@@ -48,6 +52,7 @@
         scoreboard players operation $temporary system.status.effect.calc_modifier = @s generic.speed.base
 
         scoreboard players operation $temporary system.status.effect.calc_modifier += @s generic.speed.effect_depth
+        scoreboard players operation $temporary system.status.effect.calc_modifier -= @s generic.speed.negative_effect_depth
 
         scoreboard players operation $previous system.status.effect.calc_modifier = @s generic.speed
 

@@ -1,0 +1,7 @@
+[
+    {
+      "function": "minecraft:set_nbt",
+      "tag": "{display:{Name:'{\"translate\":\"boa.item.wizard.skill.2.black\",\"color\":\"blue\",\"bold\":true,\"italic\":false}',Lore:['{\"translate\":\"boa.lore.wizard.skill.2.black.1\",\"color\":\"white\",\"italic\":false}','{\"translate\":\"boa.lore.wizard.skill.2.black.2\",\"color\":\"white\",\"italic\":false}','{\"translate\":\"boa.status.use_details\",\"color\":\"gray\",\"italic\":false}','[{\"text\":\"\\\\uE016\",\"color\":\"white\",\"italic\":false},{\"translate\":\"boa.status.blindness\",\"color\":\"white\",\"bold\":true,\"italic\":false},{\"text\":\"0:05s\",\"color\":\"dark_green\",\"bold\":false}]','[{\"text\":\"\\\\uE016\",\"color\":\"white\",\"italic\":false},{\"translate\":\"boa.status.speed\",\"color\":\"white\",\"bold\":true,\"italic\":false},{\"text\":\"30%\",\"color\":\"dark_green\",\"bold\":false}]','[{\"text\":\"\\\\uE017\",\"color\":\"white\",\"italic\":false},{\"translate\":\"boa.status.charge_duration\",\"color\":\"white\",\"bold\":false},{\"text\":\"0:05s\",\"color\":\"dark_green\",\"bold\":false,\"italic\":false}]','[{\"text\":\"\\\\uE017\",\"color\":\"white\",\"italic\":false},{\"translate\":\"boa.status.cool\",\"color\":\"white\",\"bold\":true},{\"text\":\"0:15\",\"color\":\"dark_green\",\"bold\":false}]']},CustomModelData:23}"
+    }
+  ]
+  

@@ -32,6 +32,5 @@ tag @a[gamemode=!spectator] add player
 # particle
     function pvp_data:pvpfunctions/systems/particle/tick
 
-    execute as @a[scores={plugin.events.player.left_click=1..}] at @s positioned ~ ~1 ~ positioned ^ ^ ^1.5 run function pvp_data:pvpfunctions/systems/particle/sword_slash/
-
-    scoreboard players set @a plugin.events.player.left_click 0
+# プラグイン
+    function pvp_data:pvpfunctions/systems/plugin/tick

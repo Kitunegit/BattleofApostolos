@@ -9,6 +9,23 @@
 
     execute as @e[tag=system.particle.sword_slash.temporary] rotated 90 90 run function tak_utils:align_display_rot/
 
-    execute as @e[tag=system.particle.sword_slash.temporary] run function tak_utils:multiply_rot_by_random/ {range: [-32f, 32f], command: "execute rotated ~0 ~ run tp @s ~ ~ ~ ~ ~"}
+    tp @e[tag=system.particle.sword_slash.temporary] ~ ~ ~ ~ ~
 
-    tag @e[tag=system.particle.sword_slash.temporary] remove system.particle.sword_slash.temporary
+    #execute as @e[tag=system.particle.sword_slash.temporary] run function tak_utils:multiply_rot_by_random/ {range: [-32f, 32f], command: "tp @s ~ ~ ~ ~ ~"}
+
+#
+    #declare tag system.particle.sword_slash.axis
+    execute positioned 0.0 0.0 0.0 facing ~ ~ ~1 run summon marker ^ ^ ^1 {Tags: ["system.particle.sword_slash.axis"]}
+
+    data modify storage temporary: rotation.axis set from entity @e[tag=system.particle.sword_slash.axis,limit=1] Pos
+
+    kill @e[tag=system.particle.sword_slash.axis,limit=1]
+
+    execute store result storage temporary: rotation.angle float 0.01745 run random value -90..90
+
+    data modify entity @e[tag=system.particle.sword_slash.temporary,limit=1] transformation.left_rotation set from storage temporary: rotation
+
+#
+    data remove storage temporary: rotation
+
+    tag @e[tag=system.particle.sword_slash.temporary,limit=1] remove system.particle.sword_slash.temporary

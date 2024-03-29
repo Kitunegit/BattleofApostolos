@@ -37,3 +37,6 @@ say load.mcfunctionがロードされました
 
 # particle
     function pvp_data:pvpfunctions/systems/particle/load
+
+# プラグイン
+    function pvp_data:pvpfunctions/systems/plugin/load

@@ -1,4 +1,4 @@
-#> pvp_data:pvpfunctions/jobs/wizard/skill/2/skill_start
+#> pvp_data:pvpfunctions/jobs/wizard/skill/3/skill_start
 #
 # 魔導士 スキル2 開始処理
 #
@@ -10,7 +10,7 @@
     scoreboard players set @s skill_2_cool 600
     item modify entity @s hotbar.2 pvp_data:system/tool_damage/set_damage
 # チャージ
-    function pvp_data:pvpfunctions/systems/job_system/charge/apply {isMoving:false,isRotation:true,isCheckHealth:200,duration:40}
+    function pvp_data:pvpfunctions/systems/job_system/charge/apply {isMoving:false,isRotation:true,isCheckHealth:200,duration:60}
 # 演出
     execute at @s run playsound minecraft:block.beacon.deactivate player @a[distance=..5] ~ ~ ~ 1 1
     # 魔法陣

@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.wizard.ult_white.bone.main1] run data modify entity @s {} merge value {transformation:[-0.000030000000000000004f,0f,3.6739403974420595e-21f,0f,0f,0.000030000000000000004f,0f,4.40625f,-3.6739403974420595e-21f,0f,-0.000030000000000000004f,0f,0f,0f,0f,1f],start_interpolation:0}

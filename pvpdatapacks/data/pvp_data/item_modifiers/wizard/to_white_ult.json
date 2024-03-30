@@ -1,0 +1,6 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{CustomModelData:24,display:{Name:'{\"translate\":\"boa.item.wizard.ult.white\",\"color\":\"yellow\",\"bold\":true,\"italic\":false}',Lore:['{\"translate\":\"boa.lore.wizard.ult.white.1\",\"color\":\"white\",\"italic\":false}','{\"translate\":\"boa.lore.wizard.ult.white.2\",\"color\":\"white\",\"italic\":false}','{\"translate\":\"boa.status.use_details\",\"color\":\"gray\",\"italic\":false}','[{\"text\":\"\\\\uE011\",\"color\":\"white\",\"italic\":false},{\"translate\":\"boa.status.heel\",\"color\":\"white\",\"bold\":true,\"italic\":false},{\"text\":\"10\",\"color\":\"dark_green\",\"bold\":true,\"italic\":false}]','[{\"text\":\"\\\\uE017\",\"color\":\"white\",\"italic\":false},{\"translate\":\"boa.status.charge_duration\",\"color\":\"white\",\"bold\":false},{\"text\":\"0:04\",\"color\":\"dark_green\",\"bold\":false,\"italic\":false}]','[{\"text\":\"\\\\uE017\",\"color\":\"white\",\"italic\":false},{\"translate\":\"boa.status.cool\",\"color\":\"white\",\"bold\":true},{\"text\":\"1:30\",\"color\":\"dark_green\",\"bold\":false}]']}}"
+  }
+]

@@ -1,0 +1,12 @@
+execute if entity @s[tag=aj.wizard.ult_white.bone.main1] run data modify entity @s item.tag.CustomModelData set value 11
+execute if entity @s[tag=aj.wizard.ult_white.bone.main2] run data modify entity @s item.tag.CustomModelData set value 12
+execute if entity @s[tag=aj.wizard.ult_white.bone.main3] run data modify entity @s item.tag.CustomModelData set value 13
+execute if entity @s[tag=aj.wizard.ult_white.bone.bone4] run data modify entity @s item.tag.CustomModelData set value 14
+execute if entity @s[tag=aj.wizard.ult_white.bone.bone2] run data modify entity @s item.tag.CustomModelData set value 15
+execute if entity @s[tag=aj.wizard.ult_white.bone.bone8] run data modify entity @s item.tag.CustomModelData set value 16
+execute if entity @s[tag=aj.wizard.ult_white.bone.bone9] run data modify entity @s item.tag.CustomModelData set value 17
+execute if entity @s[tag=aj.wizard.ult_white.bone.bone7] run data modify entity @s item.tag.CustomModelData set value 18
+execute if entity @s[tag=aj.wizard.ult_white.bone.bone10] run data modify entity @s item.tag.CustomModelData set value 19
+execute if entity @s[tag=aj.wizard.ult_white.bone.bone11] run data modify entity @s item.tag.CustomModelData set value 20
+execute if entity @s[tag=aj.wizard.ult_white.bone.bone14] run data modify entity @s item.tag.CustomModelData set value 21
+execute if entity @s[tag=aj.wizard.ult_white.bone.bone15] run data modify entity @s item.tag.CustomModelData set value 22

@@ -1,0 +1,11 @@
+#> pvp_data:pvpfunctions/jobs/wizard/ult/cool_fin
+#
+# 魔導士 ウルトCT終了処理
+#
+# @internal
+
+# CT終了処理
+    scoreboard players set @s ult_cool 0
+    execute at @s run playsound ui.button.click player @s ~ ~ ~ 0.5 1
+    execute if entity @s[tag=wizard_black] run item replace entity @s hotbar.3 with carrot_on_a_stick{CustomModelData:25,display:{Name:'{"translate":"boa.item.wizard.ult.white","color":"yellow","bold":true,"italic":false}',Lore:['{"translate":"boa.lore.wizard.ult.white.1","color":"white","italic":false}','{"translate":"boa.lore.wizard.ult.white.2","color":"white","italic":false}','{"translate":"boa.status.use_details","color":"gray","italic":false}','[{"text":"\\uE010","color":"white","italic":false},{"translate":"boa.status.damage","color":"white","bold":true,"italic":false},{"text":"30","color":"dark_green","bold":true,"italic":false}]','[{"text":"\\uE017","color":"white","italic":false},{"translate":"boa.status.charge_duration","color":"white","bold":false},{"text":"0:04","color":"dark_green","bold":false,"italic":false}]','[{"text":"\\uE017","color":"white","italic":false},{"translate":"boa.status.cool","color":"white","bold":true},{"text":"1:30","color":"dark_green","bold":false}]']},data: ["no_drop"]} 1
+    execute if entity @s[tag=wizard_white] run item replace entity @s hotbar.3 with carrot_on_a_stick{CustomModelData:24,display:{Name:'{"translate":"boa.item.wizard.ult.black","color":"yellow","bold":true,"italic":false}',Lore:['{"translate":"boa.lore.wizard.ult.black.1","color":"white","italic":false}','{"translate":"boa.lore.wizard.ult.black.2","color":"white","italic":false}','{"translate":"boa.status.use_details","color":"gray","italic":false}','[{"text":"\\uE011","color":"white","italic":false},{"translate":"boa.status.heel","color":"white","bold":true,"italic":false},{"text":"10","color":"dark_green","bold":true,"italic":false}]','[{"text":"\\uE017","color":"white","italic":false},{"translate":"boa.status.charge_duration","color":"white","bold":false},{"text":"0:04","color":"dark_green","bold":false,"italic":false}]','[{"text":"\\uE017","color":"white","italic":false},{"translate":"boa.status.cool","color":"white","bold":true},{"text":"1:30","color":"dark_green","bold":false}]']},data: ["no_drop"]} 1

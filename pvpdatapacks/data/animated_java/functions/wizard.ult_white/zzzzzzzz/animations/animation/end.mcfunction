@@ -1,0 +1,3 @@
+execute if score @s aj.wizard.ult_white.animation.animation.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:wizard.ult_white/zzzzzzzz/animations/animation/end_loop
+execute if score @s aj.wizard.ult_white.animation.animation.loop_mode = $aj.loop_mode.once aj.i run function animated_java:wizard.ult_white/animations/animation/stop
+execute if score @s aj.wizard.ult_white.animation.animation.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:wizard.ult_white/animations/animation/pause

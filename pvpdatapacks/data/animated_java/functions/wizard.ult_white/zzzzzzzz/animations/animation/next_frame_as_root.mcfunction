@@ -1,0 +1,1 @@
+function animated_java:wizard.ult_white/zzzzzzzz/animations/animation/tick_animation

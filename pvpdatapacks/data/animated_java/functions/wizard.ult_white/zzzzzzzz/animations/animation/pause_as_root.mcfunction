@@ -1,0 +1,1 @@
+tag @s remove aj.wizard.ult_white.animation.animation

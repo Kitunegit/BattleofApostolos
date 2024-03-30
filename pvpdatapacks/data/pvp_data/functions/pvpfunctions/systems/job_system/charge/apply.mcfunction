@@ -25,6 +25,7 @@
 # 効果時間をスコアに代入
     execute store result score @s Charge.Time run data get storage temporary: charge.duration
 # 動け無くする
+    
     execute if data storage temporary: {charge: {isMoving: false}} run effect give @s jump_boost infinite 128 true
     execute if data storage temporary: {charge: {isMoving: false}} run effect give @s slowness infinite 6 true
     execute if data storage temporary: {charge: {isMoving: false}} run effect give @s weakness infinite 6 true

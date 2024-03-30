@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.wizard.ult_white.animation.animation] run function animated_java:wizard.ult_white/zzzzzzzz/animations/animation/tick

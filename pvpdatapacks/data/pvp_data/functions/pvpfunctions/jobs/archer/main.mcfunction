@@ -7,6 +7,6 @@
     function pvp_data:pvpfunctions/jobs/archer/skill/1/main
     function pvp_data:pvpfunctions/jobs/archer/skill/2/main
     function pvp_data:pvpfunctions/jobs/archer/ult/main
-    function pvp_data:pvpfunctions/jobs/archer/passive/passive
+    function pvp_data:pvpfunctions/jobs/archer/passive/tick
 #射撃ダメアップ
     execute as @e[type=arrow] run data merge entity @s {damage:-0.984375}

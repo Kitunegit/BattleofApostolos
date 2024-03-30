@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:wizard.ult_white/zzzzzzzz/animations/animation/tree/leaf_90_as_bone

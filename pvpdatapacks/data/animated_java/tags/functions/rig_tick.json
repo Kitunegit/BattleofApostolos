@@ -3,6 +3,7 @@
 	"values": [
 		"animated_java:knight_sword/zzzzzzzz/tick",
 		"animated_java:guardian_ult/zzzzzzzz/tick",
-		"animated_java:warrior_ult.model/zzzzzzzz/tick"
+		"animated_java:warrior_ult.model/zzzzzzzz/tick",
+		"animated_java:wizard.ult_white/zzzzzzzz/tick"
 	]
 }

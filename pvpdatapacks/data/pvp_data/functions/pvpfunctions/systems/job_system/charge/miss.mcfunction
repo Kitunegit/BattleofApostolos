@@ -18,6 +18,3 @@
     tag @s remove Charge.NoRotation
     tag @e[type=marker] remove Charge.ViewPointSelector
     scoreboard players reset @s Charge.Time
-
-# デバッグ用
-    say Charge Miss

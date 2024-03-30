@@ -1,0 +1,2 @@
+scoreboard players set @s aj.wizard.ult_white.rig_loaded 1
+execute unless score @s aj.wizard.ult_white.export_version = aj.wizard.ult_white.export_version aj.i at @s run function animated_java:wizard.ult_white/zzzzzzzz/mark_outdated_rig

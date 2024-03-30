@@ -1,4 +1,4 @@
-#> pvp_data:pvpfunctions/jobs/wizard/skill/2/skill_start
+#> pvp_data:pvpfunctions/jobs/wizard/skill/3/skill_start
 #
 # 魔導士 スキル2 開始処理
 #

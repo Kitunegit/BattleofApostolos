@@ -24,7 +24,7 @@
     execute if score @s jobscore matches 0.. run function pvp_data:pvpfunctions/systems/ui/main
     execute if score @s jobscore matches 0.. run function pvp_data:pvpfunctions/systems/job_system/healing_system/main
     execute if score @s jobscore matches 0.. if score @s Charge.Time matches 1.. run function pvp_data:pvpfunctions/systems/job_system/charge/tick
-    scoreboard players set @a r_click 0
+    scoreboard players set @s r_click 0
 
 # ジャスガ
     #execute unless score @s jobscore matches 7 unless score @s jobscore matches 2 run function pvp_data:pvpfunctions/systems/job_system/justguard_system/main

@@ -16,3 +16,5 @@ scoreboard players set @s generic.speed.base 100
 scoreboard players set @s generic.max_health.base 40
 scoreboard players set @s generic.healing_speed.base 100
 scoreboard players set @s damage.shield.durability 0
+
+function #score_to_attribute:reset

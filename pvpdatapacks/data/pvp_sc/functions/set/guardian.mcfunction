@@ -10,6 +10,7 @@ scoreboard players set @s skill2.ct_data 38
 scoreboard players set @s special.ct_data 75
 scoreboard players add @s guardian_used 1
 
+
 scoreboard players set @s generic.attack.base 200
 scoreboard players set @s generic.attack_speed.base 80
 # 【仮】シールド無効化のため防御バフ

@@ -9,12 +9,12 @@ scoreboard players set @s skill1.ct_data 12
 scoreboard players set @s skill2.ct_data 25
 scoreboard players set @s special.ct_data 25
 
+scoreboard players set @s system.ui.passive_bar.length 90
 scoreboard players set @s system.ui.passive_bar.max 3000
 scoreboard players set @s passive_count 3000
 
 scoreboard players set @s generic.attack.base 100
 scoreboard players set @s generic.defense.base 100
-scoreboard players set @s generic.attack_speed 1000
 scoreboard players set @s generic.speed.base 10
 scoreboard players set @s generic.max_health.base 35
 function pvp_data:pvpfunctions/systems/status/update

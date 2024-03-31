@@ -4,4 +4,4 @@
     #ジャンプ関連
     scoreboard objectives add archer.jump_count dummy
 #ウルトの時間
-    scoreboard objectives add archer_ult_time dummy
+    scoreboard objectives add archer.arrow_interval dummy

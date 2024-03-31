@@ -12,3 +12,5 @@
     execute as @a[tag=!Assassin.Passive] if predicate pvp_data:look_assasin as @a[tag=Assassin.Passive] run function pvp_data:pvpfunctions/jobs/assassin/passive/look
 # 自身のタグを除去
     tag @s remove Assassin.Passive
+# 発見度バーに
+    scoreboard players operation @s system.ui.passive_bar.value = @s passive_count

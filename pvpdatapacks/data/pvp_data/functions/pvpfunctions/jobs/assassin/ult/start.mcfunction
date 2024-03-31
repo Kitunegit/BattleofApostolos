@@ -5,7 +5,9 @@
 # @internal
 
 # 条件不一致処理
-    execute at @s at @e[tag=player,distance=0.1..,limit=1,sort=nearest] positioned ^ ^ ^-5 unless entity @s[distance=..4.9] run return 0
+    tag @s add assassin.ult_check
+    execute at @s at @e[tag=player,distance=0.1..,limit=1,sort=nearest,tag=!assassin.ult_check] positioned ^ ^ ^-5 unless entity @s[distance=..4.9] run return 0
+    tag @s remove assassin.ult_check
 # タグ付ける
     tag @s add assassin.ult
 # チャージ状態にする

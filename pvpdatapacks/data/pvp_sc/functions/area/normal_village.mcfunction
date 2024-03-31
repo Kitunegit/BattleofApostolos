@@ -1,1 +1,1 @@
-function pvp_data:pvpfunctions/systems/area_system/start {start_vector2:"490 164",start_vector3:"490 -54 164"}
+function pvp_data:pvpfunctions/systems/area_system/start {start_vector_x:"490",start_vector_z:"164",start_vector3:"490 -54 164"}

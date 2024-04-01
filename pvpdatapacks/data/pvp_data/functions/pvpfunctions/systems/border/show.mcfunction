@@ -42,9 +42,6 @@
 # 通常時パーティクル
     execute at @e[tag=system.border.line] run particle dust 0 1 1 8 ~ ~64 ~ 1.5 128 1.5 1 5 force
 
-# 接近時
-    # execute as @a at @s positioned ~ 0 ~ if entity @e[tag=system.border.line,distance=..20] at @s positioned ~ ~1000 ~ facing entity @e[tag=system.border.line] feet positioned ^ ^ ^1000 run particle dust 0 1 1 8 ~ ~ ~ 2 16 2 1 10 normal @s
-
 # リセット
     kill @e[tag=system.border.line]
 

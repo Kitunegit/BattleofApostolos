@@ -25,9 +25,9 @@
     tp @e[tag=system.border.display] @e[tag=system.border.center,limit=1]
 
 # displayのscaleに半径を代入
-    execute store result entity @e[tag=system.border.display,limit=1] transformation.scale[0] float 1 run data get storage border: config.radius
+    execute store result entity @e[tag=system.border.display,limit=1] transformation.scale[0] float 0.0001 run data get storage border: config.radius 10000
 
-    execute store result entity @e[tag=system.border.display,limit=1] transformation.scale[2] float 1 run data get storage border: config.radius
+    execute store result entity @e[tag=system.border.display,limit=1] transformation.scale[2] float 0.0001 run data get storage border: config.radius 10000
 
 # パーティクル
     scoreboard players set $count system.border 10

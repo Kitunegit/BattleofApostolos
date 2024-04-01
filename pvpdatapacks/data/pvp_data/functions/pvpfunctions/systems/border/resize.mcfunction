@@ -8,7 +8,7 @@
 
     execute if score $time system.border matches 1.. run scoreboard players operation $radius system.border += $size system.border
 
-    execute if score $time system.border matches 1.. if score $radius system.border matches ..9999 run scoreboard players set $radius system.border 10000
+    execute if score $time system.border matches 1.. if score $radius system.border matches ..4999 run scoreboard players set $radius system.border 5000
 
     execute if score $time system.border matches 1.. if score $radius system.border matches 1600001.. run scoreboard players set $radius system.border 1600000
 

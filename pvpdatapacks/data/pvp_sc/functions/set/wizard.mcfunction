@@ -19,6 +19,7 @@ scoreboard players set @s generic.speed.base 10
 scoreboard players set @s generic.max_health.base 35
 function pvp_data:pvpfunctions/systems/status/update
 
+tag @s add wizard_white
 tag @s add wizard_black
 
 item replace entity @s armor.head with leather_helmet{Unbreakable:1b,data: ["no_drop"]}

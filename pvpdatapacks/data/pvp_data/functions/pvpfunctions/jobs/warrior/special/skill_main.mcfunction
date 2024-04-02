@@ -5,8 +5,8 @@
 # @internal
 
 # 視点動かし
-    execute if score @s special_count matches 5..10 at @s run tp @e[scores={special_count=5..10}] ~ ~ ~ ~ ~-50
-    execute if score @s special_count matches 1..4 at @s run tp @e[scores={special_count=1..4}] ~ ~ ~ ~ ~60
+    execute if score @s special_count matches 5..10 at @s run tp @s[scores={special_count=5..10}] ~ ~ ~ ~ ~-50
+    execute if score @s special_count matches 1..4 at @s run tp @s[scores={special_count=1..4}] ~ ~ ~ ~ ~60
 # 演出
     execute if score @s special_count matches 5 at @s run playsound minecraft:block.wood.place player @a[distance=..10] ~ ~ ~ 1 0.2
     execute unless score @s warrior_health_per matches 1 if score @s special_count matches 1 at @s run playsound block.anvil.place player @s ~ ~ ~ 1 1

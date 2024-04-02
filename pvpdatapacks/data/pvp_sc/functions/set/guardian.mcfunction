@@ -19,6 +19,7 @@ scoreboard players set @s generic.speed.base 8
 scoreboard players set @s generic.max_health.base 40
 scoreboard players set @s generic.healing_speed 0
 function pvp_data:pvpfunctions/systems/status/update
+function #score_to_attribute:reset
 
 item replace entity @s armor.head with iron_helmet{Unbreakable:1b,data: ["no_drop"]}
 item replace entity @s armor.chest with iron_chestplate{Unbreakable:1b,data: ["no_drop"]}

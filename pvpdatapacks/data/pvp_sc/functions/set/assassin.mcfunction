@@ -2,6 +2,8 @@ function pvp_sc:set/reset
 
 scoreboard players set @s generic.attack.base 250
 scoreboard players set @s generic.defense.base 0
+scoreboard players set @s generic.speed.base 12
+scoreboard players set @s generic.max_health.base 32
 scoreboard players set @s generic.speed.base 120
 scoreboard players set @s generic.max_health.base 34
 scoreboard players set @s generic.attack_speed.base 133
@@ -10,7 +12,7 @@ function pvp_data:pvpfunctions/systems/status/update
 scoreboard players set @s jobscore 6
 
 scoreboard players set @s system.ui.passive_bar.length 90
-scoreboard players set @s system.ui.passive_bar.max 2400
+scoreboard players set @s system.ui.passive_bar.max 1200
 
 scoreboard players set @s skill_1_cool 0
 scoreboard players set @s skill_2_cool 0

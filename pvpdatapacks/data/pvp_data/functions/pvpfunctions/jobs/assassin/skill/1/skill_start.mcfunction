@@ -5,7 +5,7 @@
 # @within function pvp_data:pvpfunctions/jobs/assassin/skill/1/skill_main
 
 # チャージ
-    function pvp_data:pvpfunctions/systems/job_system/charge/apply {isMoving:false,isRotation:true,isCheckHealth:300,duration:30}
+    function pvp_data:pvpfunctions/systems/job_system/charge/apply {isMoving:false,isRotation:true,isCheckHealth:300,duration:10}
     tag @s add assassin.skill_charge
 # 演出
     execute at @s run playsound block.beacon.activate player @a[distance=..10] ~ ~ ~ 1 0.5

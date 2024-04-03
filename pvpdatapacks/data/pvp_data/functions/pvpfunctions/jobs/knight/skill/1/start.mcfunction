@@ -12,7 +12,7 @@
 
 # 発動効果付与
 
-    function pvp_data:pvpfunctions/systems/status/effect/apply {name:generic.attack_speed,depth:140,duration:200,overwrite:false}
+    function pvp_data:pvpfunctions/systems/status/effect/apply {name:generic.attack_speed,depth:89,duration:200,overwrite:false}
     function pvp_data:pvpfunctions/systems/status/effect/apply {name:generic.speed,depth:-2,duration:200,overwrite:false}
 
 # 後処理

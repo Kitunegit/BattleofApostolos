@@ -3,6 +3,9 @@ function pvp_sc:set/reset
 scoreboard players set @s generic.attack.base 100
 scoreboard players set @s generic.defense.base 0
 scoreboard players set @s generic.speed.base 110
+scoreboard players set @s generic.max_health.base 32
+scoreboard players set @s generic.healing_speed 250
+scoreboard players set @s generic.speed.base 110
 scoreboard players set @s generic.max_health.base 33
 function pvp_data:pvpfunctions/systems/status/update
 

@@ -11,7 +11,7 @@ scoreboard players set @s skill2.ct_data 17
 
 scoreboard players set @s generic.attack.base 400
 scoreboard players set @s generic.defense.base 300
-scoreboard players set @s generic.speed.base 8
+scoreboard players set @s generic.speed.base 80
 scoreboard players set @s generic.max_health.base 40
 scoreboard players set @s generic.attack_speed.base 60
 function pvp_data:pvpfunctions/systems/status/update

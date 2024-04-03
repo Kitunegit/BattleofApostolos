@@ -15,7 +15,7 @@ scoreboard players set @s generic.attack.base 200
 scoreboard players set @s generic.attack_speed.base 80
 # 【仮】シールド無効化のため防御バフ
 scoreboard players set @s generic.defense.base 650
-scoreboard players set @s generic.speed.base 8
+scoreboard players set @s generic.speed.base 80
 scoreboard players set @s generic.max_health.base 40
 scoreboard players set @s generic.healing_speed 0
 function pvp_data:pvpfunctions/systems/status/update

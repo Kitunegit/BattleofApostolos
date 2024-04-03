@@ -14,7 +14,7 @@ scoreboard players set @s special_cool 0
 scoreboard players set @s generic.attack.base 0
 scoreboard players set @s generic.attack_speed.base 100
 scoreboard players set @s generic.defense.base 0
-scoreboard players set @s generic.speed.base 10
+scoreboard players set @s generic.speed.base 100
 scoreboard players set @s generic.max_health.base 40
 scoreboard players set @s generic.healing_speed.base 100
 scoreboard players set @s damage.shield.durability 0

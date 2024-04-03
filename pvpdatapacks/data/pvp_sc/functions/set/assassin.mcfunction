@@ -4,6 +4,8 @@ scoreboard players set @s generic.attack.base 250
 scoreboard players set @s generic.defense.base 0
 scoreboard players set @s generic.speed.base 12
 scoreboard players set @s generic.max_health.base 32
+scoreboard players set @s generic.speed.base 120
+scoreboard players set @s generic.max_health.base 34
 scoreboard players set @s generic.attack_speed.base 133
 function pvp_data:pvpfunctions/systems/status/update
 

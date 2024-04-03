@@ -2,5 +2,9 @@
 #
 # @public
 
-# loading map 01
-    execute positioned 0 -63 0 run function pvp_data:pvpfunctions/systems/map/load/01/on_0
+#
+    execute if score $ticks system.map.timer = $ticks system.map.timer run return fail
+
+    execute unless score $ticks system.map.timer = $ticks system.map.timer run function pvp_data:pvpfunctions/systems/map/load/01/scheduled
+
+    return 1

@@ -15,7 +15,7 @@ scoreboard players set @s passive_count 3000
 
 scoreboard players set @s generic.attack.base 100
 scoreboard players set @s generic.defense.base 100
-scoreboard players set @s generic.speed.base 10
+scoreboard players set @s generic.speed.base 100
 scoreboard players set @s generic.max_health.base 35
 function pvp_data:pvpfunctions/systems/status/update
 function #score_to_attribute:reset

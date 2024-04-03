@@ -9,7 +9,7 @@ scoreboard players set @s skill1.ct_data 19
 scoreboard players set @s skill2.ct_data 25
 scoreboard players set @s generic.attack.base 300
 scoreboard players set @s generic.defense.base 200
-scoreboard players set @s generic.speed.base 10
+scoreboard players set @s generic.speed.base 100
 scoreboard players set @s generic.max_health.base 39
 scoreboard players set @s generic.attack_speed.base 140
 scoreboard players set @s generic.healing_speed 50

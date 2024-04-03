@@ -9,7 +9,7 @@
 
     scoreboard players add @s generic.speed.negative_effect_duration 0
 
-    execute unless score @s generic.speed.base = @s generic.speed.base run scoreboard players set @s generic.speed.base 10
+    execute unless score @s generic.speed.base = @s generic.speed.base run scoreboard players set @s generic.speed.base 100
 
 # スコアへ代入
     # 演算タイプ

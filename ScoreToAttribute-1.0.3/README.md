@@ -18,9 +18,11 @@ scoreboardに値を設定すると、その1/100の値がattributeに反映さ�
 
 **すべて100倍の値で入力してください。**
 
+※Battle of ApostolosのためにScoreToAttribute.movement_speedだけ1000倍の値での入力になっています
+
 各オブジェクトは以下のattributeに対応しています。
 
-- `ScoreToAttribute.movement_speed (デフォルト値: 10)` - `generic.movement_speed`
+- `ScoreToAttribute.movement_speed (デフォルト値: 100)` - `generic.movement_speed`
 
 - `ScoreToAttribute.max_health (デフォルト値: 2000)` - `generic.max_health`
 

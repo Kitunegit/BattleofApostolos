@@ -7,11 +7,11 @@ scoreboard players add @s knight_used 1
 scoreboard players set @s special.ct_data 100
 scoreboard players set @s skill1.ct_data 19
 scoreboard players set @s skill2.ct_data 25
-scoreboard players set @s generic.attack.base 300
-scoreboard players set @s generic.defense.base 200
+scoreboard players set @s generic.attack.base 250
+scoreboard players set @s generic.defense.base 150
 scoreboard players set @s generic.speed.base 10
-scoreboard players set @s generic.max_health.base 39
-scoreboard players set @s generic.attack_speed.base 140
+scoreboard players set @s generic.max_health.base 35
+scoreboard players set @s generic.attack_speed.base 133
 scoreboard players set @s generic.healing_speed 50
 function pvp_data:pvpfunctions/systems/status/update
 function #score_to_attribute:reset

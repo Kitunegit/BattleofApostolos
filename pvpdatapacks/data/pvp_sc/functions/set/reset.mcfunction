@@ -1,4 +1,5 @@
 function pvp_data:pvpfunctions/systems/status/effect/clear {name:generic.attack}
+function pvp_data:pvpfunctions/systems/status/effect/clear {name:generic.attack_speed}
 function pvp_data:pvpfunctions/systems/status/effect/clear {name:generic.defense}
 function pvp_data:pvpfunctions/systems/status/effect/clear {name:generic.speed}
 function pvp_data:pvpfunctions/systems/status/effect/clear {name:generic.max_health}

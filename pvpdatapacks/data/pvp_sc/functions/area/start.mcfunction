@@ -1,1 +1,2 @@
-function pvp_data:pvpfunctions/systems/area_system/start {start_vector_x:"0",start_vector_z:"0",start_vector3:"0 -54 0"}
+function pvp_data:pvpfunctions/systems/map/load/01/
+schedule function pvp_sc:area/timer 5s

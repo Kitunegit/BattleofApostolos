@@ -40,3 +40,6 @@ say load.mcfunctionがロードされました
 
 # プラグイン
     function pvp_data:pvpfunctions/systems/plugin/load
+
+# map
+    scoreboard objectives add system.map.timer dummy

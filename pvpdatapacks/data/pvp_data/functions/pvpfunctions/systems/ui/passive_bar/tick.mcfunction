@@ -47,9 +47,15 @@
     scoreboard players operation $border system.ui.passive_bar.value /= $max system.ui.passive_bar.value
 
 # 文字列の切り出し
-    execute store result storage ui: passive_bar.border.filled int 1 run scoreboard players get $border system.ui.passive_bar.value
+    scoreboard players set $2 system.ui.passive_bar.value 2
 
-    execute store result storage ui: passive_bar.border.empty int 1 run scoreboard players operation $text_length system.ui.passive_bar.value -= $border system.ui.passive_bar.value
+    scoreboard players operation $border system.ui.passive_bar.value /= $2 system.ui.passive_bar.value
+
+    scoreboard players operation $text_length system.ui.passive_bar.value /= $2 system.ui.passive_bar.value
+
+    execute store result storage ui: passive_bar.border.filled int 2 run scoreboard players get $border system.ui.passive_bar.value
+
+    execute store result storage ui: passive_bar.border.empty int 2 run scoreboard players operation $text_length system.ui.passive_bar.value -= $border system.ui.passive_bar.value
 
     function pvp_data:pvpfunctions/systems/ui/passive_bar/slice with storage ui: passive_bar.border
 

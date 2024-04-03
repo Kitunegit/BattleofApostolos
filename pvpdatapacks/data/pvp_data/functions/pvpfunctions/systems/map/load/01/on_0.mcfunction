@@ -58,6 +58,8 @@
 # timer
     scoreboard players add $ticks system.map.timer 1
 
-    execute if score $ticks system.map.timer matches ..69 run schedule function pvp_data:pvpfunctions/systems/map/load/01/scheduled 1t
+    execute if score $ticks system.map.timer matches ..70 run schedule function pvp_data:pvpfunctions/systems/map/load/01/scheduled 1t
 
-    execute if score $ticks system.map.timer matches 70.. run scoreboard players reset $ticks system.map.timer
+    execute if score $ticks system.map.timer matches 71.. run kill @e[type=item]
+
+    execute if score $ticks system.map.timer matches 71.. run scoreboard players reset $ticks system.map.timer

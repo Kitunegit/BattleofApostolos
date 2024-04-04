@@ -11,7 +11,7 @@ function pvp_data:pvpfunctions/systems/status/update
 
 scoreboard players set @s jobscore 6
 
-scoreboard players set @s system.ui.passive_bar.length 90
+scoreboard players set @s system.ui.passive_bar.length 83
 scoreboard players set @s system.ui.passive_bar.max 1200
 
 scoreboard players set @s skill_1_cool 0

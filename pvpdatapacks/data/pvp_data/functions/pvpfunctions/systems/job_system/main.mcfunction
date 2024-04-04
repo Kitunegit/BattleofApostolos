@@ -39,3 +39,6 @@
     execute if score @s death matches 1.. run tag @s remove player
     execute if score @s death matches 1.. run function pvp_data:pvpfunctions/systems/status/update
     execute if score @s death matches 1.. run scoreboard players set @s death 0
+
+# プレイヤーに固有スコアを割り振る
+    execute as @e unless score @s PlayerID = @s PlayerID store result score @s PlayerID run scoreboard players add $Core PlayerID 1

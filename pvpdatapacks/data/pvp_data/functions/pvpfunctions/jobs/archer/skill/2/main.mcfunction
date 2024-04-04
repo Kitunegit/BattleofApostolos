@@ -11,3 +11,6 @@
 
 # 終了処理
     execute if score @s skill_2_cool matches 1 run function pvp_data:pvpfunctions/jobs/archer/skill/2/skill_fin
+
+# 矢の追尾常時実行処理
+    execute as @e[tag=archer.target_marker] at @e[tag=archer.homing_target] if score @s archer.target_unique = @e[tag=archer.homing_target,limit=1,sort=nearest] PlayerID run tp @s @e[tag=archer.homing_target,limit=1,sort=nearest]

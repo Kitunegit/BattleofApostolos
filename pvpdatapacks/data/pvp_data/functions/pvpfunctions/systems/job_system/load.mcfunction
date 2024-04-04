@@ -1,5 +1,7 @@
 
 # スコア定義
+    # プレイヤー固有スコア
+    scoreboard objectives add PlayerID dummy
     # ステータス
 
         #攻撃力(100倍の値)

@@ -116,11 +116,11 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:ender_eye",
-          "weight": 2,
+          "weight": 8,
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{consume: {duration: 30,cool_time: 160,rarity: 2,sound: {id: \"entity.generic.drink\",pitch: 1},on_consume: [{type: \"run_command\",content: \"scoreboard players add @s damage.shield.durability 400\"}]}}"
+              "tag": "{CustomModelData:1,consume: {duration: 30,cool_time: 160,rarity: 1,sound: {id: \"entity.generic.drink\",pitch: 1},on_consume: [{type: \"run_command\",content: \"scoreboard players add @s damage.shield.durability 400\"}]}}"
             },
             {
               "function": "minecraft:set_count",
@@ -168,11 +168,11 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:ender_eye",
-          "weight": 1,
+          "weight": 4,
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{consume: {duration: 60,cool_time: 300,rarity: 3,sound: {id: \"entity.generic.drink\",pitch: 0.8},on_consume: [{type: \"run_command\",content: \"scoreboard players add @s damage.shield.durability 400\"}]}}"
+              "tag": "{CustomModelData:2,consume: {duration: 60,cool_time: 300,rarity: 2,sound: {id: \"entity.generic.drink\",pitch: 0.8},on_consume: [{type: \"run_command\",content: \"scoreboard players add @s damage.shield.durability 800\"}]}}"
             },
             {
               "function": "minecraft:set_count",
@@ -200,6 +200,94 @@
                 },
                 {
                   "translate": "boa.lore.shield.2",
+                  "color": "white",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "boa.status.use_details",
+                  "color": "gray",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_eye",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:3,consume: {duration: 10,cool_time: 120,rarity: 3,sound: {id: \"entity.item.pickup\",pitch: 0.8},on_consume: [{type: \"run_command\",content: \"scoreboard players add @s damage.shield.durability 400\"}]}}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "translate": "boa.item.splash_shield",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "boa.lore.splash_shield.1",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "translate": "boa.lore.splash_shield.2",
+                  "color": "white",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "boa.status.use_details",
+                  "color": "gray",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_eye",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:4,consume: {duration: 10,cool_time: 600,rarity:4,sound: {id: \"entity.breeze.deflect\",pitch: 0.8},on_consume: [{type: \"run_command\",content: \"scoreboard players add @s damage.shield.durability 400\"}]}}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "translate": "boa.item.shield_generater",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "boa.lore.shield_generater.1",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "translate": "boa.lore.shield_generater.2",
                   "color": "white",
                   "italic": false
                 }

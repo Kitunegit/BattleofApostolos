@@ -13,4 +13,6 @@ execute if score area_phase area_timer matches 5..8 run function pvp_data:pvpfun
 # 20
 execute if score area_phase area_timer matches 9 run function pvp_data:pvpfunctions/systems/border/add {time: 600, size: -30d}
 # 最終円移動
-execute if score area_phase area_timer matches 10.. run function pvp_data:pvpfunctions/systems/border/move {time: 600, distance: 20d}
+execute if score area_phase area_timer matches 10..19 run function pvp_data:pvpfunctions/systems/border/move {time: 600, distance: 20d}
+# 最後に〆る
+execute if score area_phase area_timer matches 20.. run function pvp_data:pvpfunctions/systems/border/add {time: 600, size: -30d}

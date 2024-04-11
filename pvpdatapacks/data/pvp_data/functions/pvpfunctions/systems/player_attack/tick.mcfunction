@@ -13,4 +13,4 @@
         execute as @e run attribute @s generic.armor_toughness base set -100000.0
 
 # 矢のダメージを0に(したかった；；)
-    execute as @e[type=arrow] if data entity @s Owner run data modify entity @s damage set value 0.0d
+    execute as @e[type=arrow] if data entity @s Owner run data modify entity @s damage set value 0.1d

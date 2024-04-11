@@ -19,7 +19,7 @@ scoreboard players set @s ult_cool 0
 scoreboard players set @s skill1.ct_data 9
 scoreboard players set @s skill2.ct_data 17
 
-scoreboard players set @s system.ui.passive_bar.length 83
+scoreboard players set @s system.ui.passive_bar.length 55
 scoreboard players set @s system.ui.passive_bar.max 24
 
 scoreboard players add @s archer_used 1

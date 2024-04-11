@@ -10,17 +10,17 @@
 
     # 方向に応じて回転
     
-    execute at @s positioned ^-300 ^ ^ if entity @e[tag=archer.homing_target,distance=..299.99,limit=1] at @s run tp @s ~ ~ ~ ~25 ~
-    execute at @s positioned ^-300 ^ ^ if entity @e[tag=archer.homing_target,distance=..299.99,limit=1] at @s run tag @s add archer.homing
+    execute at @s positioned ^-60 ^ ^ if entity @e[tag=archer.homing_target,distance=..59.99,limit=1] at @s run tp @s ~ ~ ~ ~10 ~
+    execute at @s positioned ^-60 ^ ^ if entity @e[tag=archer.homing_target,distance=..59.99,limit=1] at @s run tag @s add archer.homing
 
-    execute at @s positioned ^300 ^ ^ if entity @e[tag=archer.homing_target,distance=..299.99,limit=1] at @s run tp @s ~ ~ ~ ~-25 ~
-    execute at @s positioned ^300 ^ ^ if entity @e[tag=archer.homing_target,distance=..299.99,limit=1] at @s run tag @s add archer.homing
+    execute at @s positioned ^60 ^ ^ if entity @e[tag=archer.homing_target,distance=..59.99,limit=1] at @s run tp @s ~ ~ ~ ~-10 ~
+    execute at @s positioned ^60 ^ ^ if entity @e[tag=archer.homing_target,distance=..59.99,limit=1] at @s run tag @s add archer.homing
 
-    execute at @s positioned ^ ^300 ^ if entity @e[tag=archer.homing_target,distance=..299.99,limit=1] at @s run tp @s ~ ~ ~ ~ ~-10
-    execute at @s positioned ^ ^300 ^ if entity @e[tag=archer.homing_target,distance=..299.99,limit=1] at @s run tag @s add archer.homing
+    execute at @s positioned ^ ^60 ^ if entity @e[tag=archer.homing_target,distance=..59.99,limit=1] at @s run tp @s ~ ~ ~ ~ ~-10
+    execute at @s positioned ^ ^60 ^ if entity @e[tag=archer.homing_target,distance=..59.99,limit=1] at @s run tag @s add archer.homing
 
-    execute at @s positioned ^ ^-300 ^ if entity @e[tag=archer.homing_target,distance=..299.99,limit=1] at @s run tp @s ~ ~ ~ ~ ~10
-    execute at @s positioned ^ ^-300 ^ if entity @e[tag=archer.homing_target,distance=..299.99,limit=1] at @s run tag @s add archer.homing
+    execute at @s positioned ^ ^-60 ^ if entity @e[tag=archer.homing_target,distance=..59.99,limit=1] at @s run tp @s ~ ~ ~ ~ ~10
+    execute at @s positioned ^ ^-60 ^ if entity @e[tag=archer.homing_target,distance=..59.99,limit=1] at @s run tag @s add archer.homing
 
     # Motionで飛ばす
     

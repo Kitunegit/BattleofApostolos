@@ -9,7 +9,7 @@ scoreboard players set @s skill1.ct_data 12
 scoreboard players set @s skill2.ct_data 25
 scoreboard players set @s special.ct_data 25
 
-scoreboard players set @s system.ui.passive_bar.length 83
+scoreboard players set @s system.ui.passive_bar.length 55
 scoreboard players set @s system.ui.passive_bar.max 3000
 scoreboard players set @s passive_count 3000
 

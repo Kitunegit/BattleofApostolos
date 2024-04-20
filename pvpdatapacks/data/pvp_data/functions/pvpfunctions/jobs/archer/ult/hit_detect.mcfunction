@@ -6,7 +6,8 @@
 
 # 実績解除
     advancement revoke @s only pvp_data:system/player_attack/archer_ult_arrow
-    execute unless score @s ult_count matches 1.. if entity @e[tag=archer.ult_target] run return 0
+    execute unless score @s ult_count matches 1.. run return 0 
+    execute if entity @e[tag=archer.ult_target] run return 0
 # ターゲットにタグを付与
     tag @s add archer.ult_hit
 # ターゲットを取得

@@ -6,7 +6,7 @@
 
 # 効果時間減少
     scoreboard players remove @s[scores={ult_count=0..}] ult_count 1
-# パーティクル
-    execute at @e[type=arrow] run particle dust 0.89 0.953 0.333 1 ^ ^ ^ 0.25 0.25 0.25 5 1
-    execute at @e[type=arrow] run particle dust 0.09 0.553 0.031 1 ^ ^ ^ 0.25 0.25 0.25 5 1
+# 演出
+    execute at @s run particle block minecraft:oak_leaves ~ ~1 ~ 0.1 0.5 0.1 0.1 2
 # 時間まで来たらなんやかんや
+    execute if score @s ult_count matches 0 unless entity @e[tag=archer.ult_target] run function pvp_data:pvpfunctions/jobs/archer/ult/miss

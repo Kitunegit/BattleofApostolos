@@ -1,6 +1,10 @@
 #function pvp_data:pvpfunctions/systems/advancements/main
-execute as @a[scores={jobscore=0..}] run function pvp_data:pvpfunctions/systems/job_system/main
-function pvp_data:pvpfunctions/systems/area_system/main
+
+# 役職関連
+
+    execute as @a[scores={jobscore=0..}] run function pvp_data:pvpfunctions/systems/job_system/main
+
+    function pvp_data:pvpfunctions/systems/area_system/main
 
 tag @a[gamemode=!spectator] add player
 

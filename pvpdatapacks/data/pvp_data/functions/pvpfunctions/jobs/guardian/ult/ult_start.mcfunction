@@ -11,7 +11,7 @@
     execute at @s run particle minecraft:crit ~ ~ ~ 0 0 0 0.5 15
 # モデル演出準備 
     execute at @s rotated ~ 0 positioned ~ ~100 ~ run function animated_java:guardian_ult/summon
-    execute at @s positioned ~ ~100 ~ run tag @e[type=#animated_java:root,limit=1,sort=nearest] add guardian.ult_model
+    execute at @s positioned ~ ~100 ~ run tag @e[tag=aj.guardian_ult.rig_entity,limit=1,sort=nearest] add guardian.ult_model
     execute as @e[tag=guardian.ult_model] run function animated_java:guardian_ult/animations/rotation/play
     execute at @s positioned ~ ~100 ~ run tp @e[distance=..1,limit=1,sort=nearest,tag=guardian.ult_model] ~ ~-99 ~
 # 効果付与

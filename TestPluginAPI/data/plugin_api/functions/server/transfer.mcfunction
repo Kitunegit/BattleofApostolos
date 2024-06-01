@@ -1,4 +1,4 @@
-#> plugin_api:transfer
+#> plugin_api:server/transfer
 #
 # @input
 #   args

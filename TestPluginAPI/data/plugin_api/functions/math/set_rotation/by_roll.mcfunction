@@ -1,4 +1,4 @@
-#> plugin_api:math/rotate_roll
+#> plugin_api:math/set_rotation/by_roll
 #
 # @input
 #   args
@@ -24,4 +24,4 @@
 
     $data modify storage plugin_api: _.roll set value $(roll)f
 
-    function plugin_api:math/rotate_ternion with storage plugin_api: _
+    function plugin_api:math/set_rotation/by_ternion with storage plugin_api: _

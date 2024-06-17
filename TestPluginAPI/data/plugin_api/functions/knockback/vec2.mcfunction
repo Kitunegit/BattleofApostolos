@@ -19,7 +19,7 @@
     data modify storage plugin_api: _.y set from entity @e[tag=plugin_api.temporary,limit=1] Pos[1]
     data modify storage plugin_api: _.z set from entity @e[tag=plugin_api.temporary,limit=1] Pos[2]
 
-    kill @e[tag=plugin_api.temporary,limit=1]
+    kill @e[tag=plugin_api.temporary]
 
     function plugin_api:knockback/vec3 with storage plugin_api: _
 

@@ -19,4 +19,4 @@
 
     tag @s remove plugin_api.target
 
-    kill @e[tag=plugin_api.messenger,limit=1]
+    kill @e[tag=plugin_api.messenger]

@@ -1,10 +1,11 @@
-#> plugin_api:knockback/vec3
+#> plugin_api:math/rotate_ternion
 #
 # @input
 #   args
-#       x: double
-#       y: double
-#       z: double
+#       yaw: float
+#       pitch: float
+#       roll: float
+#   entity #minecraft:display
 #
 # @api
 
@@ -12,7 +13,7 @@
     #> @private
     #declare tag plugin_api.messenger
 
-    $summon marker ~ ~ ~ {Tags: ["plugin_api.messenger", "testplugin:knockback $(x) $(y) $(z)"]}
+    $summon marker ~ ~ ~ {Tags: ["plugin_api.messenger", "testplugin:rotate_display $(yaw) $(pitch) $(roll)"]}
 
     #> @private
     #declare tag plugin_api.target

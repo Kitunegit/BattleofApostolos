@@ -5,7 +5,7 @@
 #       width: double 横幅
 #       height: double 高さ
 #       depth: double 奥行き
-#       showOutline: byte trueであれば外枠を表示する
+#       showOutline: boolean trueであれば外枠を表示する
 #   rotation 実行方向
 #   location 実行座標
 #
@@ -21,7 +21,7 @@
     #> @private
     #declare tag plugin_api.target
 
-    $summon marker ~ ~ ~ {Tags: ["plugin_api.messenger", "plugin_api.target", "testplugin:spawn_bounding_box $(width) $(height) $(depth)"]}
+    $summon marker ~ ~ ~ {Tags: ["plugin_api.messenger", "plugin_api.target", "testplugin:spawn_bounding_box $(width) $(height) $(depth) $(showOutline)"]}
 
     tp @e[tag=plugin_api.messenger] ~ ~ ~
 

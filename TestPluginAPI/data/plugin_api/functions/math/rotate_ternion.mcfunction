@@ -1,4 +1,4 @@
-#> plugin_api:math/set_rotation/by_ternion
+#> plugin_api:math/rotate_ternion
 #
 # @input
 #   args

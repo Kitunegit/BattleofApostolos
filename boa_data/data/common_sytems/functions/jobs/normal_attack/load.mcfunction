@@ -16,6 +16,9 @@
     scoreboard objectives add system.combo.count dummy
  # 最大コンボ段数(各役職ごとに定義)
     scoreboard objectives add system.combo.max dummy
-
+# 演出フレームカウンター
+    scoreboard objectives add system.particle.frame.tick dummy
+# 演出画像フレーム
+    scoreboard objectives add system.particle.frame dummy
 # ロードチェック
    say Normal_attack/Load is Loaded!

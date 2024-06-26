@@ -4,6 +4,10 @@
 #
 # @internal
 
-scoreboard players set @s system.combo.count 0
-tellraw @s {"text":"---ComboReset---"}
-execute at @s run playsound ui.button.click player @s ~ ~ ~ 1 1
+# コンボ段数リセット
+    scoreboard players set @s system.combo.count 0
+
+# デバッグテキスト
+    tellraw @s {"text":"---ComboReset---"}
+# 仮演出音
+    execute at @s run playsound ui.button.click player @s ~ ~ ~ 1 1

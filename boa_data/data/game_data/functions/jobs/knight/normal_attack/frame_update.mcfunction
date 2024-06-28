@@ -5,7 +5,7 @@
 # @internal
 
 # First
-    execute as @e[type=minecraft:text_display,tag=particle.knight.first] if score @s system.particle.frame.tick matches 6.. run kill @s
+    execute as @e[type=minecraft:text_display,tag=particle.knight.first] if score @s system.particle.frame.tick matches 7.. run kill @s
     execute as @e[type=minecraft:text_display,tag=particle.knight.first] run data merge entity @s {"text":'{"font":"slash/knight/first","score":{"name":"@s","objective":"system.particle.frame.tick"}}'}
 # second
     execute as @e[type=minecraft:text_display,tag=particle.knight.second] if score @s system.particle.frame.tick matches 6.. run kill @s

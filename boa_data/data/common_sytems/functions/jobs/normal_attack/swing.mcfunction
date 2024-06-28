@@ -12,8 +12,12 @@
 
     execute if score @s jobscore matches 3 run function game_data:jobs/knight/normal_attack/allot
 
+# タイマーセット、CTセット
+    
+
 # デバッグログ
     tellraw @s [{"score":{"name":"@s","objective":"system.combo.count"}},{"text":"段"}]
+
 
 # 通常攻撃段数が上限に達していた時の処理
     execute if score @s system.combo.count >= @s system.combo.max run tellraw @s {"text":"---ComboConpleted---"}

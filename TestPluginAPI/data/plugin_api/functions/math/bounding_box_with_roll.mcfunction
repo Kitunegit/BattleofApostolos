@@ -1,4 +1,4 @@
-#> plugin_api:math/bounding_box
+#> plugin_api:math/bounding_box_with_roll
 #
 # @input
 #   args
@@ -6,6 +6,7 @@
 #       height: double 高さ
 #       depth: double 奥行き
 #       show_outline: boolean trueであれば外枠を表示する
+#       roll: double ロール角回転
 #   rotation 実行方向
 #   location 実行座標
 #
@@ -21,7 +22,7 @@
     #> @private
     #declare tag plugin_api.target
 
-    $summon marker ~ ~ ~ {Tags: ["plugin_api.messenger", "plugin_api.target", "testplugin:spawn_bounding_box $(width) $(height) $(depth) $(show_outline) 0"]}
+    $summon marker ~ ~ ~ {Tags: ["plugin_api.messenger", "plugin_api.target", "testplugin:spawn_bounding_box $(width) $(height) $(depth) $(show_outline) $(roll)"]}
 
     #> @private
     #declare tag plugin_api.temporary

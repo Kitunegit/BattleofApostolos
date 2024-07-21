@@ -20,8 +20,8 @@
 
     tag @s add plugin_api.target
 
-    tp @e[tag=plugin_api.messenger] ~ ~ ~
+    tp @e[type=marker,tag=plugin_api.messenger] ~ ~ ~
 
     tag @s remove plugin_api.target
 
-    kill @e[tag=plugin_api.messenger]
+    kill @e[type=marker,tag=plugin_api.messenger]

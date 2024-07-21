@@ -1,4 +1,4 @@
-#> plugin_api:math/bounding_box_with_roll
+#> plugin_api:math/bounding_box
 #
 # @input
 #   args
@@ -6,7 +6,6 @@
 #       height: double 高さ
 #       depth: double 奥行き
 #       show_outline: boolean trueであれば外枠を表示する
-#       roll: double ロール角回転
 #   rotation 実行方向
 #   location 実行座標
 #
@@ -22,19 +21,19 @@
     #> @private
     #declare tag plugin_api.target
 
-    $summon marker ~ ~ ~ {Tags: ["plugin_api.messenger", "plugin_api.target", "testplugin:spawn_bounding_box $(width) $(height) $(depth) $(show_outline) $(roll)"]}
+    $summon marker ~ ~ ~ {Tags: ["plugin_api.messenger", "plugin_api.target", "testplugin:spawn_bounding_box $(width) $(height) $(depth) $(show_outline) 0"]}
 
     #> @private
     #declare tag plugin_api.temporary
 
     summon marker ~ ~ ~ {Tags: ["plugin_api.temporary"]}
 
-    tp @e[tag=plugin_api.temporary] ~ ~ ~ ~ ~
+    tp @e[type=marker,tag=plugin_api.temporary] ~ ~ ~ ~ ~
 
-    data modify entity @e[tag=plugin_api.messenger,limit=1] Rotation set from entity @e[tag=plugin_api.temporary,limit=1] Rotation
+    data modify entity @e[type=marker,tag=plugin_api.messenger,limit=1] Rotation set from entity @e[type=marker,tag=plugin_api.temporary,limit=1] Rotation
 
-    kill @e[tag=plugin_api.temporary]
+    kill @e[type=marker,tag=plugin_api.temporary]
 
-    tp @e[tag=plugin_api.messenger] ~ ~ ~
+    tp @e[type=marker,tag=plugin_api.messenger] ~ ~ ~
 
-    kill @e[tag=plugin_api.messenger]
+    kill @e[type=marker,tag=plugin_api.messenger]

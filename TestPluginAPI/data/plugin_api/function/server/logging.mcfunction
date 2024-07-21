@@ -13,6 +13,6 @@
 
     $summon marker ~ ~ ~ {Tags: ["plugin_api.messenger", "testplugin:logging $(message)"]}
 
-    tp @e[tag=plugin_api.messenger,limit=1] ~ ~ ~
+    tp @e[type=marker,tag=plugin_api.messenger,limit=1] ~ ~ ~
 
-    kill @e[tag=plugin_api.messenger]
+    kill @e[type=marker,tag=plugin_api.messenger]

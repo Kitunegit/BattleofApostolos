@@ -15,11 +15,11 @@
     #> @private
     #declare storage plugin_api:
 
-    data modify storage plugin_api: _.x set from entity @e[tag=plugin_api.temporary,limit=1] Pos[0]
-    data modify storage plugin_api: _.y set from entity @e[tag=plugin_api.temporary,limit=1] Pos[1]
-    data modify storage plugin_api: _.z set from entity @e[tag=plugin_api.temporary,limit=1] Pos[2]
+    data modify storage plugin_api: _.x set from entity @e[type=marker,tag=plugin_api.temporary,limit=1] Pos[0]
+    data modify storage plugin_api: _.y set from entity @e[type=marker,tag=plugin_api.temporary,limit=1] Pos[1]
+    data modify storage plugin_api: _.z set from entity @e[type=marker,tag=plugin_api.temporary,limit=1] Pos[2]
 
-    kill @e[tag=plugin_api.temporary]
+    kill @e[type=marker,tag=plugin_api.temporary]
 
     function plugin_api:knockback/vec3 with storage plugin_api: _
 

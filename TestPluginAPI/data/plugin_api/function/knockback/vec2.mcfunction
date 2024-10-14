@@ -7,20 +7,8 @@
 # @api
 
 #
-    #> @private
-    #declare tag plugin_api.temporary
+    tag @s add plugin_api.target
 
-    $execute positioned 0.0 0.0 0.0 run summon marker ^ ^ ^$(strength) {Tags: ["plugin_api.temporary"]}
+    $function plugin_api:send_message {message: '{"id": "knockback_vec2", "strength": $(strength)}'}
 
-    #> @private
-    #declare storage plugin_api:
-
-    data modify storage plugin_api: _.x set from entity @e[type=marker,tag=plugin_api.temporary,limit=1] Pos[0]
-    data modify storage plugin_api: _.y set from entity @e[type=marker,tag=plugin_api.temporary,limit=1] Pos[1]
-    data modify storage plugin_api: _.z set from entity @e[type=marker,tag=plugin_api.temporary,limit=1] Pos[2]
-
-    kill @e[type=marker,tag=plugin_api.temporary]
-
-    function plugin_api:knockback/vec3 with storage plugin_api: _
-
-    data remove storage plugin_api: _
+    tag @s remove plugin_api.target

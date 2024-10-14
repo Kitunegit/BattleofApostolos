@@ -16,25 +16,4 @@
 # @api
 
 #
-    #> @private
-    #declare tag plugin_api.messenger
-
-    #> @private
-    #declare tag plugin_api.target
-
-    $summon marker ~ ~ ~ {Tags: ["plugin_api.messenger", "plugin_api.target", "testplugin:spawn_bounding_box $(width) $(height) $(depth) $(show_outline) $(roll)"]}
-
-    #> @private
-    #declare tag plugin_api.temporary
-
-    summon marker ~ ~ ~ {Tags: ["plugin_api.temporary"]}
-
-    tp @e[type=marker,tag=plugin_api.temporary] ~ ~ ~ ~ ~
-
-    data modify entity @e[type=marker,tag=plugin_api.messenger,limit=1] Rotation set from entity @e[type=marker,tag=plugin_api.temporary,limit=1] Rotation
-
-    kill @e[type=marker,tag=plugin_api.temporary]
-
-    tp @e[type=marker,tag=plugin_api.messenger] ~ ~ ~
-
-    kill @e[type=marker,tag=plugin_api.messenger]
+    $function plugin_api:send_message {message: '{"id": "spawn_bounding_box", "size": [$(width), $(height), $(depth)], "roll": $(roll), "show_outline": $(show_outline)}'}

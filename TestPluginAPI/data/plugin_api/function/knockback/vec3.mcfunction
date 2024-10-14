@@ -9,18 +9,8 @@
 # @api
 
 #
-    #> @private
-    #declare tag plugin_api.messenger
-
-    $summon marker ~ ~ ~ {Tags: ["plugin_api.messenger", "testplugin:knockback $(x) $(y) $(z)"]}
-
-    #> @private
-    #declare tag plugin_api.target
-
     tag @s add plugin_api.target
 
-    tp @e[type=marker,tag=plugin_api.messenger] ~ ~ ~
+    $function plugin_api:send_message {message: '{"id": "knockback_vec3", "vector3": [$(x), $(y), $(z)]}'}
 
     tag @s remove plugin_api.target
-
-    kill @e[type=marker,tag=plugin_api.messenger]

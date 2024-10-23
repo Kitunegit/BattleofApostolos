@@ -8,4 +8,4 @@
 # @api
 
 #
-    $function plugin_api:send_message {message: '{"id": "logging", "message": $(message)}'}
+    $return run function plugin_api:send_message {message: '{"id": "logging", "message": "$(message)"}'}
